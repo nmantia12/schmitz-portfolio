@@ -1,0 +1,18 @@
+:root {
+  --wacky-orange: #ffa500;
+//   --light-blue: #00aeef;
+//   --dark-blue: #1a3055;
+//   --dark-gray: #373737;
+//   --med-gray: #4a4a4a;
+//   --light-gray: #f9f9f9;
+//   --brownish-gray: #656565;
+//   --error-red: #d0021b;
+}
+
+.has-wacky-orange-background-color {
+    background-color: #313131;
+}
+
+.has-wacky-orange-color {
+    color: var(--wacky-orange);
+}

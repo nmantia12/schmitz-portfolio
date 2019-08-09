@@ -1,0 +1,30 @@
+/**
+ * Lock down the block editor when the layout block is active.
+ */
+.fl-builder-layout-enabled .editor-inserter,
+.fl-builder-layout-enabled .editor-visual-editor__inserter,
+.fl-builder-layout-enabled .editor-default-block-appender,
+.fl-builder-layout-enabled .editor-block-list__insertion-point,
+.fl-builder-layout-enabled .editor-block-settings-menu,
+.fl-builder-layout-enabled .editor-block-mover,
+.fl-builder-layout-enabled .editor-block-list__breadcrumb,
+.fl-builder-layout-enabled .editor-block-list__block:not([data-type="fl-builder/layout"]) {
+  display: none !important; }
+
+.fl-builder-layout-enabled .editor-block-list__block-edit:before {
+  outline: none !important; }
+
+/**
+ * Launch View
+ */
+.fl-builder-layout-launch-view .components-button {
+  margin: 0 5px; }
+
+.fl-builder-layout-launch-view .components-placeholder__fieldset {
+  max-width: none; }
+
+/**
+ * Loading View
+ */
+.fl-builder-layout-loading-view .spinner {
+  float: left; }

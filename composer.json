@@ -1,0 +1,41 @@
+{
+    "name": "paradowski/wp_base_install",
+    "description": "WP Base Install",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Paradowski",
+            "email": "it-registrations@paradowski.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "^1.3.0",
+        "vlucas/phpdotenv": "^2.4.0",
+        "johnpbloch/wordpress": "^5.1",
+        "wpackagist-plugin/wordpress-seo": "^9.0",
+        "wpackagist-plugin/enable-media-replace": "^3.0.6",
+        "wpackagist-plugin/thumbnail-upscale": "^1.1",
+        "wpackagist-plugin/wp-smartcrop": "^1.4.7"
+    },
+    "extra": {
+        "installer-paths": {
+            "htdocs/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "htdocs/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "htdocs/wp"
+    },
+    "config": {
+        "secure-http": false
+    }
+}

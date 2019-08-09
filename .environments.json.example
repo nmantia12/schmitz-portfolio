@@ -1,0 +1,21 @@
+{
+	"LOCAL": {
+		"connect": "wp_base_install_wordpress",
+		"root_directory": "/var/www",
+		"url": "http://localhost:9000"
+	},
+	"QA": {
+		"connect": "pcrw@carbon.server.paradowski.com",
+		"root_directory": "/var/www/domains/parado.cz/wp_base_install",
+        "asset_path": "htdocs/app/themes/wp_base_install/assets",
+		"url": "https://wp_base_install.parado.cz",
+		"db_name": "wp_base_install_db"
+	},
+	"STAGING": {
+		"connect": "pcrw@helium.server.paradowski.com",
+		"root_directory": "/var/www/domains/stagemy.site/wp_base_install",
+        "asset_path": "htdocs/app/themes/wp_base_install/assets",
+		"url": "https://wp_base_install.stagemy.site",
+		"db_name": "wp_base_install_db"
+	}
+}

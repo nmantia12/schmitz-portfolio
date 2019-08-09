@@ -1,0 +1,18 @@
+ //takes in the px size and outputs px and rem
+@mixin font-size-px($sizeValue: 1) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue / 16) * 1rem;
+}
+
+// Breakpoints standard
+$current_break: 0;
+$lowest_break: 0;
+@mixin break($point) {
+    $current_break: $point !global;
+
+    @media screen and (min-width: #{$point}) {
+        @content;
+    }
+
+    $current_break: $lowest_break !global;
+}

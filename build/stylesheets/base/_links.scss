@@ -1,0 +1,22 @@
+a {
+    color: mediumblue;
+    text-decoration: none;
+    transition: all .3s ease-in;
+
+	&:visited {
+		color: mediumblue;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+        color: navy;
+        text-decoration: underline;
+	}
+	&:focus {
+		outline: thin dotted midnightblue;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
