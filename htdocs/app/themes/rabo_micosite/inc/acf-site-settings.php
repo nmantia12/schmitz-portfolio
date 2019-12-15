@@ -55,3 +55,14 @@ function register_acf_block_types() {
 if ( function_exists( 'acf_register_block_type' ) ) {
 	add_action( 'acf/init', 'register_acf_block_types' );
 }
+
+function wedding_gloabal_cf() {
+	// define global defaults
+	global $acf_defaults;
+	$acf_defaults = array(
+		'image'   => get_field( 'default_image', 'option' ),
+		'title'   => get_field( 'placeholder_title', 'option' ) ?: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		'content' => get_field( 'placeholder_content', 'option' ) ?: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+	);
+}
+add_action( 'init', 'wedding_gloabal_cf' );

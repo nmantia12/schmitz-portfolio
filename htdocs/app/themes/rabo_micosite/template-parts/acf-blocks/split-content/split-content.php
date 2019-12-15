@@ -24,12 +24,12 @@ if ( ! empty( $block['align'] ) ) {
 	$className .= ' align' . $block['align'];
 }
 
-// Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
+// global defaults
+global $acf_defaults;
 
+// Load values and assign defaults.
+$img_position = get_field( '50_50_image_position' ) ?: 'left';
+$img          = get_field( '50_50_image' ) ?: $acf_defaults['image'];
+$copy         = get_field( '50_50_content' ) ?: $acf_defaults['content'];
+$button       = get_field( '50_50_button' );
 
