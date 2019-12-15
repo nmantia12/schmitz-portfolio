@@ -16,8 +16,8 @@ sql-dump-*.sql
 
 # generated files
 # /dist
-htdocs/app/themes/wp_base_install/assets/js/*.js
-htdocs/app/themes/wp_base_install/assets/css/*.css
+htdocs/app/themes/rabo_micosite/assets/js/*.js
+htdocs/app/themes/rabo_micosite/assets/css/*.css
 
 # Application
 htdocs/app/plugins/*
@@ -36,7 +36,7 @@ htdocs/app/cache/*
 nginx.conf
 docker-compose.yml
 
-# Composer 
+# Composer
 /vendor/
 
 # NPM
@@ -63,7 +63,7 @@ yarn-error.log*
 
 # Docker
 /database/*
-!/**/*/.gitkeep 
+!/**/*/.gitkeep
 
 ## For content deployment tool
 jet

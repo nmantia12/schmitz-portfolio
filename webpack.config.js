@@ -6,14 +6,14 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
-const THEME_NAME = 'wp_base_install'
+const THEME_NAME = 'rabo_micosite'
 const publicPath = `/app/themes/${THEME_NAME}/assets/js/`
 const OUTPUT_DIRECTORY = `htdocs${publicPath}`;
 
 // grab environment name from .env
 const ENV = require('dotenv').config()
 const WP_ENV = process.env.WP_ENV || 'local'
-const WP_HOME = process.env.WP_HOME || 'http://local.wp_base_install.com'
+const WP_HOME = process.env.WP_HOME || 'http://local.rabo_micosite.com'
 
 const PROXY_URL = WP_HOME
 
@@ -59,7 +59,7 @@ const plugins = [
 	// })
 	new BrowserSyncPlugin({
 		host: 'localhost',
-		port: 9005,
+		port: 9008,
 		proxy: PROXY_URL,
 		files: ['**/**/**/**/*.php'],
 		reloadDelay: 0
