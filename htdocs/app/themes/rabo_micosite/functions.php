@@ -77,7 +77,7 @@ function theme_setup() {
 
 	// Add support for responsive embedded content.
 	add_theme_support( 'responsive-embeds' );
-	
+
 	// Adds support for editor color palette.
 	add_theme_support( 'editor-color-palette', array(
 		array(
@@ -96,7 +96,7 @@ function theme_setup() {
 			'color' => '#333',
 		),
 	) );
-    
+
 }
 
 add_action( 'after_setup_theme', 'theme_setup');
@@ -120,7 +120,7 @@ function site_scripts() {
     // Theme javascript.
 	$main_js_file = get_stylesheet_directory_uri() . '/assets/js/main.js';
 	wp_enqueue_script( 'site-js', $main_js_file, ['jquery'], get_file_time($main_js_file), true);
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'site_scripts');
 

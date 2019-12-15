@@ -1,8 +1,28 @@
 //Breakpoints, actually
-$big-phone: 375px;
-$tablet: 768px;
+$phone: 375px;
+$big-phone: 768px;
+$tablet: 992px;
 $desktop: 1200px;
 $desktop4k: 2559px;
 
-
+// Content
 $content-width: 1100px;
+$block-margin: 20px;
+
+// Grid
+$grid-width: $desktop;
+$grid-gap: 32px;
+$base-margin: 16px;
+$wrap_edge: $base-margin;
+$margin_2x: $base-margin * 2;
+$margin_4x: $base-margin * 4;
+
+// Include Media
+$breakpoints: (
+  "phone": $phone,
+  "small": $big-phone,
+  "tablet": $big-phone,
+  "medium": $tablet,
+  "large": $desktop,
+  "desktop": $grid-width + $grid-gap
+);

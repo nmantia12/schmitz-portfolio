@@ -1,14 +1,18 @@
-@import 'base/mixins';
-@import 'base/colors';
-@import 'base/normalize';
-@import 'base/breakpoints';
-@import 'base/typography';
-@import 'base/elements';
-@import 'base/links';
-@import 'base/buttons';
-@import 'base/forms';
-@import 'base/navigation';
+@import "vendor/include-media";
 
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/content';
+@import "base/colors";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/breakpoints";
+@import "base/gutenberg";
+@import "base/blocks";
+@import "base/typography";
+@import "base/elements";
+@import "base/links";
+@import "base/buttons";
+@import "base/forms";
+@import "base/navigation";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";

@@ -1,4 +1,4 @@
- //takes in the px size and outputs px and rem
+//takes in the px size and outputs px and rem
 @mixin font-size-px($sizeValue: 1) {
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue / 16) * 1rem;
@@ -8,11 +8,167 @@
 $current_break: 0;
 $lowest_break: 0;
 @mixin break($point) {
-    $current_break: $point !global;
+  $current_break: $point !global;
 
-    @media screen and (min-width: #{$point}) {
-        @content;
+  @media screen and (min-width: #{$point}) {
+    @content;
+  }
+
+  $current_break: $lowest_break !global;
+}
+
+@mixin base-style {
+  color: $base-color;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+%transition {
+  transition: all 0.1s ease-in-out;
+}
+
+%alt_link {
+  color: $base-color;
+  font-weight: 400;
+
+  &:hover {
+    color: $highlight;
+    text-decoration: none;
+  }
+}
+/**
+ * Placeholder Color
+ *
+ */
+@mixin placeholder-color($color) {
+  ::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  ::-ms-input-placeholder {
+    color: $color;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  input:focus::-webkit-input-placeholder,
+  input:focus::-moz-placeholder,
+  input:focus:-ms-input-placeholder,
+  textarea:focus::-webkit-input-placeholder,
+  textarea:focus::-moz-placeholder,
+  textarea:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+}
+
+/**
+ * Font Sizes
+ *
+**/
+@mixin font-sizes($base: null, $tablet: null, $medium: null, $large: null) {
+  @if ($base) {
+    font-size: $base;
+  }
+
+  @if ($tablet) {
+    @include media(">=tablet") {
+      font-size: $tablet;
+    }
+  }
+
+  @if ($medium) {
+    @include media(">=medium") {
+      font-size: $medium;
+    }
+  }
+
+  @if ($large) {
+    @include media(">=desktop") {
+      font-size: $large;
+    }
+  }
+}
+/**
+ * Columns
+ *
+ */
+@mixin columns($columns, $grid_item_element: article, $gap: null) {
+  @if ($gap == null) {
+    $gap: $grid-gap;
+  }
+
+  & > #{$grid_item_element} {
+    float: left;
+    margin-left: $gap / $grid-width * 100%;
+    width: (($grid-width - $gap * ($columns - 1)) / $columns) / $grid-width *
+      100%;
+
+    &:nth-of-type(#{$columns}n + 1) {
+      clear: both;
+      margin-left: 0;
+    }
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-column-gap: $gap;
+    grid-template-columns: repeat($columns, 1fr);
+
+    & > #{$grid_item_element} {
+      margin-left: 0;
+      width: 100%;
     }
 
-    $current_break: $lowest_break !global;
+    header,
+    nav,
+    aside,
+    footer {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+/**
+ * Columns, Mobile
+ *
+ */
+@mixin columns-mobile($columns, $grid_item_element: article, $gap: null) {
+  @include media("<tablet") {
+    @include columns($columns, $grid_item_element, $gap);
+  }
+}
+
+/**
+ * Columns, Tablet
+ *
+ */
+@mixin columns-tablet($columns, $grid_item_element: article, $gap: null) {
+  @include media(">=tablet", "<medium") {
+    @include columns($columns, $grid_item_element, $gap);
+  }
+}
+
+/**
+ * Columns, Tablet Up
+ *
+ */
+@mixin columns-tablet-up($columns, $grid_item_element: article, $gap: null) {
+  @include media(">=tablet") {
+    @include columns($columns, $grid_item_element, $gap);
+  }
+}
+
+/**
+ * Columns, Desktop
+ *
+ */
+@mixin columns-desktop($columns, $grid_item_element: article, $gap: null) {
+  @include media(">=medium") {
+    @include columns($columns, $grid_item_element, $gap);
+  }
 }
