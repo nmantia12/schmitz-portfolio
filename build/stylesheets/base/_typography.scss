@@ -1,13 +1,15 @@
 // Google Fonts: https://fonts.googleapis.com/css?family=Fira+Sans:300,600,600i|Merriweather:300,300i,700
 // Fira Sans in 2 weights: 300, 600 & 600 italic
 // Meriweather in 2 weights: 300, 300 italic, 700
-$sans: "Fira Sans", sans-serif;
+$sans: "Helvetica", sans-serif;
 $serif: "Merriweather", serif;
 
 body {
-  font-family: $serif;
+  font-family: $sans;
   font-weight: 300;
+  color: $base-color;
 }
+
 h1,
 h2,
 h3,
@@ -17,17 +19,71 @@ h6 {
   margin: 0;
   padding: 0;
   font-family: $sans;
-  font-weight: 600;
-}
-h1 {
   font-weight: 300;
-  a {
-    font-weight: 600;
+  color: $base-color;
+
+  @include media("<tablet") {
+    font-weight: normal;
   }
 }
+
 p {
   margin: 0;
   padding: 0;
-  font-family: $serif;
+  font-family: $sans;
   font-weight: 300;
+}
+
+p,
+.body-1 {
+  @include font-sizes(20);
+  line-height: rem(31);
+  letter-spacing: rem(-0.2);
+}
+
+.body-2 {
+  @include font-sizes(17);
+  line-height: rem(25);
+  letter-spacing: rem(-0.17);
+}
+
+.body-3 {
+  @include font-sizes(10);
+  line-height: rem(15);
+  letter-spacing: rem(-0.1);
+}
+
+h1 {
+  @include font-sizes(37);
+  line-height: rem(42);
+  letter-spacing: rem(-0.37);
+}
+
+h2 {
+  @include font-sizes(25);
+  line-height: rem(31);
+  letter-spacing: rem(-0.25);
+}
+
+h3 {
+  @include font-sizes(22);
+  line-height: rem(24);
+  letter-spacing: rem(-0.22);
+}
+
+h4 {
+  @include font-sizes(15);
+  line-height: rem(24);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: rem(1.2);
+}
+
+h5,
+h6 {
+  @include font-sizes(12);
+  line-height: rem(19);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: rem(0.96);
 }

@@ -1,7 +1,3 @@
-body {
-  @include base-style();
-}
-
 /* Post title width */
 .editor-post-title__block.wp-block {
   max-width: $content-width;

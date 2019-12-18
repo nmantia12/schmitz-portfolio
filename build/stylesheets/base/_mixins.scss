@@ -4,6 +4,11 @@
   font-size: ($sizeValue / 16) * 1rem;
 }
 
+// coverts numeral to rem
+@function rem($pixels, $context: 16) {
+  @return #{$pixels/$context}rem;
+}
+
 // Breakpoints standard
 $current_break: 0;
 $lowest_break: 0;
@@ -15,14 +20,6 @@ $lowest_break: 0;
   }
 
   $current_break: $lowest_break !global;
-}
-
-@mixin base-style {
-  color: $base-color;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
 }
 
 %transition {
@@ -72,24 +69,24 @@ $lowest_break: 0;
 **/
 @mixin font-sizes($base: null, $tablet: null, $medium: null, $large: null) {
   @if ($base) {
-    font-size: $base;
+    @include font-size-px($base);
   }
 
   @if ($tablet) {
     @include media(">=tablet") {
-      font-size: $tablet;
+      @include font-size-px($tablet);
     }
   }
 
   @if ($medium) {
     @include media(">=medium") {
-      font-size: $medium;
+      @include font-size-px($medium);
     }
   }
 
   @if ($large) {
     @include media(">=desktop") {
-      font-size: $large;
+      @include font-size-px($large);
     }
   }
 }

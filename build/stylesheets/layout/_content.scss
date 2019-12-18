@@ -48,30 +48,6 @@ main.site-main {
   }
 }
 
-/* Skip Links
---------------------------------------------- */
-
-.genesis-skip-link {
-  margin: 0;
-}
-
-.genesis-skip-link .skip-link-hidden {
-  display: none;
-  visibility: hidden;
-}
-
-.genesis-skip-link li {
-  height: 0;
-  list-style: none;
-  width: 0;
-}
-
-/* Display outline on focus */
-:focus {
-  color: #333;
-  outline: #ccc solid 1px;
-}
-
 /* Screen Reader Text
 --------------------------------------------- */
 
@@ -104,7 +80,6 @@ main.site-main {
 
 /* Archive Navigation
 --------------------------------------------- */
-
 .pagination {
   border-top: 1px solid $border-color;
   font-size: 16px;
@@ -132,6 +107,115 @@ main.site-main {
         color: $white;
         text-decoration: none;
       }
+    }
+  }
+}
+
+/* Entry Content
+--------------------------------------------- */
+
+.entry-content {
+  ul,
+  ol {
+    padding-left: 1.5rem;
+
+    li {
+      padding-bottom: 0.5rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      ul,
+      ol {
+        padding-top: 0.5rem;
+      }
+    }
+
+    &.wp-block-gallery {
+      padding-left: 0;
+
+      li {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.entry-content > *,
+.block-area > * {
+  margin: $block-margin 0;
+  max-width: 100%;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .full-width-content &,
+  .content & {
+    &.alignwide {
+      margin: calc(2 * #{$block-margin}) calc(50% - 50vw);
+      max-width: 100vw;
+      width: auto;
+
+      @include media(">=tablet") {
+        margin: calc(2 * #{$block-margin}) calc(25% - 25vw);
+      }
+    }
+
+    &.alignfull {
+      margin: calc(2 * #{$block-margin}) calc(50% - 50vw);
+      max-width: 100vw;
+      width: 100vw;
+    }
+  }
+
+  &.alignleft {
+    /*rtl:ignore*/
+    float: left;
+    margin: 0 $block-margin $block-margin 0;
+  }
+
+  &.alignright {
+    /*rtl:ignore*/
+    float: right;
+    margin: 0 0 $block-margin $block-margin;
+  }
+
+  &.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.wp-block-quote,
+  &.post-listing-block {
+    margin-top: calc(2 * #{$block-margin});
+    margin-bottom: calc(2 * #{$block-margin});
+  }
+
+  &.wp-block-search {
+    max-width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.entry-content > .alignfull {
+  &:first-child {
+    margin-top: -36px;
+    @include media(">=tablet") {
+      margin-top: -48px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: -36px;
+    @include media(">=tablet") {
+      margin-bottom: -48px;
     }
   }
 }

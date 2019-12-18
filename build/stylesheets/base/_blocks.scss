@@ -95,57 +95,51 @@
     }
   }
 }
+$default: nth(nth($colors, 1), 1);
 
-/* Headings
---------------------------------------------- */
+.wp-block-button__link {
+  border: 2px solid brand-color($default, "darken");
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 16px 32px;
+  text-decoration: none;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $base-color;
-  line-height: 1.2;
-  font-weight: 600;
-  margin-bottom: 16px;
+  .is-style-full &,
+  &.full {
+    display: block;
+    width: 100%;
+  }
 
-  a {
-    color: $base-color;
+  &:not(.has-text-color) {
+    color: white;
 
     &:hover {
-      color: $highlight;
-      text-decoration: none;
+      color: white;
     }
   }
 
-  &:focus {
-    outline: none;
+  &:not(.has-background) {
+    background-color: brand-color($default);
+
+    &:hover,
+    &:focus {
+      background-color: brand-color($default, "darken");
+    }
   }
-}
 
-h1 {
-  font-size: 36px;
-}
+  @each $name, $color in $colors {
+    &.has-#{$name}-color:hover,
+    &.has-#{$name}-color:focus {
+      color: $color;
+    }
 
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 15px;
+    &.has-#{$name}-background-color:hover,
+    &.has-#{$name}-background-color:focus {
+      background-color: brand-color($name, "darken");
+    }
+  }
 }
 
 /* Blockquote
@@ -182,7 +176,7 @@ blockquote.wp-block-quote {
     margin: calc(2 * $block-margin) auto;
 
     p {
-      @include font-sizes(24px, 36px);
+      @include font-sizes(24, 36);
     }
 
     cite {

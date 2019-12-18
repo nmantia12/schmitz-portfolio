@@ -1,22 +1,22 @@
 a {
-    color: mediumblue;
-    text-decoration: none;
-    transition: all .3s ease-in;
+  color: $blue;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
 
-	&:visited {
-		color: mediumblue;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-        color: navy;
-        text-decoration: underline;
-	}
-	&:focus {
-		outline: thin dotted midnightblue;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  // &:visited {
+  //   color: scale-color($blue, $lightness: -50%);
+  // }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $highlight;
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: thin dotted midnightblue;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
