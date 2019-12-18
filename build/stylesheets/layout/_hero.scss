@@ -1,0 +1,90 @@
+.hero {
+  @include fixed-viewport;
+
+  &__overlay,
+  &__video,
+  &__image,
+  &__body {
+    @include fixed-viewport;
+  }
+
+  &__body {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__overlay {
+    z-index: 2;
+    background: linear-gradient(to right, $blue, rgba($blue, 0));
+  }
+
+  &__video,
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    color: #fff;
+    max-width: 33.33%;
+
+    h4 {
+      opacity: 0.5;
+    }
+
+    h4,
+    h1 {
+      margin-bottom: rem(13);
+    }
+
+    p {
+      font-size: rem(25);
+      line-height: rem(31);
+      font-weight: 300;
+      letter-spacing: -0.25px;
+      margin-bottom: rem(22);
+      opacity: 0.7;
+    }
+
+    & > * {
+      color: #fff;
+    }
+  }
+
+  &__nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+    text-align: center;
+  }
+
+  &__tab {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.25s linear;
+    margin: 0 rem(5);
+    width: rem(250);
+    max-width: calc(25% - 10px);
+    padding: rem(26) rem(39);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: rem(17);
+    line-height: rem(24);
+    font-weight: normal;
+
+    &.active,
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

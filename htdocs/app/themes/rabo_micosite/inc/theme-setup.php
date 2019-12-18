@@ -39,10 +39,10 @@ function theme_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 190,
-			'width'       => 190,
-			'flex-width'  => false,
-			'flex-height' => false,
+			'height'      => 198,
+			'width'       => 28,
+			'flex-width'  => true,
+			'flex-height' => true,
 		)
 	);
 

@@ -72,7 +72,6 @@ function register_acf_block_types() {
 		'split-scroll'        => 'Split Scrolling Section',
 		'content-image-quote' => 'Content / Image / Quote',
 		'infographic'         => 'Infographic',
-		'hero'                => 'Hero',
 		'video-modal'         => 'Video Modal',
 		'full-bg-img-content' => 'Full Background Image with Content',
 		'image-slider'        => 'Image Slider',
