@@ -73,7 +73,7 @@ function theme_setup() {
 	add_theme_support( 'editor-styles' );
 
 	// Enqueue editor styles.
-	add_editor_style( 'editor-styles', get_stylesheet_directory_uri() . '/assets/css/editor.css' );
+	add_editor_style( '/assets/css/editor.css' );
 
 	// Add support for responsive embedded content.
 	add_theme_support( 'responsive-embeds' );
@@ -81,22 +81,26 @@ function theme_setup() {
 	// Adds support for editor color palette.
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'Wacky Orange', 'para_theme' ),
-			'slug'  => 'wacky-orange',
-			'color'	=> '#ffa500',
+			'name'  => __( 'Primary Indigo', 'para_theme' ),
+			'slug'  => 'blue',
+			'color'	=> '#002664',
 		),
 		array(
-			'name'  => __( 'Medium gray', 'para_theme' ),
-			'slug'  => 'medium-gray',
-			'color' => '#999',
+			'name'  => __( 'Teal', 'para_theme' ),
+			'slug'  => 'teal',
+			'color' => '#90D1E3',
 		),
 		array(
-			'name'  => __( 'Dark gray', 'para_theme' ),
-			'slug'  => 'dark-gray',
-			'color' => '#333',
+			'name'  => __( 'Orange', 'para_theme' ),
+			'slug'  => 'orange',
+			'color' => '#FF6700',
+		),
+		array(
+			'name'  => __( 'Grey', 'para_theme' ),
+			'slug'  => 'grey',
+			'color' => '#5E6A71',
 		),
 	) );
-
 }
 
 add_action( 'after_setup_theme', 'theme_setup');
@@ -120,9 +124,17 @@ function site_scripts() {
     // Theme javascript.
 	$main_js_file = get_stylesheet_directory_uri() . '/assets/js/main.js';
 	wp_enqueue_script( 'site-js', $main_js_file, ['jquery'], get_file_time($main_js_file), true);
-
 }
 add_action( 'wp_enqueue_scripts', 'site_scripts');
+
+/**
+ * Enqueue seditor scripts
+ */
+function pc_guten_enqueue() {
+	$editor_js_file = get_stylesheet_directory_uri() . '/assets/js/editor.js';
+	wp_enqueue_script('editor-js', $editor_js_file, ['wp-blocks', 'wp-dom'], get_file_time($editor_js_file), true);
+}
+add_action( 'enqueue_block_editor_assets', 'pc_guten_enqueue' );
 
 //removes that pesky jquery migrate console error
 add_action('wp_default_scripts', function ($scripts) {

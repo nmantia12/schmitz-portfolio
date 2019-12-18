@@ -22,7 +22,7 @@ const mode = ['staging', 'prod'].indexOf(WP_ENV) < 0 ? 'development' : 'producti
 
 const entry = {
   main: ["./build/javascripts/index.js", "./build/stylesheets/main.scss"],
-  editor: ["./build/stylesheets/editor.scss"]
+  editor: ["./build/javascripts/editor.js", "./build/stylesheets/editor.scss"]
 };
 
 const output = {
