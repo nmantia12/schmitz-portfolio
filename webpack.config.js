@@ -13,31 +13,17 @@ const OUTPUT_DIRECTORY = `htdocs${publicPath}`;
 // grab environment name from .env
 const ENV = require('dotenv').config()
 const WP_ENV = process.env.WP_ENV || 'local'
-const WP_HOME = process.env.WP_HOME || 'http://local.rabo_micosite.com'
+const WP_HOME = process.env.WP_HOME || "http://localhost:9008"
 
 const PROXY_URL = WP_HOME
-
-const blocksArray = glob.sync('./build/javascripts/blocks/*.js');
-const blocksObject = blocksArray.reduce((acc, item) => {
-	// console.log(item)
-	let name = item.replace('./build/javascripts/blocks/_', '').replace(".js", '');
-	acc[name] = [item];
-	return acc;
-}, {});
-
-const mainJs = { main: ['./build/javascripts/index.js', './build/stylesheets/main.scss'] }
-const blockCSS = { blocks: ['./build/stylesheets/blocks.scss'] }
-blocksObject['main'] = mainJs['main']
-blocksObject['blocks'] = blockCSS['blocks']
 
 // dynamically choose mode if none provided by command
 const mode = ['staging', 'prod'].indexOf(WP_ENV) < 0 ? 'development' : 'production'
 
-// const entry = {
-// 	main: ['./build/javascripts/index.js'],
-// 	blocks: ['./build/javascripts/blocks.js']
-// }
-const entry = blocksObject
+const entry = {
+  main: ["./build/javascripts/index.js", "./build/stylesheets/main.scss"],
+  editor: ["./build/stylesheets/editor.scss"]
+};
 
 const output = {
 	path: path.join(__dirname, OUTPUT_DIRECTORY),
@@ -49,14 +35,7 @@ const plugins = [
 	new MiniCssExtractPlugin({
 		filename: '../css/[name].css'
 	}),
-	// new BrowserSyncPlugin({
-	//     proxy: WP_HOME
-	// })
-	// new BrowserSyncPlugin({
-	// 	host: 'localhost',
-	// 	port: 9005,
-	// 	server: { baseDir: [OUTPUT_DIRECTORY] }
-	// })
+
 	new BrowserSyncPlugin({
 		host: 'localhost',
 		port: 9008,

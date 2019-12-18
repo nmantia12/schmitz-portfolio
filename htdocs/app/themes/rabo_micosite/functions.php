@@ -73,7 +73,7 @@ function theme_setup() {
 	add_theme_support( 'editor-styles' );
 
 	// Enqueue editor styles.
-	add_editor_style( 'style-editor.css' );
+	add_editor_style( 'editor-styles', get_stylesheet_directory_uri() . '/assets/css/editor.css' );
 
 	// Add support for responsive embedded content.
 	add_theme_support( 'responsive-embeds' );

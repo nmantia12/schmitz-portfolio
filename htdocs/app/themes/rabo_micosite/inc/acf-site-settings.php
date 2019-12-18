@@ -18,6 +18,25 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 
 }
 
+/*
+  Create PC Block Category
+*/
+function pc_block_category( $categories, $post ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug'  => 'paradowski',
+				'title' => __( 'Paradowski Blocks', 'paradowski' ),
+			),
+		)
+	);
+}
+add_filter( 'block_categories', 'pc_block_category', 10, 2 );
+
+/*
+  Register Block Types
+*/
 function register_acf_block_types() {
 
 	$pc_blocks = [
@@ -35,8 +54,6 @@ function register_acf_block_types() {
 	];
 
 	foreach ( $pc_blocks as $block_slug => $block_name ) {
-
-		// register a testimonial block.
 		acf_register_block_type(
 			array(
 				'name'            => $block_slug,
@@ -51,13 +68,17 @@ function register_acf_block_types() {
 	}
 }
 
-// Check if function exists and hook into setup.
+/*
+  Check if function exists and hook into setup.
+*/
 if ( function_exists( 'acf_register_block_type' ) ) {
 	add_action( 'acf/init', 'register_acf_block_types' );
 }
 
-function wedding_gloabal_cf() {
-	// define global defaults
+/*
+   Global default placeholders
+*/
+function define_gloabal_cf() {
 	global $acf_defaults;
 	$acf_defaults = array(
 		'image'   => get_field( 'default_image', 'option' ),
@@ -65,4 +86,4 @@ function wedding_gloabal_cf() {
 		'content' => get_field( 'placeholder_content', 'option' ) ?: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 	);
 }
-add_action( 'init', 'wedding_gloabal_cf' );
+add_action( 'init', 'define_gloabal_cf' );
