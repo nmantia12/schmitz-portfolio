@@ -1,6 +1,29 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+/**
+ * Define where the local JSON is saved
+ *
+ * @return string
+ */
+function pc_local_json_path() {
+	return get_stylesheet_directory() . '/acf-json';
+}
+add_filter( 'acf/settings/save_json', 'pc_local_json_path' );
+
+/**
+ * Add our path for the local JSON
+ *
+ * @param array $paths
+ *
+ * @return array
+ */
+function add_local_json_path( $paths ) {
+	$paths[] = get_stylesheet_directory() . '/acf-json';
+
+	return $paths;
+}
+add_filter( 'acf/settings/load_json', 'add_local_json_path' );
 
 // First add options page
 if ( function_exists( 'acf_add_options_page' ) ) {
@@ -38,6 +61,9 @@ add_filter( 'block_categories', 'pc_block_category', 10, 2 );
   Register Block Types
 */
 function register_acf_block_types() {
+	if ( ! function_exists( 'acf_register_block_type' ) ) {
+		return;
+	}
 
 	$pc_blocks = [
 		'large-quote'         => 'Large Quote',

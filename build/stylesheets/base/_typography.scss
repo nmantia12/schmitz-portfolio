@@ -1,28 +1,33 @@
 // Google Fonts: https://fonts.googleapis.com/css?family=Fira+Sans:300,600,600i|Merriweather:300,300i,700
 // Fira Sans in 2 weights: 300, 600 & 600 italic
 // Meriweather in 2 weights: 300, 300 italic, 700
-$fira-font-stack: 'Fira Sans', sans-serif;
-$merriweather-font-stack: 'Merriweather', serif;
+$sans: "Fira Sans", sans-serif;
+$serif: "Merriweather", serif;
 
 body {
-    font-family: $merriweather-font-stack;
-    font-weight: 300;
+  font-family: $serif;
+  font-weight: 300;
 }
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-    padding: 0;
-    font-family: $fira-font-stack;
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $sans;
+  font-weight: 600;
 }
 h1 {
-    font-weight: 300;
-    a {
-        font-weight: 600;
-    }
+  font-weight: 300;
+  a {
+    font-weight: 600;
+  }
 }
 p {
-    margin: 0;
-    padding: 0;
-    font-family: $merriweather-font-stack;
-    font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-family: $serif;
+  font-weight: 300;
 }
