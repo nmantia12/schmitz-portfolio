@@ -1,5 +1,7 @@
 .hero {
   @include fixed-viewport;
+  overflow: hidden;
+  background-color: $blue;
 
   &__overlay,
   &__video,
@@ -9,10 +11,26 @@
   }
 
   &__body {
-    display: none;
+    pointer-events: none;
+    visibility: hidden;
 
     &.active {
-      display: block;
+      visibility: visible;
+      pointer-events: auto;
+
+      .hero__video,
+      .hero__image {
+        opacity: 1;
+        bottom: 0;
+        top: rem(-60);
+        transition: all 1s 0.125s $cubic-ease;
+      }
+
+      .hero__info {
+        top: 50%;
+        opacity: 1;
+        transition: all 1s 0.25s $cubic-ease;
+      }
     }
   }
 
@@ -23,18 +41,25 @@
 
   &__video,
   &__image {
+    height: calc(100vh + 60px);
+    bottom: rem(-60);
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     z-index: 1;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 0.125s $cubic-ease;
   }
 
   &__info {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 60px);
     transform: translateY(-50%);
     z-index: 3;
     color: #fff;
     max-width: 33.33%;
+    opacity: 0;
+    transition: opacity 0.125s $cubic-ease;
 
     h4 {
       opacity: 0.5;
@@ -45,11 +70,7 @@
       margin-bottom: rem(13);
     }
 
-    p {
-      font-size: rem(25);
-      line-height: rem(31);
-      font-weight: 300;
-      letter-spacing: -0.25px;
+    h2 {
       margin-bottom: rem(22);
       opacity: 0.7;
     }
@@ -70,21 +91,48 @@
   &__tab {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
-    transition: background-color 0.25s linear;
+    transition: background-color 0.25s $cubic-ease;
     margin: 0 rem(5);
     width: rem(250);
     max-width: calc(25% - 10px);
-    padding: rem(26) rem(39);
+    padding: rem(26) rem(12);
     text-align: center;
-    color: #fff;
     cursor: pointer;
     font-size: rem(17);
     line-height: rem(24);
     font-weight: normal;
+    transform: translateY(0);
+    opacity: 1;
+
+    @for $i from 1 to 5 {
+      &:nth-child(#{$i}) {
+        transition: transform 1s 0.1s * $i $cubic-ease, opacity 0.5s $cubic-ease !important;
+      }
+    }
+    a {
+      color: #fff;
+    }
 
     &.active,
     &:hover {
       background-color: rgba(255, 255, 255, 0.5);
     }
+  }
+}
+
+body.menu-open {
+  .hero__info,
+  .hero__body.active .hero__info {
+    $neg_left: calc(
+      -100% - ((#{$content-width} - #{map-get($breakpoints, "medium")}) / 2)
+    );
+    transform: translateX($neg_left) translateY(-50%);
+    opacity: 0;
+    transition: all 0.25s 0.5s $cubic-ease !important;
+  }
+  .hero__tab {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.25s 0.5s $cubic-ease !important;
   }
 }

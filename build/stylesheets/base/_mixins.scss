@@ -180,3 +180,5 @@ $lowest_break: 0;
     @include columns($columns, $grid_item_element, $gap);
   }
 }
+
+$cubic-ease: cubic-bezier(0.155, 0.81, 0.26, 0.995);

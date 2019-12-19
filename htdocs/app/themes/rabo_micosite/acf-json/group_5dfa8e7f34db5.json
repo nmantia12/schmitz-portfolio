@@ -110,6 +110,13 @@
                 "operator": "==",
                 "value": "topic.php"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "40"
+            }
         ]
     ],
     "menu_order": 0,
@@ -120,5 +127,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1576702974
+    "modified": 1576771832
 }

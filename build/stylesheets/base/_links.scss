@@ -10,10 +10,10 @@ a {
   &:focus,
   &:active {
     color: $highlight;
-    text-decoration: underline;
+    text-decoration: none;
   }
   &:focus {
-    outline: thin dotted midnightblue;
+    outline: 0;
   }
   &:hover,
   &:active {
