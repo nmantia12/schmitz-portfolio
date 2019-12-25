@@ -91,7 +91,7 @@ get_header();
 									?>
 									<img class="hero__image" src="<?php echo esc_url( $hero_poster['url'] ); ?>"/>
 								<?php endif; ?>
-								<div class="hero__info alignwide">
+								<div class="hero__info">
 									<?php
 									// subtitle
 									if ( $hero_subtitle ) :

@@ -10,3 +10,9 @@
   position: relative;
   z-index: 999;
 }
+.site-branding-container {
+  @include content-width;
+  width: 100vw;
+  max-width: 100vw;
+  padding-top: rem(40) !important;
+}

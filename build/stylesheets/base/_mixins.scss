@@ -101,6 +101,19 @@ $lowest_break: 0;
   width: 100vw;
 }
 
+@mixin content-width() {
+  margin: 0 auto;
+  padding: 0 $block-margin;
+  max-width: $content-width;
+
+  @include break($tablet) {
+    padding: 0 calc(#{$block-margin} * 2);
+  }
+  @include break($desktop) {
+    padding: 0 $block-margin;
+  }
+}
+
 /**
  * Columns
  *

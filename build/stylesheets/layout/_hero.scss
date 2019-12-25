@@ -23,7 +23,8 @@
         opacity: 1;
         bottom: 0;
         top: rem(-60);
-        transition: all 1s 0.125s $cubic-ease;
+        transition: top 1s 0.125s $cubic-ease, bottom 1s 0.125s $cubic-ease,
+          opacity 1s 0.125s $cubic-ease;
       }
 
       .hero__info {
@@ -52,14 +53,25 @@
   }
 
   &__info {
+    @include content-width;
     position: absolute;
     top: calc(50% + 60px);
     transform: translateY(-50%);
     z-index: 3;
     color: #fff;
-    max-width: 33.33%;
+    width: 100%;
+    max-width: 100%;
     opacity: 0;
     transition: opacity 0.125s $cubic-ease;
+
+    @include break($tablet) {
+      max-width: 50%;
+      padding-right: 0;
+    }
+
+    @include break($desktop) {
+      max-width: 33.33%;
+    }
 
     h4 {
       opacity: 0.5;
@@ -84,18 +96,46 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    left: auto;
+    right: auto;
     z-index: 4;
+    font-size: 0;
     text-align: center;
-  }
 
+    .slick-slide {
+      display: inline-block;
+    }
+
+    @include media("<=medium") {
+      height: 56px;
+      bottom: 70px;
+    }
+  }
+  @include media("<=medium") {
+    .slick-list {
+      padding: 0 !important;
+      height: 168px !important;
+      overflow: hidden !important;
+    }
+
+    .slick-current,
+    .slick-center {
+      .hero__tab {
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: scale(0.9);
+      }
+    }
+  }
   &__tab {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s $cubic-ease;
     margin: 0 rem(5);
-    width: rem(250);
-    max-width: calc(25% - 10px);
-    padding: rem(26) rem(12);
+    // width: rem(250);
+    // max-width: calc(25% - 12.5px);
+    max-width: 100%;
+    width: 100%;
+    padding: rem(26) rem(8);
     text-align: center;
     cursor: pointer;
     font-size: rem(17);
@@ -103,6 +143,14 @@
     font-weight: normal;
     transform: translateY(0);
     opacity: 1;
+
+    @include media("<=medium") {
+      max-width: 100%;
+      width: 100%;
+      padding: rem(16) rem(8);
+      transform: scale(0.9);
+      transition: all 0.25s 0s $cubic-ease;
+    }
 
     @for $i from 1 to 5 {
       &:nth-child(#{$i}) {
@@ -116,6 +164,10 @@
     &.active,
     &:hover {
       background-color: rgba(255, 255, 255, 0.5);
+
+      @include media("<=medium") {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
   }
 }
