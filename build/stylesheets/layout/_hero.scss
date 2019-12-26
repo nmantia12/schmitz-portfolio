@@ -93,17 +93,19 @@
   }
 
   &__nav-bar {
+    @include content-width;
     position: fixed;
     bottom: 0;
     width: 100%;
-    left: auto;
-    right: auto;
+    left: 0;
+    right: 0;
     z-index: 4;
     font-size: 0;
     text-align: center;
 
     .slick-slide {
       display: inline-block;
+      padding: 0 rem(5);
     }
 
     @include media("<=medium") {
@@ -126,11 +128,12 @@
       }
     }
   }
+
   &__tab {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.25s $cubic-ease;
-    margin: 0 rem(5);
+    // margin: 0 rem(5);
     // width: rem(250);
     // max-width: calc(25% - 12.5px);
     max-width: 100%;
