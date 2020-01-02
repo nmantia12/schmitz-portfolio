@@ -12,7 +12,13 @@
 }
 .site-branding-container {
   @include content-width;
+  max-width: rem(1300);
   width: 100vw;
-  max-width: 100vw;
   padding-top: rem(40) !important;
+
+  @include break(1280px) {
+    .site-branding {
+      margin-left: -80px;
+    }
+  }
 }

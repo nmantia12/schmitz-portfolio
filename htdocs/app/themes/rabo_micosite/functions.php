@@ -117,3 +117,44 @@ function get_nav_menu_items_by_location( $location, $args = [] ) {
 	// Return menu post objects
 	return $menu_items;
 }
+
+add_filter( 'nav_menu_link_attributes', 'pc_contact_menu_atts', 10, 3 );
+function pc_contact_menu_atts( $atts, $item, $args ) {
+	$pageID          = get_post_meta( $item->ID, '_menu_item_object_id', true );
+	$atts['data-id'] = $pageID;
+
+	if ( 'topic.php' === get_page_template_slug( $pageID ) ) {
+		$atts['data-topic'] = $pageID;
+	}
+
+	return $atts;
+}
+
+add_action(
+	'rest_api_init',
+	function () {
+		// Path to AJAX endpoint
+		register_rest_route(
+			'prisma',
+			'/ajax_navigation/',
+			array(
+				'methods'  => WP_REST_Server::READABLE,
+				'callback' => 'ajax_navigation_function',
+			)
+		);
+	}
+);
+
+function ajax_navigation_function() {
+	if ( isset( $_GET['ajaxid'] ) ) {
+		$post            = get_post( $_GET['ajaxid'] );
+		$data['title']   = $post->post_title;
+		$data['content'] = $post->post_content;
+		$data['success'] = true;
+
+		$response = new WP_REST_Response( $data, 200 );
+		$response->set_headers( [ 'Cache-Control' => 'must-revalidate, no-cache, no-store, private' ] );
+
+		return $response;
+	}
+}

@@ -25,9 +25,11 @@ function theme_setup() {
 	 */
 	register_nav_menus(
 		array(
-			'main-nav'   => __( 'Header Menu' ),
-			'footer-nav' => __( 'Footer Menu' ),
-			'social-nav' => __( 'Social Links Menu' ),
+			'main-nav'    => __( 'Header Menu' ),
+			'utility-nav' => __( 'Secondary Menu' ),
+			'tab-nav'     => __( 'Tab Menu' ),
+			'footer-nav'  => __( 'Footer Menu' ),
+			'social-nav'  => __( 'Social Links Menu' ),
 		)
 	);
 

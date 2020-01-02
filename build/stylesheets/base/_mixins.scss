@@ -109,9 +109,6 @@ $lowest_break: 0;
   @include break($tablet) {
     padding: 0 calc(#{$block-margin} * 2);
   }
-  @include break($desktop) {
-    padding: 0 $block-margin;
-  }
 }
 
 /**

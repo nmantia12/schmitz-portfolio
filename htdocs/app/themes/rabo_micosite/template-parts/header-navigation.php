@@ -14,12 +14,19 @@
 				<span class="vh expanded-text">Menu expanded</span><span class="vh collapsed-text">Menu collapsed</span>
 			</label>
 			<div role="menu" data-menu-origin="left">
-				<div class="alignfull">
+				<div class="alignfull overlay-menu-wrap">
 					<?php
 					wp_nav_menu(
 						array(
 							'theme_location' => 'main-nav',
 							'menu_class'     => 'main-menu',
+							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						)
+					);
+					wp_nav_menu(
+						array(
+							'theme_location' => 'utility-nav',
+							'menu_class'     => 'main-menu utility-menu',
 							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						)
 					);

@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  transition: all 0.5s $cubic-ease;
 }
 nav {
   .vh {
@@ -30,6 +31,20 @@ nav {
     padding: 0;
   }
 
+  [role="menu"] ul li {
+    display: inline-block;
+    width: auto;
+    float: left;
+    clear: both;
+  }
+  .menu-secondary-menu-container,
+  .menu-main-menu-container,
+  .menu-main-nav-container {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+
   [data-opens-menu],
   [role="menu"] a {
     line-height: 1;
@@ -50,6 +65,23 @@ nav {
   [role="menu"] a {
     font-size: rem(37);
     font-weight: 300;
+  }
+
+  [role="menu"] .menu-secondary-menu-container {
+    margin-top: rem(50);
+
+    li {
+      margin-top: 0;
+    }
+    a {
+      font-size: rem(17);
+      line-height: rem(34);
+      letter-spacing: -0.17px;
+      max-width: rem(150);
+      min-width: 0;
+      white-space: normal;
+      margin-top: 0;
+    }
   }
 
   [type="checkbox"]:focus + [data-opens-menu],
@@ -99,8 +131,9 @@ nav {
     }
 
     .menu-main-menu-container,
-    .menu-main-nav-container {
-      @for $i from 1 to 6 {
+    .menu-main-nav-container,
+    .menu-secondary-menu-container {
+      @for $i from 1 to 8 {
         ul li:nth-child(#{$i}) {
           transform: translateY(60px);
           opacity: 0;
@@ -119,12 +152,22 @@ nav {
 
     .menu-main-menu-container,
     .menu-main-nav-container {
-      @for $i from 1 to 6 {
+      @for $i from 1 to 8 {
         ul li:nth-child(#{$i}) {
           transform: translateY(0);
           opacity: 1;
           transition: transform 1.5s $i * 0.1 + 0.25s $cubic-ease,
             opacity 1.5s $i * 0.1 + 0.25s $cubic-ease;
+        }
+      }
+    }
+    .menu-secondary-menu-container {
+      @for $i from 1 to 8 {
+        ul li:nth-child(#{$i}) {
+          transform: translateY(0);
+          opacity: 1;
+          transition: transform 1.5s $i * 0.1 + 0.75s $cubic-ease,
+            opacity 1.5s $i * 0.1 + 0.75s $cubic-ease;
         }
       }
     }
@@ -143,12 +186,13 @@ nav {
   }
 }
 
-.menu-main-menu-container,
-.menu-main-nav-container {
+.overlay-menu-wrap {
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: rem(1300);
+  width: 100%;
 
   ul li {
     padding: 2vh rem(16);
@@ -158,10 +202,21 @@ nav {
     a {
       text-align: left;
       font-weight: 300;
+      opacity: 0.5;
+      transition: opacity 0.5s $cubic-ease;
     }
+    &:hover,
     &.active {
-      background-color: rgba(255, 255, 255, 0.3);
+      a {
+        opacity: 1 !important;
+      }
     }
+  }
+}
+
+body.home {
+  .inline-nav {
+    display: none;
   }
 }
 

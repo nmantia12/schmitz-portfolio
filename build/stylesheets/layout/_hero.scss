@@ -54,23 +54,27 @@
 
   &__info {
     @include content-width;
+    max-width: rem(1300);
     position: absolute;
     top: calc(50% + 60px);
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
     color: #fff;
     width: 100%;
-    max-width: 100%;
     opacity: 0;
     transition: opacity 0.125s $cubic-ease;
 
     @include break($tablet) {
-      max-width: 50%;
-      padding-right: 0;
+      & > * {
+        max-width: 50%;
+      }
     }
 
     @include break($desktop) {
-      max-width: 33.33%;
+      & > * {
+        max-width: 33.33%;
+      }
     }
 
     h4 {
@@ -131,14 +135,14 @@
 
   &__tab {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba($teal, 0.2);
     transition: background-color 0.25s $cubic-ease;
     // margin: 0 rem(5);
     // width: rem(250);
     // max-width: calc(25% - 12.5px);
     max-width: 100%;
     width: 100%;
-    padding: rem(26) rem(8);
+    padding: rem(23) rem(8);
     text-align: center;
     cursor: pointer;
     font-size: rem(17);
@@ -161,15 +165,20 @@
       }
     }
     a {
+      transition: color 0.25s $cubic-ease;
       color: #fff;
     }
 
     &.active,
     &:hover {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: $teal;
+
+      a {
+        color: $blue;
+      }
 
       @include media("<=medium") {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba($teal, 0.2);
       }
     }
   }
@@ -184,6 +193,22 @@ body.menu-open {
     transform: translateX($neg_left) translateY(-50%);
     opacity: 0;
     transition: all 0.25s 0.5s $cubic-ease !important;
+  }
+  .hero__tab {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.25s 0.5s $cubic-ease !important;
+  }
+}
+body.topic-open {
+  .inline-nav {
+    display: block;
+  }
+  .hero__info,
+  .hero__body.active .hero__info {
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%) translateY(0);
   }
   .hero__tab {
     transform: translateY(100%);

@@ -23,7 +23,7 @@ get_header();
 					$hero_poster      = get_field( 'topic_video_poster_image' ) ?: $acf_defaults['image'];
 					$hero_link        = get_the_permalink();
 				?>
-				<div class="hero__body active">
+				<div class="hero__body active initial">
 					<div class="hero__overlay"></div>
 					<?php
 					if ( $hero_video ) :
@@ -62,7 +62,7 @@ get_header();
 					</div>
 				</div>
 			<?php
-				$menu_array = get_nav_menu_items_by_location( 'main-nav' );
+				$menu_array = get_nav_menu_items_by_location( 'tab-nav' );
 			if ( $menu_array ) :
 				$i = 0;
 				foreach ( $menu_array as $hero ) :
@@ -77,7 +77,7 @@ get_header();
 						$hero_poster      = get_field( 'topic_video_poster_image', $hero->object_id ) ?: $acf_defaults['image'];
 						$hero_link        = get_the_permalink( $hero->object_id );
 						?>
-							<div class="hero__body" data-hero-index="<?php echo $i; ?>">
+							<div class="hero__body" data-hero-index="<?php echo $hero->object_id; ?>">
 								<div class="hero__overlay"></div>
 							<?php
 							if ( $hero_video ) :
@@ -128,13 +128,16 @@ get_header();
 						$hero_tab_title = get_the_title( $hero_tab_id );
 						$hero_tab_link  = get_the_permalink( $hero_tab_id );
 						?>
-							<div class="hero__tab" data-tab-index="<?php echo $i; ?>">
-								<a href="<?php echo esc_url( $hero_tab_link ); ?>"><?php echo $hero_tab_title; ?></a>
+							<div class="hero__tab" data-tab-index="<?php echo $hero_tab_id; ?>">
+								<a data-topic="<?php echo $hero_tab_id; ?>" href="<?php echo esc_url( $hero_tab_link ); ?>"><?php echo $hero_tab_title; ?></a>
 							</div>
 						<?php endforeach; ?>
 					</div>
 				<?php endif; // if $menu_array. ?>
-			</div>
+			</div><!-- hero -->
+
+			<div id="topic"></div>
+
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 
