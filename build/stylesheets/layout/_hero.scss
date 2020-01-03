@@ -139,6 +139,10 @@
 
     .slick-slide {
       display: inline-block;
+
+      @include media(">tablet") {
+        padding: 0 rem(5);
+      }
     }
 
     @include media("<=tablet") {
