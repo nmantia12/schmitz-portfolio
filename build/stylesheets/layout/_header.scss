@@ -14,11 +14,16 @@
   @include content-width;
   max-width: rem(1300);
   width: 100vw;
-  padding-top: rem(40) !important;
+  padding-top: rem(40);
 
-  @include break(1280px) {
+  @include media("<=tablet") {
+    padding-top: rem(54);
+  }
+
+  @include break(1440px) {
     .site-branding {
       margin-left: -80px;
+      width: calc(100% + 80px);
     }
   }
 }

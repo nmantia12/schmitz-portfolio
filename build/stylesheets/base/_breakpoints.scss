@@ -1,7 +1,8 @@
 //Breakpoints, actually
 $phone: 375px;
-$big-phone: 768px;
-$tablet: 992px;
+$small: 768px;
+$tablet: 768px;
+$medium: 992px;
 $desktop: 1200px;
 $desktop4k: 2559px;
 
@@ -20,9 +21,9 @@ $margin_4x: $base-margin * 4;
 // Include Media
 $breakpoints: (
   "phone": $phone,
-  "small": $big-phone,
-  "tablet": $big-phone,
-  "medium": $tablet,
+  "small": $small,
+  "tablet": $tablet,
+  "medium": $medium,
   "large": $desktop,
   "desktop": $grid-width + $grid-gap
 );

@@ -3,63 +3,107 @@
 jQuery(document).ready(function ($) {
 
 	const removeActiveHeros = () => {
-		$(".hero__tab").removeClass("active");
-		$(".hero__body").removeClass("active");
-		$('nav [role="menu"] li').removeClass("active");
+		$(".hero__tab, nav [role='menu'] li, .hero__body").removeClass("active");
 	}
 
-	$(".hero__tab[data-tab-index]").hover(function() {
-		const index = $(this).attr("data-tab-index");
-		const navIndex = parseInt(index) - 1;
-		removeActiveHeros();
-    $(this).addClass("active");
-		$(".hero__body[data-hero-index='" + index + "'").addClass("active");
+	const unbindHovers = () => {
+		// $(":not(.inline-nav) a[data-topic]").unbind("mouseover");
+		$(document).off("mouseover", 'a[data-topic]');
+	}
+
+	const initHovers = () => {
+		$(document).on("mouseover", 'a[data-topic]', function() {
+			if (!$(this).parents().hasClass('inline-nav')) {
+				var index = $(this).attr('data-topic');
+				removeActiveHeros();
+				$(this).parent().addClass("active");
+
+				if (!$(this).parent().hasClass('hero__tab')) {
+					$(".hero__tab[data-tab-index='" + index + "'").addClass("active");
+					$('nav [role="menu"]').addClass('fade');
+				}
+
+				$(".hero__body[data-hero-index='" + index + "'").addClass("active");
+			}
+		});
+	}
+
+	if ($(window).width() > 768) {
+		initHovers();
+	}
+
+	$(window).on("orientationchange", function() {
+		if ($(window).width() > 768) {
+      initHovers();
+    } else {
+      unbindHovers();
+    }
 	});
 
-	$('[data-opens-menu]').click(function() {
+	$(window).on("resize", function() {
+		if ($(window).width() > 768) {
+      initHovers();
+    } else {
+      unbindHovers();
+    }
+	});
+
+
+	$(document).on("click", '[data-opens-menu]', function() {
 		$('body').toggleClass('menu-open');
 		$('nav [role="menu"]').removeClass("fade");
 		$('nav [role="menu"] li').removeClass("active");
-	});
-
-	$('[role="menu"] .menu-main-nav-container li a').hover(function() {
-		var index = $(this).attr('data-topic');
-		removeActiveHeros();
-		if (index) {
-			$('nav [role="menu"]').addClass('fade');
-			$(this).parent().addClass("active");
-			$(".hero__tab[data-tab-index='" + index + "'").addClass("active");
-			$(".hero__body[data-hero-index='" + index + "'").addClass("active");
+		if ($('body').hasClass('menu-open')) {
+			$("body").css({
+        height: "100vh",
+        overflow: "hidden"
+      });
+		} else {
+			$("body").css({
+				height: "auto",
+				overflow: "visible"
+			});
 		}
 	});
 
-	$('a[data-topic]').click(function (e) {
-		var dataId = $(this).attr('data-topic');
-		$.get('/wp-json/prisma/ajax_navigation/', {
-			ajaxid: dataId
-		}).done(function (response) {
-			console.log(response);
-			if (response.success) {
-				$('nav [role="menu"] li, .hero__body, .hero__tab').css("pointer-events", "none");
+	// $(document).on("click", 'a[data-topic]', function(e) {
+	// 	e.preventDefault();
+	// 	unbindHovers();
+	// 	var dataId = $(this).attr('data-topic');
+	// 	const thisEl = $(this);
 
-				$("#toggle").prop("checked", false);
-				removeActiveHeros();
-				$('nav [role="menu"]').removeClass("fade");
-				$('body').removeClass('menu-open');
+	// 	$.get('/wp-json/pc/ajax_navigation/', {
+	// 		ajaxid: dataId
+	// 	}).done(function (response) {
+	// 		console.log(response);
+	// 		if (response.success) {
+	// 			window.history.pushState(
+	// 				{ id: response.id, content: response.content, title: response.title, name: response.name },
+	// 				"",
+	// 				response.name
+	// 			);
+	// 			$("#toggle").prop("checked", false);
+	// 			$('body').removeClass('menu-open');
 
-				if (!$(".hero__body[data-hero-index='" + dataId + "'").hasClass('active')) {
-					setTimeout(() => {
-						$(".hero__tab[data-tab-index='" + dataId + "'").addClass("active");
-						$(".hero__body[data-hero-index='" + dataId + "'").addClass("active");
-						$('body').addClass('topic-open');
-						$('#topic').html(response.content);
-						$('nav [role="menu"] li, .hero__body, .hero__tab').css("pointer-events", "auto");
-					}, 500);
-				}
-			}
-		});
-		e.preventDefault();
-		// removeActiveHeros();
-		// $("#topic").load('/app/themes/rabo_micosite/topic-' + index + '.php');
-	});
+	// 			const pId = response.id;
+	// 			if (thisEl.parents().hasClass('inline-nav')) {
+	// 				removeActiveHeros();
+	// 				$('nav [role="menu"]').removeClass("fade");
+	// 				if (
+  //           !$(".hero__body[data-hero-index='" + pId + "'").hasClass("active")
+  //         ) {
+  //           $(".hero__tab[data-tab-index='" + pId + "'").addClass("active");
+  //           $(".hero__body[data-hero-index='" + pId + "'").addClass("active");
+  //         }
+	// 			}
+
+	// 			$('body').addClass('topic-open');
+	// 			$('#topic').html(response.content);
+	// 		}
+	// 		setTimeout(() => {
+	// 			initHovers();
+	// 		}, 1000);
+	// 	});
+	// });
+
 });

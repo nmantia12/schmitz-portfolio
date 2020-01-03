@@ -28,9 +28,13 @@
       }
 
       .hero__info {
-        top: 50%;
+        top: auto;
         opacity: 1;
         transition: all 1s 0.25s $cubic-ease;
+
+        @include media(">tablet") {
+          top: 50%;
+        }
       }
     }
   }
@@ -38,6 +42,10 @@
   &__overlay {
     z-index: 2;
     background: linear-gradient(to right, $blue, rgba($blue, 0));
+
+    @include media("<=tablet") {
+      background: rgba($blue, 0.95);
+    }
   }
 
   &__video,
@@ -64,6 +72,26 @@
     width: 100%;
     opacity: 0;
     transition: opacity 0.125s $cubic-ease;
+
+    @include media("<=tablet") {
+      text-align: center;
+      height: calc(100vh - 350px);
+      bottom: rem(266);
+      top: auto;
+      transform: none;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        display: none;
+      }
+      h2 {
+        font-size: rem(17);
+      }
+    }
 
     @include break($tablet) {
       & > * {
@@ -96,6 +124,8 @@
     }
   }
 
+  $mobile-tab-height: 70px;
+
   &__nav-bar {
     @include content-width;
     position: fixed;
@@ -109,26 +139,28 @@
 
     .slick-slide {
       display: inline-block;
-      padding: 0 rem(5);
     }
 
-    @include media("<=medium") {
-      height: 56px;
-      bottom: 70px;
+    @include media("<=tablet") {
+      position: absolute;
+      height: calc(#{$mobile-tab-height} * 3);
+      bottom: rem(50);
+      overflow: hidden;
     }
   }
-  @include media("<=medium") {
+  @include media("<=tablet") {
     .slick-list {
-      padding: 0 !important;
-      height: 168px !important;
-      overflow: hidden !important;
+      height: calc(#{$mobile-tab-height} * 2) !important;
+      overflow: visible !important;
+      margin-top: $mobile-tab-height;
+      padding: 0 calc(#{$block-margin} * 2);
     }
 
     .slick-current,
     .slick-center {
       .hero__tab {
-        background-color: rgba(255, 255, 255, 0.5);
-        transform: scale(0.9);
+        background-color: $teal;
+        transform: scale(1);
       }
     }
   }
@@ -137,12 +169,8 @@
     display: inline-block;
     background-color: rgba($teal, 0.2);
     transition: background-color 0.25s $cubic-ease;
-    // margin: 0 rem(5);
-    // width: rem(250);
-    // max-width: calc(25% - 12.5px);
     max-width: 100%;
     width: 100%;
-    padding: rem(23) rem(8);
     text-align: center;
     cursor: pointer;
     font-size: rem(17);
@@ -151,34 +179,58 @@
     transform: translateY(0);
     opacity: 1;
 
-    @include media("<=medium") {
-      max-width: 100%;
-      width: 100%;
-      padding: rem(16) rem(8);
-      transform: scale(0.9);
-      transition: all 0.25s 0s $cubic-ease;
-    }
-
-    @for $i from 1 to 5 {
-      &:nth-child(#{$i}) {
-        transition: transform 1s 0.1s * $i $cubic-ease, opacity 0.5s $cubic-ease !important;
-      }
-    }
     a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: rem(23) rem(8);
       transition: color 0.25s $cubic-ease;
       color: #fff;
     }
 
-    &.active,
-    &:hover {
+    @include media("<=tablet") {
+      max-width: 100%;
+      width: 100%;
+      transform: scale(0.71);
+      transition: all 0.25s $cubic-ease;
+      border-radius: rem(5);
+
+      a {
+        height: $mobile-tab-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 rem(15);
+      }
+    }
+
+    @include media(">tablet") {
+      @for $i from 1 to 5 {
+        &:nth-child(#{$i}) {
+          transition: transform 1s 0.1s * $i $cubic-ease,
+            opacity 0.5s $cubic-ease !important;
+        }
+      }
+    }
+
+    &.active {
       background-color: $teal;
 
       a {
         color: $blue;
       }
 
-      @include media("<=medium") {
+      @include media("<=tablet") {
         background-color: rgba($teal, 0.2);
+      }
+    }
+    @include media(">tablet") {
+      &:hover {
+        background-color: $teal;
+
+        a {
+          color: $blue;
+        }
       }
     }
   }
@@ -188,27 +240,11 @@ body.menu-open {
   .hero__info,
   .hero__body.active .hero__info {
     $neg_left: calc(
-      -100% - ((#{$content-width} - #{map-get($breakpoints, "medium")}) / 2)
+      -100% - ((#{$content-width} - #{map-get($breakpoints, "tablet")}) / 2)
     );
     transform: translateX($neg_left) translateY(-50%);
     opacity: 0;
     transition: all 0.25s 0.5s $cubic-ease !important;
-  }
-  .hero__tab {
-    transform: translateY(100%);
-    opacity: 0;
-    transition: all 0.25s 0.5s $cubic-ease !important;
-  }
-}
-body.topic-open {
-  .inline-nav {
-    display: block;
-  }
-  .hero__info,
-  .hero__body.active .hero__info {
-    top: auto;
-    bottom: 0;
-    transform: translateX(-50%) translateY(0);
   }
   .hero__tab {
     transform: translateY(100%);

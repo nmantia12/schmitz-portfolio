@@ -135,7 +135,7 @@ add_action(
 	function () {
 		// Path to AJAX endpoint
 		register_rest_route(
-			'prisma',
+			'pc',
 			'/ajax_navigation/',
 			array(
 				'methods'  => WP_REST_Server::READABLE,
@@ -148,9 +148,22 @@ add_action(
 function ajax_navigation_function() {
 	if ( isset( $_GET['ajaxid'] ) ) {
 		$post            = get_post( $_GET['ajaxid'] );
+		$data['id']      = $post->ID;
 		$data['title']   = $post->post_title;
-		$data['content'] = $post->post_content;
+		$data['name']    = $post->post_name;
 		$data['success'] = true;
+
+		if ( has_blocks( $post ) ) {
+			$output = '';
+			$blocks = parse_blocks( $post->post_content );
+			foreach ( $blocks as $block ) {
+				$output .= render_block( $block );
+			}
+		} else {
+			$output = $post->post_content;
+		}
+
+		$data['content'] = $output;
 
 		$response = new WP_REST_Response( $data, 200 );
 		$response->set_headers( [ 'Cache-Control' => 'must-revalidate, no-cache, no-store, private' ] );
