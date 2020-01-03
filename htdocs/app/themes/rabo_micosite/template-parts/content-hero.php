@@ -1,12 +1,16 @@
 <header class="hero">
 	<?php
 		global $acf_defaults;
+		$string_length    = 140;
 		$hero_title       = get_field( 'hero_title' );
 		$hero_subtitle    = get_field( 'hero_subtitle' );
 		$hero_description = get_field( 'hero_description' );
-		$hero_video       = get_field( 'topic_video' );
-		$hero_poster      = get_field( 'topic_video_poster_image' );
-		$hero_link        = get_the_permalink();
+	if ( strlen( $hero_description ) > $string_length ) {
+		$hero_description = substr( $hero_description, 0, $string_length ) . '...';
+	}
+		$hero_video  = get_field( 'topic_video' );
+		$hero_poster = get_field( 'topic_video_poster_image' );
+		$hero_link   = get_the_permalink();
 	?>
 	<div class="hero__body active initial">
 		<div class="hero__overlay"></div>
@@ -58,9 +62,12 @@ if ( $menu_array ) :
 			$hero_title       = get_field( 'hero_title', $hero->object_id );
 			$hero_subtitle    = get_field( 'hero_subtitle', $hero->object_id );
 			$hero_description = get_field( 'hero_description', $hero->object_id );
-			$hero_video       = get_field( 'topic_video', $hero->object_id );
-			$hero_poster      = get_field( 'topic_video_poster_image', $hero->object_id );
-			$hero_link        = get_the_permalink( $hero->object_id );
+			if ( strlen( $hero_description ) > $string_length ) {
+				$hero_description = substr( $hero_description, 0, $string_length ) . '...';
+			}
+			$hero_video  = get_field( 'topic_video', $hero->object_id );
+			$hero_poster = get_field( 'topic_video_poster_image', $hero->object_id );
+			$hero_link   = get_the_permalink( $hero->object_id );
 			?>
 				<div class="hero__body" data-hero-index="<?php echo $hero->object_id; ?>">
 					<div class="hero__overlay"></div>
