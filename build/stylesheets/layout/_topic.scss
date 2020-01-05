@@ -20,9 +20,15 @@
   }
   .hero__info,
   .hero__body.active .hero__info {
-    top: auto;
     bottom: rem(86);
-    transform: translateX(-50%) translateY(0);
+    height: auto;
+    top: 90px;
+
+    @include break($tablet) {
+      top: auto;
+      left: 0;
+      transform: translateX(0) translateY(0);
+    }
 
     & > * {
       max-width: 100%;
@@ -32,17 +38,33 @@
       }
     }
   }
+
+  .hero__nav-bar {
+    display: none;
+  }
   .hero__tab {
     transform: translateY(100%);
     opacity: 0;
     transition: all 0.25s 0.5s $cubic-ease !important;
   }
   .hero__overlay {
-    background: linear-gradient(to top, $blue, rgba($blue, 0));
+    background: rgba(0, 38, 100, 0.95);
+
+    @include break($tablet) {
+      background: linear-gradient(to top, $blue, rgba($blue, 0));
+    }
   }
 }
 .topic-vid-wrap {
   background-color: $blue;
-  padding-top: rem(70);
-  padding-bottom: rem(250);
+  margin-top: -100px;
+  z-index: 2;
+  position: relative;
+  padding: 0 rem(25) rem(250);
+
+  @include break($tablet) {
+    padding-top: rem(70);
+    padding-bottom: rem(250);
+    margin-top: 0;
+  }
 }

@@ -1,5 +1,6 @@
 .hero {
   @include fixed-viewport;
+  max-width: 100%;
   overflow: hidden;
   background-color: $blue;
 

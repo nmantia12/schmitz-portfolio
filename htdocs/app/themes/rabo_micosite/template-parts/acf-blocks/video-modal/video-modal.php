@@ -42,6 +42,7 @@ if ( $show_vid ) : ?>
 	<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
 		<a class="video-modal__link" href="<?php echo esc_url( $vid_url ); ?>">
 			<img class="video-modal__image" src="<?php echo esc_url( $vid_image ); ?>"/>
+			<img class="video-modal__play" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/play-button.svg'; ?>"/>
 		</a>
 	</div>
 <?php endif; ?>

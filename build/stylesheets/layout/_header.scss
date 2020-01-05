@@ -13,7 +13,7 @@
 .site-branding-container {
   @include content-width;
   max-width: rem(1300);
-  width: 100vw;
+  width: 100%;
   padding-top: rem(40);
 
   @include media("<=tablet") {

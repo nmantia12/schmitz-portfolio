@@ -7,7 +7,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
+  background: $blue;
   opacity: 0.8;
 }
 
@@ -149,8 +149,8 @@ button::-moz-focus-inner {
   height: 44px;
   line-height: 44px;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: rem(16);
+  right: rem(16);
   text-decoration: none;
   text-align: center;
   opacity: 0.65;

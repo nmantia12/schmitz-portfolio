@@ -17,7 +17,7 @@
 		<?php
 		if ( $hero_video ) :
 			?>
-			<video class="hero__video" width="320" height="240" autoplay muted loop poster="<?php echo esc_url( $hero_poster['url'] ); ?>">
+			<video class="hero__video" width="320" height="240" muted loop poster="<?php echo esc_url( $hero_poster['url'] ); ?>">
 				<source src="<?php echo esc_url( $hero_video['url'] ); ?>" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
@@ -69,12 +69,12 @@ if ( $menu_array ) :
 			$hero_poster = get_field( 'topic_video_poster_image', $hero->object_id );
 			$hero_link   = get_the_permalink( $hero->object_id );
 			?>
-				<div class="hero__body" data-hero-index="<?php echo $hero->object_id; ?>">
+				<div class="hero__body" data-hero-index="<?php echo $hero->object_id; ?>" data-tab-num="<?php echo $i; ?>">
 					<div class="hero__overlay"></div>
 				<?php
 				if ( $hero_video ) :
 					?>
-						<video class="hero__video" width="320" height="240" autoplay muted loop poster="<?php echo esc_url( $hero_poster['url'] ); ?>">
+						<video class="hero__video" width="320" height="240" muted loop poster="<?php echo esc_url( $hero_poster['url'] ); ?>">
 							<source src="<?php echo esc_url( $hero_video['url'] ); ?>" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
