@@ -13,6 +13,7 @@
 					<span class="vh expanded-text">Menu expanded</span><span class="vh collapsed-text">Menu collapsed</span>
 				</label>
 				<div role="menu" data-menu-origin="left">
+					<img class="menu-close" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/x.svg'; ?>"/>
 					<div class="alignfull overlay-menu-wrap">
 						<?php
 						wp_nav_menu(

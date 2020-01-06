@@ -293,4 +293,27 @@ body.menu-open {
       }
     }
   }
+  .menu-close {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s 0.5s $cubic-ease;
+
+    &:hover {
+      transition: 0.5s $cubic-ease;
+      opacity: 0.6;
+    }
+  }
+
+  @include media("<=tablet") {
+    nav [data-opens-menu] {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.5s $cubic-ease;
+
+      &:hover {
+        opacity: 0;
+      }
+    }
+  }
 }

@@ -31,6 +31,23 @@
   }
 }
 
+.menu-close {
+  position: fixed;
+  top: rem(54);
+  right: rem(25);
+  height: rem(21);
+  width: rem(21);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all 0.5s $cubic-ease;
+
+  @include media(">=tablet") {
+    top: rem(45);
+    right: rem(80);
+  }
+}
+
 nav {
   .vh {
     position: absolute !important;
@@ -56,6 +73,7 @@ nav {
     margin: 0;
     margin-left: $block-margin;
     padding: 0;
+    width: auto;
 
     @include media("<=tablet") {
       margin-left: 0;

@@ -103,6 +103,9 @@ jQuery(document).ready(function ($) {
 		});
   }
 
+	$(document).on("click", '.menu-close', function() {
+		$('[data-opens-menu]').trigger('click');
+	});
 
 	$(document).on("click", '[data-opens-menu]', function() {
 		$('body').toggleClass('menu-open');
