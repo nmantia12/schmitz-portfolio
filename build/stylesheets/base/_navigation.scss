@@ -279,7 +279,7 @@ body.home {
 .inline-nav {
   width: auto;
   text-align: right;
-  transition: all 0.5s 0.5s $cubic-ease;
+  transition: all 0.5s $cubic-ease;
 
   @include media("<=tablet") {
     display: none;

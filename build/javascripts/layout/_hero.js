@@ -9,7 +9,6 @@ jQuery(document).ready(function ($) {
 			$(this)
 				.get(0)
 				.pause();
-			// mediaVideo.pause();
 		});
 	}
 
@@ -33,7 +32,6 @@ jQuery(document).ready(function ($) {
 					$(this)
 						.get(0)
 						.play();
-					// mediaVideo.pause();
 				});
     });
 
@@ -56,7 +54,6 @@ jQuery(document).ready(function ($) {
 					$(this)
 						.get(0)
 						.play();
-					// mediaVideo.pause();
 				});
 			}
 		});
@@ -92,19 +89,17 @@ jQuery(document).ready(function ($) {
       $(this)
         .get(0)
         .pause();
-      // mediaVideo.pause();
     });
 		clearTimeout(resizeId);
 		resizeId = setTimeout(doneResizing, 500);
 	});
 
 	function doneResizing() {
-		var heroVideos = $(".hero__video");
+		var heroVideos = $(".hero__body.active .hero__video");
 		heroVideos.each(function(index) {
 			$(this)
 				.get(0)
 				.play();
-			// mediaVideo.pause();
 		});
   }
 
@@ -123,6 +118,16 @@ jQuery(document).ready(function ($) {
 				height: "auto",
 				overflow: "visible"
 			});
+			if (!$('body').hasClass('home')) {
+				$(".hero__body").removeClass("active");
+				$(".hero__body.initial").addClass("active");
+					var heroVideos = $(".hero__body.initial .hero__video");
+					heroVideos.each(function(index) {
+						$(this)
+							.get(0)
+							.play();
+					});
+			}
 		}
 	});
 

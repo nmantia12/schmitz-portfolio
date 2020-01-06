@@ -279,9 +279,18 @@ body.menu-open {
     transition: all 0.25s 0.5s $cubic-ease !important;
   }
   .inline-nav {
+    transition: all 0.5s $cubic-ease;
     margin-top: -100%;
   }
   .hero::before {
     opacity: 0;
+  }
+  &:not(.home) {
+    .hero__info,
+    .hero__body.active .hero__info {
+      @include break($tablet) {
+        left: -100%;
+      }
+    }
   }
 }
