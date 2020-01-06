@@ -53,7 +53,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -77,7 +77,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -106,5 +106,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578276343
+    "modified": 1578327998
 }

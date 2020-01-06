@@ -1,0 +1,20 @@
+.lg-quote {
+  position: relative;
+  background: $teal;
+  padding: rem(100) rem(20) rem(120);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: rem(50);
+    width: rem(70);
+    top: rem(-10);
+    left: rem(20);
+    background: url("../img/quotes.svg") no-repeat center center / contain;
+  }
+
+  &__bg {
+    display: none;
+  }
+}

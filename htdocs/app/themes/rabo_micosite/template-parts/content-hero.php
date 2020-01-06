@@ -45,7 +45,7 @@
 
 			// link
 			if ( $hero_link ) :
-				echo '<a class="button" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
+				echo '<a class="button button__inline" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
 			endif;
 			?>
 		</div>
@@ -102,7 +102,7 @@ if ( $menu_array ) :
 
 						// link
 						if ( $hero_link ) :
-							echo '<a class="button" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
+							echo '<a class="button button__inline" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
 						endif;
 						?>
 					</div>

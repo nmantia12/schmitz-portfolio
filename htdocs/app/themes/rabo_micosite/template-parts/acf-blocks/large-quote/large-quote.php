@@ -10,26 +10,47 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'testimonial-' . $block['id'];
+$id = 'lg-quote-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = 'lg-quote';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
-	$className .= ' align' . $block['align'];
+	$alignClass = ' align' . $block['align'];
+} else {
+	$alignClass = '';
 }
 
 // Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
+$quote    = get_field( 'lg_quote_quote' ) ?: 'Your quote here...';
+$author   = get_field( 'lg_quote_author' ) ?: 'Author name';
+$headshot = get_field( 'lg_quote_headshot' );
+$bg_img   = get_field( 'lg_quote_background_image' );
 
-
+if ( $quote ) : ?>
+	<?php if ( $alignClass ) : ?>
+		<div class="<?php echo $alignClass; ?>">
+	<?php endif; ?>
+	<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
+		<?php if ( $quote ) : ?>
+			<h2 class="lg-quote__quote has-blue-color"><?php echo $quote; ?></h2>
+		<?php endif; ?>
+		<?php if ( $author ) : ?>
+			<h4 class="lg-quote__author has-white-color"><?php echo $author; ?></h4>
+		<?php endif; ?>
+		<?php if ( $headshot ) : ?>
+			<img class="lg-quote__headshot" src="<?php echo esc_url( $headshot ); ?>"/>
+		<?php endif; ?>
+		<?php if ( $bg_img ) : ?>
+			<img class="lg-quote__bg" src="<?php echo esc_url( $bg_img ); ?>"/>
+		<?php endif; ?>
+	</div>
+	<?php if ( $alignClass ) : ?>
+		</div>
+	<?php endif; ?>
+<?php endif; ?>

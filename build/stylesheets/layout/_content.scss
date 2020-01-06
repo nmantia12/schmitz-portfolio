@@ -162,7 +162,7 @@ main.site-main {
 
 .entry-content > *,
 .block-area > * {
-  margin: $block-margin 0;
+  margin: $block-margin auto;
   max-width: 100%;
 
   &:first-child {
@@ -173,6 +173,11 @@ main.site-main {
     width: calc(100% + 50px);
     max-width: calc(100% + 50px);
     margin-left: -25px;
+  }
+
+  &.alignwide {
+    max-width: $content-width;
+    padding: 0;
   }
 
   &:last-child {
