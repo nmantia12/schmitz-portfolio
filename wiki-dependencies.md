@@ -1,7 +1,7 @@
 # Javascript Dependencies
 
 ```{
-  "name": "rabo_micosite",
+  "name": "rabo_microsite",
   "version": "1.0.0",
   "description": "WP Base Install Javascript Dependencies",
   "main": "index.js",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/paradowskicreative/rabo_micosite.git"
+    "url": "git+https://bitbucket.org/paradowskicreative/rabo_microsite.git"
   },
   "jest": {
     "verbose": true,
@@ -44,7 +44,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/paradowskicreative/rabo_micosite#readme",
+  "homepage": "https://bitbucket.org/paradowskicreative/rabo_microsite#readme",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",

@@ -16,8 +16,8 @@ sql-dump-*.sql
 
 # generated files
 # /dist
-htdocs/app/themes/rabo_micosite/assets/js/*.js
-htdocs/app/themes/rabo_micosite/assets/css/*.css
+htdocs/app/themes/rabo_microsite/assets/js/*.js
+htdocs/app/themes/rabo_microsite/assets/css/*.css
 
 # Application
 htdocs/app/plugins/*

@@ -1,7 +1,7 @@
 // Google Fonts: https://fonts.googleapis.com/css?family=Fira+Sans:300,600,600i|Merriweather:300,300i,700
 // Fira Sans in 2 weights: 300, 600 & 600 italic
 // Meriweather in 2 weights: 300, 300 italic, 700
-$sans: "Helvetica", sans-serif;
+$sans: "myriad-pro-semiextended", sans-serif;
 $serif: "Merriweather", serif;
 
 body {
@@ -115,4 +115,17 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: rem(0.96);
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.italic {
+  font-style: italic;
 }

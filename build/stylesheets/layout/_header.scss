@@ -9,6 +9,7 @@
   margin-left: rem(60);
   position: relative;
   z-index: 999;
+  max-width: rem(200);
 }
 .site-branding-container {
   @include content-width;

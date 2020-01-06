@@ -4,7 +4,6 @@
 @import "base/mixins";
 @import "base/normalize";
 @import "base/breakpoints";
-@import "base/gutenberg";
 @import "base/blocks";
 @import "base/typography";
 
@@ -15,3 +14,4 @@
 @import "acf-blocks/split-content";
 @import "acf-blocks/lg-quote";
 @import "acf-blocks/parallax-image";
+@import "acf-blocks/image-slider";

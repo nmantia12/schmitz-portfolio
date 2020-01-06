@@ -67,7 +67,7 @@
 
     &:hover {
       color: $teal;
-      text-decoration: underline;
+      background-color: transparent;
 
       &::after {
         background-color: transparent;

@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
-const THEME_NAME = 'rabo_micosite'
+const THEME_NAME = 'rabo_microsite'
 const publicPath = `/app/themes/${THEME_NAME}/assets/js/`
 const OUTPUT_DIRECTORY = `htdocs${publicPath}`;
 

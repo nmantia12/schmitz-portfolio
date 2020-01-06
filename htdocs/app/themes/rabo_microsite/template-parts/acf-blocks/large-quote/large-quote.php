@@ -52,7 +52,10 @@ if ( $quote ) : ?>
 				</defs>
 			</svg>
 			<div style="clip-path: url(#headshot_mask);
--webkit-clip-path: url(#headshot_mask); background: url(<?php echo esc_url( $headshot ); ?>) no-repeat center center / cover;" class="lg-quote__headshot"><div class="overlay"></div></div>
+			-webkit-clip-path: url(#headshot_mask);" class="lg-quote__headshot">
+				<div class="overlay"></div>
+				<img src="<?php echo esc_url( $headshot ); ?>"/>
+			</div>
 		<?php endif; ?>
 		<?php if ( $bg_img ) : ?>
 			<div class="lg-quote__bg" style="background: url(<?php echo esc_url( $bg_img ); ?>) no-repeat center center / cover;"></div>

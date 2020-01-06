@@ -7,7 +7,7 @@
             "label": "Image Slider",
             "name": "image_slider",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Use 16:9 ratio for best result",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,9 +16,9 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 0,
+            "min": 2,
             "max": 0,
-            "layout": "table",
+            "layout": "block",
             "button_label": "",
             "sub_fields": [
                 {
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578337052
+    "modified": 1578343070
 }

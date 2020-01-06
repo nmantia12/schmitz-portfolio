@@ -26,7 +26,7 @@ function get_file_time( $path ) {
  */
 function site_scripts() {
 	// Typekit fonts
-	// wp_enqueue_style( 'site-fonts', 'https://use.typekit.net/mum7jvj.css');
+	wp_enqueue_style( 'site-fonts', 'https://use.typekit.net/mwl8yah.css' );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'site-style', get_stylesheet_directory_uri() . '/assets/css/main.css' );
