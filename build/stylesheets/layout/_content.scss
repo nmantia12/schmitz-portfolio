@@ -21,7 +21,7 @@ main.site-main {
 .alignfull {
   @include content-width;
   padding: 0;
-  max-width: 100vw;
+  max-width: 100%;
   width: 100vw;
 }
 /* Content Area
