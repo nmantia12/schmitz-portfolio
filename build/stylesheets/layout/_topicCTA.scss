@@ -1,0 +1,58 @@
+.topic-cta {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(
+      to top,
+      #002664,
+      rgba(0, 38, 100, 0.4) 92%
+    );
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    padding-bottom: rem(500);
+
+    @include break($tablet) {
+      padding-bottom: 56.25%;
+    }
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+    z-index: 4;
+
+    & > * {
+      margin-bottom: 0;
+      color: #fff;
+    }
+    .button {
+      margin-top: rem(36);
+    }
+  }
+}

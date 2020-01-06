@@ -24,6 +24,8 @@ get_header();
 				endwhile;
 
 			endif;
+
+			get_template_part( 'template-parts/content', 'topicCTA' );
 			?>
 
 		</main><!-- .site-main -->
