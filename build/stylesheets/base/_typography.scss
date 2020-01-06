@@ -16,11 +16,17 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  max-width: calc(#{$content-width} / 2);
+  margin: 0 auto;
+  margin-bottom: $block-margin;
   padding: 0;
   font-family: $sans;
   font-weight: 300;
   color: $base-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include media("<tablet") {
     font-weight: normal;
@@ -28,10 +34,17 @@ h6 {
 }
 
 p {
-  margin: 0;
+  max-width: calc(#{$content-width} / 2);
+  margin: 0 auto;
+  margin-bottom: $block-margin;
   padding: 0;
   font-family: $sans;
   font-weight: 300;
+  color: $grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 p,

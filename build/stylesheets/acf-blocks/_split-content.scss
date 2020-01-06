@@ -1,0 +1,88 @@
+.split-content {
+  position: relative;
+  z-index: 4;
+  padding: 0;
+  @include columns-mobile(1, div, 0px);
+  @include columns-tablet-up(2, div, 16px);
+
+  &__col {
+    position: relative;
+  }
+
+  &.right {
+    @include media(">=tablet") {
+      padding-bottom: rem(200);
+    }
+    .split-content__image {
+      @include media(">=tablet") {
+        margin-top: -158px;
+        padding-left: $block-margin;
+      }
+      @include media(">=desktop") {
+        padding-left: calc(#{$block-margin} * 2);
+      }
+    }
+    .split-content__info {
+      @include media(">=desktop") {
+        float: right;
+      }
+    }
+  }
+
+  &.left {
+    .split-content__image {
+      @include media(">=tablet") {
+        margin-top: 0;
+        padding-right: $block-margin;
+      }
+      @include media(">=desktop") {
+        padding-right: calc(#{$block-margin} * 2);
+      }
+    }
+    .split-content__info {
+      padding-top: rem(124);
+      @include media(">=desktop") {
+        float: left;
+      }
+    }
+  }
+
+  &__image {
+    @include media(">=tablet") {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: rem(600);
+      object-fit: cover;
+
+      @include media(">=tablet") {
+        height: 100%;
+      }
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    background-color: #fff;
+    padding: rem(105) $block-margin rem(80);
+
+    @include media(">=tablet") {
+      padding: rem(158) $block-margin rem(88);
+    }
+    @include media(">=desktop") {
+      padding: rem(158) calc(#{$block-margin} * 2) rem(88);
+      max-width: calc(#{$content-width} / 2);
+    }
+  }
+  &__title {
+    color: $blue;
+  }
+  &__content {
+  }
+}

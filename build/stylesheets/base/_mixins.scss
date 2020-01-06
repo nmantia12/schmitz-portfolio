@@ -103,7 +103,7 @@ $lowest_break: 0;
 
 @mixin content-width() {
   margin: 0 auto;
-  padding: 0 calc(#{$block-margin} * 2);
+  padding: 0 $block-margin;
   max-width: $content-width;
 }
 

@@ -97,12 +97,14 @@
     @include break($tablet) {
       & > * {
         max-width: 50%;
+        margin-left: 0;
       }
     }
 
     @include break($desktop) {
       & > * {
         max-width: 33.33%;
+        margin-left: 0;
       }
     }
 
