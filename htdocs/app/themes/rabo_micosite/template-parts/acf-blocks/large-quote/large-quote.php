@@ -21,7 +21,7 @@ if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
-	$alignClass = ' align' . $block['align'];
+	$alignClass = 'align' . $block['align'];
 } else {
 	$alignClass = '';
 }
@@ -44,7 +44,7 @@ if ( $quote ) : ?>
 			<h4 class="lg-quote__author has-white-color"><?php echo $author; ?></h4>
 		<?php endif; ?>
 		<?php if ( $headshot ) : ?>
-			<svg height="0px" width="0px">
+			<svg height="0px" width="0px" preserveAspectRation="none">
 				<defs>
 					<clipPath id="headshot_mask">
 					<path d="M8.062,33.917A54.735,54.735,0,0,1,28.4,12.327C45.119,2.448,65.368-.77,84.589.124c18.6.894,37.951,5.588,51.585,19,.536.492,1.028,1.028,1.52,1.565,11.13,11.89,15.466,30.441,15.824,46.31.4,19.624-6.124,41.527-20.7,55.25C120.841,133.51,102.872,137.221,87,138.785c-20.741,2.012-42.555,1.207-60.033-11.533C11.951,116.345,3.368,98.778.865,80.719-1.326,64.761.686,47.864,8.062,33.917Z"/>
@@ -55,7 +55,7 @@ if ( $quote ) : ?>
 -webkit-clip-path: url(#headshot_mask); background: url(<?php echo esc_url( $headshot ); ?>) no-repeat center center / cover;" class="lg-quote__headshot"><div class="overlay"></div></div>
 		<?php endif; ?>
 		<?php if ( $bg_img ) : ?>
-			<img class="lg-quote__bg" src="<?php echo esc_url( $bg_img ); ?>"/>
+			<div class="lg-quote__bg" style="background: url(<?php echo esc_url( $bg_img ); ?>) no-repeat center center / cover;"></div>
 		<?php endif; ?>
 	</div>
 	<?php if ( $alignClass ) : ?>

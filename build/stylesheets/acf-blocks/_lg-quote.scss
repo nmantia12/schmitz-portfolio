@@ -13,6 +13,7 @@
     top: rem(-10);
     left: rem(20);
     background: url("../img/quotes.svg") no-repeat center center / contain;
+    z-index: 4;
   }
 
   h2 {
@@ -39,6 +40,8 @@
     width: 154px;
     bottom: -70px;
     right: 25px;
+    z-index: 5;
+    transition: all 0.25s $cubic-ease;
 
     .overlay {
       background-color: $orange;
@@ -66,5 +69,58 @@
 
   &__bg {
     display: none;
+  }
+
+  @include media(">=large") {
+    padding: rem(213) rem(80) rem(150);
+    margin-right: rem(140);
+    margin-top: rem(75);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: url("../img/quote_bg.svg") no-repeat right center / cover;
+      z-index: 3;
+    }
+
+    .lg-quote__headshot {
+      top: 45%;
+      right: 25%;
+      transform: translateX(50%) translateY(-50%) scale(0.9);
+      bottom: auto;
+    }
+
+    .lg-quote__bg {
+      display: block;
+      position: absolute;
+      top: -50px;
+      right: -140px;
+      width: 800px;
+      bottom: 0;
+      object-fit: cover;
+    }
+
+    &::before {
+      left: rem(80);
+      top: rem(132);
+    }
+
+    h2,
+    h4 {
+      position: relative;
+      margin-left: 0;
+      max-width: 50%;
+      z-index: 4;
+    }
+  }
+  @include media(">=desktop") {
+    .lg-quote__headshot {
+      transform: translateX(50%) translateY(-50%) scale(1);
+    }
   }
 }
