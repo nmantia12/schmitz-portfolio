@@ -67,7 +67,7 @@ function register_acf_block_types() {
 
 	$pc_blocks = [
 		'large-quote'         => 'Large Quote',
-		'fullwidth-parallax'  => 'Full Width Image',
+		// 'fullwidth-parallax'  => 'Full Width Image',
 		'fact-circle'         => 'Fact Circle',
 		'split-scroll'        => 'Split Scrolling Section',
 		'content-image-quote' => 'Content / Image / Quote',

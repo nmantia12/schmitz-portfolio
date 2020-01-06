@@ -2,7 +2,12 @@ body {
   background-color: mintcream;
 }
 
-.site {
+article.page {
+  background: #fff;
+
+  @include media(">=tablet") {
+    background: #f4f4f4;
+  }
 }
 
 main.site-main {
@@ -15,6 +20,7 @@ main.site-main {
 
 .alignfull {
   @include content-width;
+  padding: 0;
   max-width: 100vw;
   width: 100vw;
 }
@@ -123,6 +129,33 @@ main.site-main {
       li {
         padding-bottom: 0;
       }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: calc(#{$content-width} / 2);
+    margin: 0 auto;
+    margin-bottom: $block-margin;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    max-width: calc(#{$content-width} / 2);
+    margin: 0 auto;
+    margin-bottom: $block-margin;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

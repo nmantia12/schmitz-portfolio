@@ -41,6 +41,8 @@
     }
     .split-content__info {
       padding-top: rem(124);
+      padding-bottom: rem(60);
+
       @include media(">=desktop") {
         float: left;
       }
@@ -69,7 +71,6 @@
 
   &__info {
     display: inline-block;
-    background-color: #fff;
     padding: rem(105) $block-margin rem(80);
 
     @include media(">=tablet") {

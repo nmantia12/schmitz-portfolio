@@ -33,6 +33,10 @@ h6 {
   }
 }
 
+h2 {
+  color: $blue;
+}
+
 p {
   max-width: calc(#{$content-width} / 2);
   margin: 0 auto;

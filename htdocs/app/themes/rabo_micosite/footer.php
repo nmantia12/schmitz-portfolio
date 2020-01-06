@@ -6,19 +6,19 @@
  */
 ?>
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-            <a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
+		<div class="site-info alignwide">
+			<?php if ( has_custom_logo() ) : ?>
+				<div class="site-logo"><?php the_custom_logo(); ?></div>
+				<?php
+			endif;
+
+			if ( has_nav_menu( 'footer-nav' ) ) :
+				?>
 				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location' => 'footer',
+							'theme_location' => 'footer-nav',
 							'menu_class'     => 'footer-nav',
 							'depth'          => 1,
 						)
