@@ -2,6 +2,7 @@
   position: relative;
   background: $teal;
   padding: rem(100) rem(20) rem(120);
+  margin-bottom: rem(95);
 
   &::before {
     content: "";
@@ -12,6 +13,55 @@
     top: rem(-10);
     left: rem(20);
     background: url("../img/quotes.svg") no-repeat center center / contain;
+  }
+
+  h2 {
+    font-weight: 300;
+    line-height: 1.36;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  svg {
+    height: 0;
+    width: 0;
+
+    path {
+      left: 20px;
+    }
+  }
+
+  &__headshot {
+    position: absolute;
+    height: 140px;
+    width: 154px;
+    bottom: -70px;
+    right: 25px;
+
+    .overlay {
+      background-color: $orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.9;
+      mix-blend-mode: multiply;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: none;
+      }
+
+      @supports (-ms-accelerator: true) {
+        display: none;
+      }
+
+      @supports (-ms-ime-align: auto) {
+        display: none;
+      }
+    }
   }
 
   &__bg {
