@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  background: $blue;
+  border: 1px solid $blue;
+  padding: 14px 32px;
+  margin-right: rem(44);
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    width: rem(44);
+    height: calc(100% + 2px);
+    right: rem(-44);
+    background: $teal;
+    border: 1px solid $teal;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: -0.2px;
+    text-align: center;
+  }
+
+  &__ghost-blue {
+    background: transparent;
+    border-color: $blue;
+
+    &::after {
+      background: transparent;
+      border-color: $blue;
+    }
+  }
+
+  &__ghost-white {
+    background: transparent;
+    border-color: white;
+
+    &::after {
+      background: transparent;
+      border-color: white;
+    }
+  }
+}
