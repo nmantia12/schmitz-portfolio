@@ -4,6 +4,22 @@
   overflow: hidden;
   background-color: $blue;
 
+  @include media(">=tablet") {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+      opacity: 0.6;
+      z-index: 2;
+      transition: opacity 0.5s $cubic-ease;
+    }
+  }
+
   &__overlay,
   &__video,
   &__image,
@@ -261,5 +277,11 @@ body.menu-open {
     transform: translateY(100%);
     opacity: 0;
     transition: all 0.25s 0.5s $cubic-ease !important;
+  }
+  .inline-nav {
+    margin-top: -100%;
+  }
+  .hero::before {
+    opacity: 0;
   }
 }

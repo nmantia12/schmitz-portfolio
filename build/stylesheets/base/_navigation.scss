@@ -311,7 +311,26 @@ body.home {
       }
 
       a {
+        display: inline-block;
         color: white;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: rem(2);
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          bottom: rem(-3);
+          background-color: white;
+          transition: all 0.5s $cubic-ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
