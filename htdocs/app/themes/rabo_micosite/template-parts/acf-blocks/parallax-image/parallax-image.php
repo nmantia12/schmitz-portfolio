@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'testimonial-' . $block['id'];
+$id = 'parallax-image-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = 'parallax-image';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
@@ -25,11 +25,10 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
+$parallax_img = get_field( 'parallax_image' );
+$img_height   = get_field( 'image_height' );
+?>
 
-
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>" style="height: <?php echo $img_height; ?>px;">
+	<img src="<?php echo esc_url( $parallax_img ); ?>"/>
+</div>

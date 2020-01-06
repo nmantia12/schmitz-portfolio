@@ -1,0 +1,18 @@
+.parallax-image {
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+
+  img {
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+  }
+}
