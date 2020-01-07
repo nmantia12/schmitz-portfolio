@@ -1,5 +1,4 @@
 import * as ScrollMagic from "scrollmagic";
-import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 import { TweenMax, TimelineMax, Linear } from "gsap";
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 
