@@ -24,7 +24,7 @@
     "push:db:prod": "./tools/wordpress/index.js push db prod",
     "pull:uploads:prod": "./tools/wordpress/index.js pull uploads prod",
     "push:uploads:prod": "./tools/wordpress/index.js push uploads prod",
-    "deploy:qa": "npm run build && ./tools/wordpress/index.js push code qa develop",
+    "deploy:qa": "npm run build && ./tools/wordpress/index.js push code qa develop && npm run push:uploads:qa",
     "deploy:staging": "npm run prod && ./tools/wordpress/index.js push code staging",
     "deploy:prod": "npm run prod && ./tools/wordpress/index.js push code prod",
     "ssh:qa": "./tools/ssh.js ssh qa",
