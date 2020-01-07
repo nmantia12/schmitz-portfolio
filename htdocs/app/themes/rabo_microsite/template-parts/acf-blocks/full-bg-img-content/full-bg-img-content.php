@@ -10,26 +10,35 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'testimonial-' . $block['id'];
+$id = 'fwb-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = 'fwb';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
-	$className .= ' align' . $block['align'];
+	$className .= ' alignfull';
 }
 
 // Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
+$fw_align   = get_field( 'content_alignment' );
+$fw_bg      = get_field( 'full_width_background_image' );
+$fw_accent  = get_field( 'accent_image' );
+$fw_content = get_field( 'full_width_bg_content' ) ?: '<p>Your content here...</p>';
+if ( ! empty( $fw_align ) ) {
+	$className .= ' ' . $fw_align;
+}
+?>
 
-
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>" style="background: url(<?php echo esc_url( $fw_bg ); ?>) no-repeat center center / cover;">
+	<div class="fwb__overlay"></div>
+	<?php if ( $fw_content ) : ?>
+		<div class="fwb__content alignwide">
+			<?php echo $fw_content; ?>
+		</div>
+	<?php endif; ?>
+</div>
