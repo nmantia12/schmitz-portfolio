@@ -12,7 +12,7 @@
     "watch": "webpack --watch",
     "bbcm:add": "./tools/beaver-builder/index.js add",
     "block:add": "./tools/blocks/index.js add",
-    "pull:db:qa": "./tools/wordpress/index.js pull db qa",
+    "pull:db:qa": "./tools/wordpress/index.js pull db qa && npm run pull:uploads:qa",
     "push:db:qa": "./tools/wordpress/index.js push db qa",
     "pull:uploads:qa": "./tools/wordpress/index.js pull uploads qa",
     "push:uploads:qa": "./tools/wordpress/index.js push uploads qa",
