@@ -1,49 +1,70 @@
 .fwb {
   position: relative;
   text-align: center;
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-image: linear-gradient(
-      to right,
-      #f4f4f4 20%,
-      rgba(#f4f4f4, 0.9) 50%,
-      rgba(242, 242, 242, 0)
-    );
-    z-index: 2;
+  @include media(">=tablet") {
+    padding-top: rem(262);
+    padding-bottom: rem(388);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      object-fit: cover;
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-image: linear-gradient(
+        to right,
+        #f4f4f4 20%,
+        rgba(#f4f4f4, 0.9) 50%,
+        rgba(242, 242, 242, 0)
+      );
+      z-index: 2;
+    }
   }
 
   &__content {
     position: relative;
     z-index: 3;
     width: 100%;
-    max-width: calc(#{$content-width} / 2);
     margin: 0 auto;
-    margin-left: calc(((100vw - #{$content-width}) / 2));
     text-align: left;
+
+    @include media(">=tablet") {
+      max-width: calc(#{$content-width} / 2);
+      margin-left: calc(((100vw - #{$content-width}) / 2));
+    }
   }
 
-  &.right {
-    .fwb__content {
-      margin-left: auto;
-      margin-right: calc(((100vw - #{$content-width}) / 2));
-    }
-    .fwb__overlay {
-      background-image: linear-gradient(
-        to left,
-        #f4f4f4 20%,
-        rgba(#f4f4f4, 0.9) 50%,
-        rgba(242, 242, 242, 0)
-      );
+  @include media(">=tablet") {
+    &.right {
+      .fwb__content {
+        margin-left: auto;
+        margin-right: calc(((100vw - #{$content-width}) / 2));
+      }
+      .fwb__overlay {
+        background-image: linear-gradient(
+          to left,
+          #f4f4f4 20%,
+          rgba(#f4f4f4, 0.9) 50%,
+          rgba(242, 242, 242, 0)
+        );
+      }
     }
   }
 }

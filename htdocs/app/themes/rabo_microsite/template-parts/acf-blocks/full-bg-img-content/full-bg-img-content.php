@@ -34,7 +34,8 @@ if ( ! empty( $fw_align ) ) {
 }
 ?>
 
-<div class="<?php echo $className; ?>" id="<?php echo $id; ?>" style="background: url(<?php echo esc_url( $fw_bg ); ?>) no-repeat center center / cover;">
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
+	<img src="<?php echo esc_url( $fw_bg ); ?>"/>
 	<div class="fwb__overlay"></div>
 	<?php if ( $fw_content ) : ?>
 		<div class="fwb__content alignwide">
