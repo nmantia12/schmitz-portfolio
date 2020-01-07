@@ -66,30 +66,69 @@ function register_acf_block_types() {
 	}
 
 	$pc_blocks = [
-		'large-quote'         => 'Large Quote',
-		'parallax-image'      => 'Parallax Image',
-		'fact-circle'         => 'Fact Circle',
-		'split-scroll'        => 'Split Scrolling Section',
-		'content-image-quote' => 'Content / Image / Quote',
-		'infographic'         => 'Infographic',
-		'video-modal'         => 'Video Modal',
-		'full-bg-img-content' => 'Full Background Image with Content',
-		'image-slider'        => 'Image Slider',
-		'split-content'       => '50 / 50 Image & Content',
+		'large-quote'         => [
+			'name' => 'Large Quote',
+		],
+		'parallax-image'      => [
+			'name' => 'Parallax Image',
+		],
+		'fact-circle'         => [
+			'name' => 'Fact Circle',
+		],
+		'split-scroll'        => [
+			'name'     => 'Split Scrolling Section',
+			'supports' => [
+				'align' => false,
+			],
+		],
+		'content-image-quote' => [
+			'name'     => 'Content / Image / Quote',
+			'supports' => [
+				'align' => false,
+			],
+		],
+		'infographic'         => [
+			'name' => 'Infographic',
+		],
+		'video-modal'         => [
+			'name'     => 'Video Modal',
+			'supports' => [
+				'align' => false,
+			],
+		],
+		'full-bg-img-content' => [
+			'name'     => 'Full Background Image with Content',
+			'supports' => [
+				'align' => false,
+			],
+		],
+		'image-slider'        => [
+			'name' => 'Image Slider',
+		],
+		'split-content'       => [
+			'name' => '50 / 50 Image & Content',
+		],
 	];
 
-	foreach ( $pc_blocks as $block_slug => $block_name ) {
-		acf_register_block_type(
-			array(
-				'name'            => $block_slug,
-				'title'           => $block_name,
-				'description'     => __( 'A custom block.' ),
-				'render_template' => 'template-parts/acf-blocks/' . $block_slug . '/' . $block_slug . '.php',
-				'category'        => 'paradowski',
-				'icon'            => 'admin-comments',
-				'keywords'        => array( $block_name, 'paradowski' ),
-			)
-		);
+	foreach ( $pc_blocks as $block_slug => $block_array ) {
+		$block_name      = $block_array['name'];
+		$block_type_args = [
+			'name'            => $block_slug,
+			'title'           => $block_name,
+			'description'     => __( 'A custom block.' ),
+			'render_template' => 'template-parts/acf-blocks/' . $block_slug . '/' . $block_slug . '.php',
+			'category'        => 'paradowski',
+			'icon'            => 'admin-comments',
+			'keywords'        => array( $block_name, 'paradowski' ),
+		];
+
+		if ( array_key_exists( 'supports', $block_array ) && is_array( $block_array['supports'] ) ) :
+			foreach ( $block_array['supports'] as $options_key => $options_value ) {
+				$block_type_args['supports'][ $options_key ] = $options_value;
+			}
+		endif;
+
+		acf_register_block_type( $block_type_args );
 	}
 }
 
