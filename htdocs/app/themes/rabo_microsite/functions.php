@@ -42,7 +42,7 @@ add_action( 'wp_enqueue_scripts', 'site_scripts' );
  */
 function pc_guten_enqueue() {
 	$editor_js_file = get_stylesheet_directory_uri() . '/assets/js/editor.js';
-	wp_enqueue_script( 'editor-js', $editor_js_file, [ 'wp-blocks', 'wp-dom' ], get_file_time( $editor_js_file ), true );
+	wp_enqueue_script( 'editor-js', $editor_js_file, [ 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ], get_file_time( $editor_js_file ), true );
 }
 add_action( 'enqueue_block_editor_assets', 'pc_guten_enqueue' );
 
