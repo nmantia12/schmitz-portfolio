@@ -1,7 +1,10 @@
 import $ from "jquery";
 import "slick-carousel";
+import { parse } from "@babel/core";
 // Document ready
 // eslint-disable-next-line no-undef
+
+const slideNum = document.getElementsByClassName("hero__tab").length;
 
   const slickEl = $(".hero__nav-bar");
   const settings = {
@@ -21,7 +24,7 @@ import "slick-carousel";
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: parseInt(slideNum),
           vertical: false,
           verticalSwiping: false
         }
