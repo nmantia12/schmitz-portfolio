@@ -22,7 +22,7 @@ h6 {
   padding: 0;
   font-family: $sans;
   font-weight: 300;
-  color: $base-color;
+  color: $blue;
 
   &:last-child {
     margin-bottom: 0;
@@ -31,10 +31,6 @@ h6 {
   @include media("<tablet") {
     font-weight: normal;
   }
-}
-
-h2 {
-  color: $blue;
 }
 
 p {
