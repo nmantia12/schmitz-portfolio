@@ -1,7 +1,32 @@
 .fwb {
   position: relative;
   text-align: center;
-  overflow: hidden;
+
+  &__accent {
+    max-width: 540px;
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: calc(((100vw - #{$content-width}) / 2));
+    z-index: 5;
+
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      padding-bottom: 100%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   @include media(">=tablet") {
     padding-top: rem(262);

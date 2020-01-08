@@ -44,3 +44,13 @@ body .acf-block-fields,
     }
   }
 }
+.editor-post-title {
+  @include font-sizes(25, 37);
+  line-height: rem(42);
+  letter-spacing: rem(-0.37);
+  color: $blue;
+
+  @include media("<tablet") {
+    line-height: rem(31);
+  }
+}

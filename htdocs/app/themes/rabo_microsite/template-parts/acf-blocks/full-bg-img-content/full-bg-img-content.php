@@ -42,4 +42,14 @@ if ( ! empty( $fw_align ) ) {
 			<?php echo $fw_content; ?>
 		</div>
 	<?php endif; ?>
+	<svg viewBox="0 0 1 1" preserveAspectRation="none">
+		<defs>
+			<clipPath id="bee_mask" clipPathUnits="objectBoundingBox">
+				<path d="M 0.05 0.24 C 0.08 0.18 0.13 0.13 0.18 0.09 C 0.29 0.02 0.43 -0.01 0.55 0 C 0.67 0.01 0.8 0.04 0.89 0.14 C 0.89 0.14 0.89 0.14 0.9 0.15 C 0.97 0.23 1 0.37 1 0.48 C 1 0.62 0.96 0.78 0.87 0.88 C 0.79 0.96 0.67 0.98 0.57 0.99 C 0.43 1.01 0.29 1 0.18 0.91 C 0.08 0.83 0.02 0.71 0.01 0.58 C -0.01 0.46 0 0.34 0.05 0.24 Z"/>
+			</clipPath>
+		</defs>
+	</svg>
+	<div style="clip-path: url(#bee_mask); -webkit-clip-path: url(#bee_mask);" class="fwb__accent">
+		<img src="<?php echo esc_url( $fw_accent ); ?>"/>
+	</div>
 </div>
