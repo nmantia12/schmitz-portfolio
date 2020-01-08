@@ -10,25 +10,35 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'parallax-image-' . $block['id'];
+$id = 'responsive-spacer-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'parallax-image';
+$className = 'responsive-spacer';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
-if ( ! empty( $block['align'] ) ) {
-	$className .= ' align' . $block['align'];
-}
 
-// Load values and assign defaults.
-$parallax_img = get_field( 'parallax_image' );
-$img_height   = get_field( 'image_height' );
+$mobile_space  = get_field( 'mobile_spacer_height' );
+$tablet_space  = get_field( 'tablet_spacer_height' );
+$desktop_space = get_field( 'desktop_spacer_height' );
 ?>
 
-<div class="<?php echo $className; ?>" id="<?php echo $id; ?>" style="height: <?php echo $img_height; ?>px;">
-	<img src="<?php echo esc_url( $parallax_img ); ?>"/>
-</div>
+<style>
+	<?php echo '#responsive-spacer-' . $block['id']; ?> {
+		height: <?php echo $mobile_space . 'px'; ?>;
+	}
+	@media (min-width: 768px) {
+		<?php echo '#responsive-spacer-' . $block['id']; ?> {
+			height: <?php echo $tablet_space . 'px'; ?>;
+		}
+	}
+	@media (min-width: 992px) {
+		<?php echo '#responsive-spacer-' . $block['id']; ?> {
+			height: <?php echo $desktop_space . 'px'; ?>;
+		}
+	}
+</style>
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>"></div>

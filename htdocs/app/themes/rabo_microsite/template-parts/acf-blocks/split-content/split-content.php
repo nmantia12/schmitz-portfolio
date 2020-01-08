@@ -23,6 +23,9 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
 	$className .= ' align' . $block['align'];
 }
+if ( $is_preview ) {
+	$className .= ' is-admin';
+}
 
 // global defaults
 global $acf_defaults;

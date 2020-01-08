@@ -23,8 +23,9 @@ wp.domReady(() => {
     "acf/video-modal",
     "acf/full-bg-img-content",
     "acf/image-slider",
-    "acf/split-content"
-  ];
+    "acf/split-content",
+    "acf/responsive-spacer"
+	];
 
 	wp.blocks.getBlockTypes().forEach(function(blockType) {
 		if (allowedBlocks.indexOf(blockType.name) === -1) {

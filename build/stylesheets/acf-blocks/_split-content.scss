@@ -5,6 +5,14 @@
   @include columns-mobile(1, div, 0px);
   @include columns-tablet-up(2, div, 16px);
 
+  &.is-admin.split-content.right {
+    .split-content__image {
+      @include media(">=tablet") {
+        margin-top: 0px;
+      }
+    }
+  }
+
   &__col {
     position: relative;
   }

@@ -67,7 +67,10 @@ function register_acf_block_types() {
 
 	$pc_blocks = [
 		'responsive-spacer'   => [
-			'title' => 'Spacer',
+			'title'    => 'Spacer',
+			'supports' => [
+				'align' => false,
+			],
 		],
 		'large-quote'         => [
 			'title' => 'Large Quote',
@@ -122,17 +125,13 @@ function register_acf_block_types() {
 
 	foreach ( $pc_blocks as $block_slug => $block_array ) {
 		$render_template = '/template-parts/acf-blocks/' . $block_slug . '/' . $block_slug . '.php';
+
 		$block_type_args = [
 			'name'            => $block_slug,
 			'render_template' => $render_template,
 			'category'        => 'paradowski',
 			'keywords'        => array( $block_array['title'], 'paradowski' ),
 		];
-		$block_args_keys = array_keys( $block_type_args );
-
-		if ( file_exists( $render_template ) ) {
-			var_dump( 'exists' );
-		}
 
 		if ( $block_array && is_array( $block_array ) ) :
 			foreach ( $block_array as $block_key => $block_value ) :
