@@ -136,13 +136,7 @@ function register_acf_block_types() {
 				if ( ! in_array( 'title', $block_array ) ) :
 					$block_array['title'] = $block_slug;
 				endif;
-				if ( array_key_exists( $block_key, $block_array ) && is_array( $block_array[ $block_key ] ) ) :
-					foreach ( $block_array[ $block_key ] as $options_key => $options_value ) :
-						$block_type_args[ $block_key ][ $options_key ] = $options_value;
-					endforeach;
-				elseif ( array_key_exists( $block_key, $block_array ) && ( ! is_array( $block_array[ $block_key ] ) ) ) :
-						$block_type_args[ $block_key ] = $block_array[ $block_key ];
-				endif;
+				$block_type_args[ $block_key ] = $block_array[ $block_key ];
 			endforeach;
 		endif;
 		acf_register_block_type( $block_type_args );
