@@ -20,6 +20,10 @@ $className = 'image-slider-wrap';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
+if ( $is_preview ) {
+	$className .= ' is-admin';
+}
+
 if ( ! empty( $block['align'] ) ) {
 	$alignClass = 'align' . $block['align'];
 } else {

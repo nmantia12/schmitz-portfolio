@@ -1,3 +1,18 @@
+.image-slider-wrap {
+  // Fix selectable bug.
+  &.is-admin {
+    &:before {
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 40px;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
 .image-slider {
   position: relative;
 

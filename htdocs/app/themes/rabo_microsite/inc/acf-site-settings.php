@@ -67,78 +67,84 @@ function register_acf_block_types() {
 
 	$pc_blocks = [
 		'large-quote'         => [
-			'name' => 'Large Quote',
+			'title' => 'Large Quote',
 		],
 		'parallax-image'      => [
-			'name' => 'Parallax Image',
+			'title' => 'Parallax Image',
 		],
 		'fact-circle'         => [
-			'name' => 'Fact Circle',
+			'title' => 'Fact Circle',
 		],
 		'split-scroll'        => [
-			'name'     => 'Split Scrolling Section',
+			'title'    => 'Split Scrolling Section',
 			'supports' => [
-				'align' => array( 'full' ),
+				'align' => [ 'full' ],
 			],
 		],
 		'content-image-quote' => [
-			'name'     => 'Content / Image / Quote',
+			'title'    => 'Content / Image / Quote',
 			'supports' => [
-				'align' => array( 'full' ),
+				'align' => [ 'full' ],
 			],
 		],
 		'infographic'         => [
-			'name' => 'Infographic',
+			'title' => 'Infographic',
 		],
 		'video-modal'         => [
-			'name'     => 'Video Modal',
+			'title'    => 'Video Modal',
 			'supports' => [
-				'align' => array( 'full' ),
+				'align' => [ 'full' ],
 			],
 		],
 		'full-bg-img-content' => [
-			'name'     => 'Full Background Image with Content',
+			'title'    => 'Full Background Image with Content',
 			'supports' => [
-				'align' => array( 'full' ),
+				'align' => [ 'full' ],
 			],
 		],
 		'image-slider'        => [
-			'name' => 'Image Slider',
+			'title'          => 'Image Slider',
+			'icon'           => 'images-alt2',
+			'description'    => __( 'Image Slider Block' ),
+			'enqueue_assets' => function() {
+				$block_script = get_template_directory_uri() . '/template-parts/acf-blocks/image-slider/js/image-slider.js';
+				wp_enqueue_script( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.8.1', true );
+				wp_enqueue_script( 'block-slider', $block_script, array(), '1.0.0', true );
+			},
 		],
 		'split-content'       => [
-			'name' => '50 / 50 Image & Content',
+			'title' => '50 / 50 Image & Content',
 		],
 	];
 
 	foreach ( $pc_blocks as $block_slug => $block_array ) {
-		$block_name      = $block_array['name'];
+		$render_template = '/template-parts/acf-blocks/' . $block_slug . '/' . $block_slug . '.php';
 		$block_type_args = [
 			'name'            => $block_slug,
-			'title'           => $block_name,
-			'description'     => __( 'A custom block.' ),
-			'render_template' => 'template-parts/acf-blocks/' . $block_slug . '/' . $block_slug . '.php',
+			'render_template' => $render_template,
 			'category'        => 'paradowski',
-			'icon'            => 'admin-comments',
-			'keywords'        => array( $block_name, 'paradowski' ),
+			'keywords'        => array( $block_array['title'], 'paradowski' ),
 		];
+		$block_args_keys = array_keys( $block_type_args );
 
-		if ( 'image-slider' === $block_slug ) :
-			$block_type_args['enqueue_assets'] = function() {
-				$block_script = get_template_directory_uri() . '/template-parts/acf-blocks/image-slider/js/image-slider.js';
+		if ( file_exists( $render_template ) ) {
+			var_dump( 'exists' );
+		}
 
-				wp_enqueue_style( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1' );
-				wp_enqueue_script( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.8.1', true );
-
-				wp_enqueue_script( 'block-slider', $block_script, array(), '1.0.0', true );
-			};
+		if ( $block_array && is_array( $block_array ) ) :
+			foreach ( $block_array as $block_key => $block_value ) :
+				if ( ! in_array( 'title', $block_array ) ) :
+					$block_array['title'] = $block_slug;
+				endif;
+				if ( array_key_exists( $block_key, $block_array ) && is_array( $block_array[ $block_key ] ) ) :
+					foreach ( $block_array[ $block_key ] as $options_key => $options_value ) :
+						$block_type_args[ $block_key ][ $options_key ] = $options_value;
+					endforeach;
+				elseif ( array_key_exists( $block_key, $block_array ) && ( ! is_array( $block_array[ $block_key ] ) ) ) :
+						$block_type_args[ $block_key ] = $block_array[ $block_key ];
+				endif;
+			endforeach;
 		endif;
-
-		if ( array_key_exists( 'supports', $block_array ) && is_array( $block_array['supports'] ) ) :
-			foreach ( $block_array['supports'] as $options_key => $options_value ) {
-				$block_type_args['supports'][ $options_key ] = $options_value;
-			}
-		endif;
-
 		acf_register_block_type( $block_type_args );
 	}
 }
