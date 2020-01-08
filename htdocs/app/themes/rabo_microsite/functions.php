@@ -76,8 +76,8 @@ function typekit_resource_hints( $urls, $relation_type ) {
 
 
 function cc_mime_types( $mimes ) {
-	 $mimes['svg'] = 'image/svg+xml';
-	 return $mimes;
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
 }
 
 add_filter( 'upload_mimes', 'cc_mime_types' );

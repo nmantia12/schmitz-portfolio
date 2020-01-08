@@ -78,13 +78,13 @@ function register_acf_block_types() {
 		'split-scroll'        => [
 			'name'     => 'Split Scrolling Section',
 			'supports' => [
-				'align' => false,
+				'align' => array( 'full' ),
 			],
 		],
 		'content-image-quote' => [
 			'name'     => 'Content / Image / Quote',
 			'supports' => [
-				'align' => false,
+				'align' => array( 'full' ),
 			],
 		],
 		'infographic'         => [
@@ -93,13 +93,13 @@ function register_acf_block_types() {
 		'video-modal'         => [
 			'name'     => 'Video Modal',
 			'supports' => [
-				'align' => false,
+				'align' => array( 'full' ),
 			],
 		],
 		'full-bg-img-content' => [
 			'name'     => 'Full Background Image with Content',
 			'supports' => [
-				'align' => false,
+				'align' => array( 'full' ),
 			],
 		],
 		'image-slider'        => [
@@ -121,6 +121,17 @@ function register_acf_block_types() {
 			'icon'            => 'admin-comments',
 			'keywords'        => array( $block_name, 'paradowski' ),
 		];
+
+		if ( 'image-slider' === $block_slug ) :
+			$block_type_args['enqueue_assets'] = function() {
+				$block_script = get_template_directory_uri() . '/template-parts/acf-blocks/image-slider/js/image-slider.js';
+
+				wp_enqueue_style( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1' );
+				wp_enqueue_script( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.8.1', true );
+
+				wp_enqueue_script( 'block-slider', $block_script, array(), '1.0.0', true );
+			};
+		endif;
 
 		if ( array_key_exists( 'supports', $block_array ) && is_array( $block_array['supports'] ) ) :
 			foreach ( $block_array['supports'] as $options_key => $options_value ) {
