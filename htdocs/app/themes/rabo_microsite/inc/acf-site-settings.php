@@ -66,6 +66,9 @@ function register_acf_block_types() {
 	}
 
 	$pc_blocks = [
+		'responsive-spacer'   => [
+			'title' => 'Spacer',
+		],
 		'large-quote'         => [
 			'title' => 'Large Quote',
 		],

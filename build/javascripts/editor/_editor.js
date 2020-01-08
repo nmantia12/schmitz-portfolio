@@ -27,7 +27,6 @@ wp.domReady(() => {
   ];
 
 	wp.blocks.getBlockTypes().forEach(function(blockType) {
-		console.log(blockType.name);
 		if (allowedBlocks.indexOf(blockType.name) === -1) {
 			wp.blocks.unregisterBlockType(blockType.name);
 		}
