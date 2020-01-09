@@ -1,0 +1,16 @@
+.infographic {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid $blue;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 50vw;
+  height: 50vw;
+  max-width: rem(500);
+  max-height: rem(500);
+}

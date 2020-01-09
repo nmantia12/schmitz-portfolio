@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Testimonial Block Template.
+ * infographic Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -10,26 +10,27 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'testimonial-' . $block['id'];
+$id = 'infographic-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = 'infographic';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
 	$className .= ' align' . $block['align'];
 }
+if ( $is_preview ) {
+	$className .= ' is-admin';
+}
 
 // Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
+$info_img = get_field( 'infographic_image' );
+?>
 
-
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
+	<img class="infographic__img" id="<?php echo 'infographic__img-' . $block['id']; ?>" src="<?php echo esc_url( $info_img ); ?>"/>
+</div>

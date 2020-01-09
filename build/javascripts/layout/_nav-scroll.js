@@ -1,6 +1,5 @@
 import $ from "jquery";
 import "slick-carousel";
-import { parse } from "@babel/core";
 // Document ready
 // eslint-disable-next-line no-undef
 
