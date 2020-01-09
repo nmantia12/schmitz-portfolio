@@ -1,6 +1,11 @@
 .infographic {
   position: relative;
   overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .img-magnifier-glass {

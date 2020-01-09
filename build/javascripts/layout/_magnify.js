@@ -27,6 +27,7 @@ function magnify(imgID, zoom) {
   glass.addEventListener("touchmove", moveMagnifier);
 	img.addEventListener("touchmove", moveMagnifier);
 	 window.addEventListener("resize", moveMagnifier);
+
   function moveMagnifier(e) {
     var pos, x, y;
     /* Prevent any other actions that may occur when moving over the image */
@@ -73,11 +74,13 @@ function magnify(imgID, zoom) {
   }
 }
 
-	const infographics = document.getElementsByClassName("infographic__img");
-  for (let i = 0; i < infographics.length; i++) {
-		const image = infographics[i];
-		const imageId = image.getAttribute('id');
-    magnify(String(imageId), 2);
-	}
+	$(document).ready(function() {
+		const infographics = document.getElementsByClassName("infographic__img");
+		for (let i = 0; i < infographics.length; i++) {
+			const image = infographics[i];
+			const imageId = image.getAttribute('id');
+			magnify(String(imageId), 2);
+		}
+	});
 
 })(jQuery);
