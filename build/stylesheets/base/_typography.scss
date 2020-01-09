@@ -49,9 +49,13 @@ p {
 
 p,
 .body-1 {
-  @include font-sizes(20);
-  line-height: rem(31);
+  @include font-sizes(17, 20);
+  line-height: rem(25);
   letter-spacing: rem(-0.2);
+
+  @include media("<tablet") {
+    line-height: rem(31);
+  }
 }
 
 .body-2 {
