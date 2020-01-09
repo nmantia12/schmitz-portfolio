@@ -77,7 +77,7 @@ function magnify(imgID, zoom) {
   for (let i = 0; i < infographics.length; i++) {
 		const image = infographics[i];
 		const imageId = image.getAttribute('id');
-    magnify(String(imageId), 6);
+    magnify(String(imageId), 2);
 	}
 
 })(jQuery);
