@@ -1,0 +1,52 @@
+.split-scroll {
+  background-color: rgba($grey, 0.1);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+
+  &__section {
+    @include columns-mobile(1, div, 0px);
+    @include columns-tablet-up(2, div, 16px);
+    display: flex;
+    height: 0;
+
+    &.section-active {
+      .split-scroll__img {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__col {
+    &.content {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__content-wrap {
+    display: inline-block;
+    padding: rem(105) $block-margin rem(80);
+
+    @include media(">=tablet") {
+      padding: rem(158) $block-margin rem(88);
+    }
+    @include media(">=desktop") {
+      padding: rem(158) calc(#{$block-margin} * 2) rem(88);
+      max-width: calc(#{$content-width} / 2);
+    }
+  }
+
+  &__title {
+  }
+
+  &__content {
+  }
+
+  &__img {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.5s $cubic-ease;
+  }
+}
