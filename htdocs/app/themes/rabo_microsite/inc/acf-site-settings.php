@@ -82,6 +82,7 @@ function register_acf_block_types() {
 				wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.js', array( 'jquery' ), '3.0.5', true );
 				wp_enqueue_script( 'scrollmagic', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js', array( 'jquery' ), '2.0.7', true );
 				wp_enqueue_script( 'animation-gsap', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array( 'jquery' ), '2.0.5', true );
+				wp_enqueue_script( 'cssPLugin', '//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js', array( 'jquery' ), '2.1.2', true );
 				wp_enqueue_script( 'parallax-image-js', $block_script, array(), '1.0.0', true );
 			},
 		],
