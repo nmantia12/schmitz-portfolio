@@ -8,11 +8,7 @@
 
       // build scenes
       new ScrollMagic.Scene({ triggerElement: ".parallax-image" })
-        .setTween(".parallax-image__img", {
-          y: "-25%",
-          ease: Linear.easeNone,
-          duration: "200%"
-        })
+        .setTween(".parallax-image__img", { y: "-25%", ease: Linear.easeNone })
         .addTo(controller);
     }
   });
