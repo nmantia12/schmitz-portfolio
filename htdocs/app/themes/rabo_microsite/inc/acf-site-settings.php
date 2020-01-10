@@ -79,9 +79,9 @@ function register_acf_block_types() {
 			'title'          => 'Parallax Image',
 			'enqueue_assets' => function() {
 				$block_script = get_template_directory_uri() . '/template-parts/acf-blocks/parallax-image/js/parallax-image.js';
-				wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.js', array( 'jquery' ), '1.8.1', true );
-				wp_enqueue_script( 'animation-gsap', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array( 'jquery' ), '1.8.1', true );
-				wp_enqueue_script( 'scrollmagic', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js', array( 'jquery' ), '1.8.1', true );
+				wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.js', array( 'jquery' ), '3.0.5', true );
+				wp_enqueue_script( 'scrollmagic', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js', array( 'jquery' ), '2.0.7', true );
+				wp_enqueue_script( 'animation-gsap', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array( 'jquery' ), '2.0.5', true );
 				wp_enqueue_script( 'parallax-image-js', $block_script, array(), '1.0.0', true );
 			},
 		],
