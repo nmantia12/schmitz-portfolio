@@ -30,5 +30,5 @@ $img_height   = get_field( 'image_height' );
 ?>
 
 <div class="<?php echo $className; ?>" id="<?php echo $id; ?>" style="height: <?php echo $img_height; ?>px;">
-	<img src="<?php echo esc_url( $parallax_img ); ?>"/>
+	<img class="parallax-image__img" src="<?php echo esc_url( $parallax_img ); ?>"/>
 </div>
