@@ -96,9 +96,6 @@ function register_acf_block_types() {
 			],
 			'enqueue_assets' => function() {
 				$block_script = get_template_directory_uri() . '/template-parts/acf-blocks/split-scroll/js/split-scroll.js';
-				wp_enqueue_script( 'scrollmagic', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array( 'jquery' ), '1.8.1', true );
-				wp_enqueue_script( 'indicators', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array( 'jquery' ), '1.8.1', true );
-				// wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js', array( 'jquery' ), '1.8.1', true );
 				wp_enqueue_script( 'split-scroll-js', $block_script, array(), '1.0.0', true );
 			},
 		],

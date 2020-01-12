@@ -1,38 +1,61 @@
 .split-scroll {
-  background-color: rgba($grey, 0.1);
+  background-color: white;
   margin: 0;
-  height: 100vh;
   overflow: hidden;
+  position: relative;
+  height: 100vh;
 
-  &__section {
-    @include columns-mobile(1, div, 0px);
-    @include columns-tablet-up(2, div, 16px);
-    display: flex;
-    height: 0;
+  &__inner {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba($grey, 0.1);
 
-    &.section-active {
-      .split-scroll__img {
-        opacity: 1;
-      }
+    &.fixed {
+      @include fixed-viewport;
+      margin-left: 0;
+      z-index: 99;
     }
   }
 
+  .duration-bar {
+    position: fixed;
+    top: 32px;
+    height: rem(5);
+    left: 0;
+    background-color: $blue;
+    z-index: 999;
+    transition: all 0.25s $cubic-ease;
+  }
+
+  &__section {
+  }
+
   &__col {
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    float: left;
+
     &.content {
-      display: flex;
-      justify-content: flex-end;
+      padding: rem(105) $block-margin rem(80);
+
+      @include media(">=tablet") {
+        padding: rem(158) $block-margin rem(88);
+      }
+      @include media(">=desktop") {
+        padding: rem(158) calc(#{$block-margin} * 2) rem(88);
+      }
     }
   }
 
   &__content-wrap {
     display: inline-block;
-    padding: rem(105) $block-margin rem(80);
+    width: 100%;
 
-    @include media(">=tablet") {
-      padding: rem(158) $block-margin rem(88);
-    }
     @include media(">=desktop") {
-      padding: rem(158) calc(#{$block-margin} * 2) rem(88);
       max-width: calc(#{$content-width} / 2);
     }
   }
@@ -40,13 +63,18 @@
   &__title {
   }
 
-  &__content {
-  }
+  // &__content {
+  //   display: none;
+  // }
+
+  // &__image-wrap {
+  //   height: 0;
+  // }
 
   &__img {
     height: 100vh;
     object-fit: cover;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.5s $cubic-ease;
   }
 }

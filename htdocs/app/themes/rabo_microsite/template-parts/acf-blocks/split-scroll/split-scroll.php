@@ -27,35 +27,38 @@ if ( ! empty( $block['align'] ) ) {
 if ( have_rows( 'split_scrolling_sections' ) ) :
 	?>
 	<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
-	<?php
-	while ( have_rows( 'split_scrolling_sections' ) ) :
-		the_row();
-		$section_title   = get_sub_field( 'section_title' );
-		$section_content = get_sub_field( 'section_content' );
-		$section_img     = get_sub_field( 'section_image' );
-		?>
-		<div class="split-scroll__section">
-			<div class="split-scroll__col content">
-				<div class="split-scroll__content-wrap">
-					<?php if ( $section_title ) : ?>
-						<div class="split-scroll__title">
-							<?php echo $section_title; ?>
+		<div class="duration-bar"></div>
+		<div class="split-scroll__inner">
+			<?php
+			while ( have_rows( 'split_scrolling_sections' ) ) :
+				the_row();
+				$section_title   = get_sub_field( 'section_title' );
+				$section_content = get_sub_field( 'section_content' );
+				$section_img     = get_sub_field( 'section_image' );
+				?>
+				<div class="split-scroll__section">
+					<div class="split-scroll__col content">
+						<div class="split-scroll__content-wrap">
+							<?php if ( $section_title ) : ?>
+								<div class="split-scroll__title">
+									<?php echo $section_title; ?>
+								</div>
+							<?php endif; ?>
+							<?php if ( $section_content ) : ?>
+								<div class="split-scroll__content">
+									<?php echo $section_content; ?>
+								</div>
+							<?php endif; ?>
 						</div>
-					<?php endif; ?>
-					<?php if ( $section_content ) : ?>
-						<div class="split-scroll__content">
-							<?php echo $section_content; ?>
-						</div>
-					<?php endif; ?>
+					</div>
+					<div class="split-scroll__col">
+						<?php if ( $section_img ) : ?>
+							<img class="split-scroll__img" src="<?php echo esc_url( $section_img ); ?>" />
+						<?php endif; ?>
+					</div>
 				</div>
-			</div>
-			<div class="split-scroll__col">
-				<?php if ( $section_img ) : ?>
-					<img class="split-scroll__img" src="<?php echo esc_url( $section_img ); ?>" />
-				<?php endif; ?>
+				<?php	endwhile; ?>
 			</div>
 		</div>
-		<?php	endwhile; ?>
-	</div>
 	<?php
 endif;
