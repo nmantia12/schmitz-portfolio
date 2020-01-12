@@ -14,7 +14,7 @@
 
   var initializeBlock = function(block) {
 		const $window = $(window);
-		const sections = block.find(".split-scroll__title");
+		const sections = block.find(".split-scroll__inner .split-scroll__title");
 		const inner = $(".split-scroll__inner");
 		const sectionSceneDuration = $window.innerHeight() * 2;
 		const sceneCount = sections.length;
@@ -25,9 +25,7 @@
 		const totalY = blockTop + blockSceneDuration;
 		var scrollPercent = 0;
     block.css("height", blockSceneHeight + "px");
-		$(
-      ".split-scroll__content-wrap:first-child, .split-scroll__img:first-child"
-    ).addClass("active");
+
 		var st = $(this).scrollTop();
 		if (st > blockTop && st <= totalY) {
       inner.addClass("fixed");
@@ -76,30 +74,75 @@
 
 	var lastScrollTop = 0;
 	$(window).on("scroll", function() {
-    $(".split-scroll").each(function() {
-      initializeBlock($(this));
-    });
+		if ($(window).width() > 768) {
+			$(".split-scroll").each(function() {
+				initializeBlock($(this));
+			});
+		}
+		if ($(window).width() <= 768) {
+			$(".split-scroll__inner").removeClass("fixed");
+			$(".split-scroll__content-wrap, .split-scroll__img").removeClass(
+				"active"
+			);
+			$(".split-scroll").css('height', 'auto');
+		}
   });
 
   // Initialize each block on page load (front end).
   $(document).ready(function() {
-    $(".split-scroll").each(function() {
-      initializeBlock($(this));
-    });
+		$(
+      ".split-scroll__content-wrap:first-child, .split-scroll__img:first-child"
+		).addClass("active");
+		if ($(window).width() > 768) {
+			$(".split-scroll").each(function() {
+				initializeBlock($(this));
+			});
+		}
+		if ($(window).width() <= 768) {
+			$(".split-scroll__inner").removeClass("fixed");
+			$(".split-scroll__content-wrap, .split-scroll__img").removeClass(
+				"active"
+			);
+			$(".split-scroll").css("height", "auto");
+		}
   });
 
   // resize event handlers
   $(window).on("orientationchange", function() {
-    $(".split-scroll").each(function() {
-      initializeBlock($(this));
-    });
+		if ($(window).width() > 768) {
+			$(
+				".split-scroll__content-wrap:first-child, .split-scroll__img:first-child"
+			).addClass("active");
+			$(".split-scroll").each(function() {
+				initializeBlock($(this));
+			});
+		}
+		if ($(window).width() <= 768) {
+			$(".split-scroll__inner").removeClass("fixed");
+			$(".split-scroll__content-wrap, .split-scroll__img").removeClass(
+        "active"
+			);
+			$(".split-scroll").css("height", "auto");
+		}
   });
 
   // var resizeId;
   $(window).on("resize", function() {
-    $(".split-scroll").each(function() {
-      initializeBlock($(this));
-    });
+		if ($(window).width() > 768) {
+			$(
+        ".split-scroll__content-wrap:first-child, .split-scroll__img:first-child"
+      ).addClass("active");
+			$(".split-scroll").each(function() {
+				initializeBlock($(this));
+			});
+		}
+		if ($(window).width() <= 768) {
+			$(".split-scroll__inner").removeClass("fixed");
+			$(".split-scroll__content-wrap, .split-scroll__img").removeClass(
+        "active"
+			);
+			$(".split-scroll").css("height", "auto");
+		}
   });
 
   // Initialize dynamic block preview (editor).

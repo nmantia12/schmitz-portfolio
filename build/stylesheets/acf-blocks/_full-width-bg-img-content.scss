@@ -1,16 +1,33 @@
 .fwb {
   position: relative;
   text-align: center;
-  margin-bottom: rem(250);
+
+  @include media(">=tablet") {
+    margin-bottom: rem(250);
+  }
+
+  svg {
+    height: 0;
+    width: 0;
+  }
 
   &__accent {
+    display: none;
     max-width: 540px;
     width: 35%;
     position: absolute;
     bottom: 0;
     transform: translateY(50%);
-    left: calc(((100vw - #{$content-width}) / 2));
+    left: $block-margin;
     z-index: 5;
+
+    @include media(">=tablet") {
+      display: inline-block;
+    }
+
+    @include break($content-width) {
+      left: calc(((100vw - #{$content-width}) / 2));
+    }
 
     &::before {
       content: "";

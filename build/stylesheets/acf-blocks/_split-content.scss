@@ -1,5 +1,6 @@
 .split-content {
   position: relative;
+  overflow: hidden;
   z-index: 4;
   padding: 0;
   @include columns-mobile(1, div, 0px);
@@ -20,10 +21,25 @@
   &.right {
     @include media(">=tablet") {
       padding-bottom: rem(200);
+
+      svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(75%);
+        height: 50%;
+        max-height: rem(585);
+      }
+    }
+    &:first-child {
+      .split-content__image {
+        @include media(">=tablet") {
+          margin-top: -158px;
+        }
+      }
     }
     .split-content__image {
       @include media(">=tablet") {
-        margin-top: -158px;
         padding-left: $block-margin;
       }
       @include media(">=desktop") {
@@ -38,6 +54,14 @@
   }
 
   &.left {
+    padding-top: rem(70);
+    svg {
+      position: absolute;
+      height: rem(140);
+      top: 0;
+      left: 50%;
+      transform: translateX(-75%);
+    }
     .split-content__image {
       @include media(">=tablet") {
         margin-top: 0;
@@ -54,6 +78,20 @@
       @include media(">=desktop") {
         float: left;
       }
+    }
+  }
+
+  svg {
+    display: none;
+    fill: $orange;
+    opacity: 0.9;
+
+    path {
+      fill: $orange;
+    }
+
+    @include media(">=tablet") {
+      display: inline-block;
     }
   }
 
