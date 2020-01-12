@@ -14,7 +14,7 @@
 
   var initializeBlock = function(block) {
 		const $window = $(window);
-		const sections = block.find(".split-scroll__section");
+		const sections = block.find(".split-scroll__title");
 		const inner = $(".split-scroll__inner");
 		const sectionSceneDuration = $window.innerHeight() * 2;
 		const sceneCount = sections.length;
@@ -23,8 +23,11 @@
       sectionSceneDuration * sceneCount + $window.innerHeight();
 		const blockTop = block.offset().top;
 		const totalY = blockTop + blockSceneDuration;
+		var scrollPercent = 0;
     block.css("height", blockSceneHeight + "px");
-
+		$(
+      ".split-scroll__content-wrap:first-child, .split-scroll__img:first-child"
+    ).addClass("active");
 		var st = $(this).scrollTop();
 		if (st > blockTop && st <= totalY) {
       inner.addClass("fixed");
@@ -49,20 +52,26 @@
 		for (let i = 0; i < sections.length; i++) {
 			const switchPoint = sectionSceneDuration * i;
 			const currY = $(this).scrollTop() - (blockTop + switchPoint);
-			var scrollPercent = 0;
 
 			if (st > blockTop + switchPoint && st <= totalY) {
         const nthChild = i + 1;
         const activeSection = $(
-          ".split-scroll__section:nth-child(" + nthChild + ")"
+          ".split-scroll__content-wrap:nth-child(" +
+            nthChild +
+            "), .split-scroll__img:nth-child(" +
+            nthChild +
+            ")"
         );
-        $(".split-scroll__section").removeClass("active");
+        $(".split-scroll__content-wrap, .split-scroll__img").removeClass(
+          "active"
+        );
         activeSection.addClass("active");
-        scrollPercent = Math.ceil((currY / sectionSceneDuration) * 100);
-        $(".duration-bar").css("width", scrollPercent + "%");
+        scrollPercent = Math.ceil((currY / (sectionSceneDuration - 50)) * 100);
       }
     }
 		lastScrollTop = st;
+
+		$(".duration-bar").css("width", scrollPercent + "%");
 	};
 
 	var lastScrollTop = 0;

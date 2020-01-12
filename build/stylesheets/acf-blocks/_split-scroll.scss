@@ -34,19 +34,21 @@
   }
 
   &__col {
+    position: relative;
     display: inline-block;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     float: left;
 
     &.content {
-      padding: rem(105) $block-margin rem(80);
+      width: 60%;
+      padding: rem(90) 0 rem(134) $block-margin;
 
       @include media(">=tablet") {
-        padding: rem(158) $block-margin rem(88);
+        padding: rem(90) 0 rem(134) calc(#{$block-margin} * 2);
       }
       @include media(">=desktop") {
-        padding: rem(158) calc(#{$block-margin} * 2) rem(88);
+        padding: rem(90) 0 rem(134) calc(#{$block-margin} * 3);
       }
     }
   }
@@ -54,27 +56,96 @@
   &__content-wrap {
     display: inline-block;
     width: 100%;
+    max-width: calc(#{$content-width} * 0.6);
+    padding-right: $block-margin;
+    float: right;
 
+    @include media(">=tablet") {
+      padding-right: calc(#{$block-margin} * 2);
+    }
     @include media(">=desktop") {
-      max-width: calc(#{$content-width} / 2);
+      padding-right: calc(#{$block-margin} * 3);
+    }
+
+    &.active {
+      .split-scroll__title {
+        position: relative;
+        margin-top: rem(70);
+        font-size: rem(25);
+        font-weight: normal;
+        line-height: 1.4;
+        letter-spacing: -0.25px;
+        text-align: left;
+        color: $orange;
+        opacity: 1;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          height: rem(2);
+          width: rem(43);
+          left: rem(-60);
+          background-color: $orange;
+        }
+      }
+
+      &:first-child {
+        .split-scroll__title {
+          margin-top: 0;
+        }
+      }
+      .split-scroll__content {
+        height: auto;
+        max-height: 50vh;
+        overflow: auto;
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
   &__title {
+    opacity: 0.2;
+    font-size: rem(15);
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: $grey;
+    transition: all 0.5s $cubic-ease;
+    transition-property: opacity, color;
   }
 
-  // &__content {
-  //   display: none;
-  // }
+  &__content {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s $cubic-ease;
 
-  // &__image-wrap {
-  //   height: 0;
-  // }
+    & > * {
+      max-width: 100% !important;
+    }
+  }
 
   &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
-    // opacity: 0;
+    opacity: 0;
+    transform: translateY(60px);
     transition: all 0.5s $cubic-ease;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
