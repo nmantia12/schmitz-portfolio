@@ -112,7 +112,12 @@ main.site-main {
     padding-left: 1.5rem;
 
     li {
-      padding-bottom: 0.5rem;
+			font-size: rem(17);
+			padding-bottom: rem(20);
+
+			@include media('>=medium') {
+				font-size: rem(20);
+			}
 
       &:last-child {
         padding-bottom: 0;
@@ -131,8 +136,22 @@ main.site-main {
         padding-bottom: 0;
       }
     }
-  }
+	}
+	ul {
+		list-style: none;
+	}
+	ul li::before {
+		content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+		color: $teal; /* Change the color */
+		font-weight: bold; /* If you want it to be bold */
+		display: inline-block; /* Needed to add space between the bullet and the text */
+		width: 1em; /* Also needed for space (tweak if needed) */
+		margin-left: -1em; /* Also needed for space (tweak if needed) */
 
+		@include media('>=medium') {
+			color: $orange;
+		}
+	}
   h1,
   h2,
   h3,

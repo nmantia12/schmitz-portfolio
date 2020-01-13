@@ -25,7 +25,7 @@
             "key": "field_5e1c9f653d1da",
             "label": "Fact",
             "name": "fact",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "rows": ""
         },
         {
             "key": "field_5e1c9f6d3d1db",
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1578934143
+    "modified": 1578935099
 }
