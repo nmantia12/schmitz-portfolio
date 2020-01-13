@@ -34,7 +34,7 @@ if ( ! empty( $fw_align ) ) {
 ?>
 
 <div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
-	<img src="<?php echo esc_url( $fw_bg ); ?>" data-parallax="200"/>
+	<img class="fwb__img" src="<?php echo esc_url( $fw_bg ); ?>" data-parallax="200"/>
 	<div class="fwb__overlay"></div>
 	<?php if ( $fw_content ) : ?>
 		<div class="fwb__content alignwide">

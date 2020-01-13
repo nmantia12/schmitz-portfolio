@@ -12,20 +12,18 @@
   }
 
   &__accent {
-    display: none;
     max-width: 540px;
     width: 35%;
     position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
+    bottom: auto;
+    top: calc(100vh + 90px);
+    transform: translateY(-100%);
     left: $block-margin;
     z-index: 5;
 
-    @include media(">=tablet") {
-      display: inline-block;
-    }
-
     @include break($content-width) {
+      transform: translateY(50%);
+      bottom: 0;
       left: calc(((100vw - #{$content-width}) / 2));
     }
 
@@ -46,6 +44,12 @@
     }
   }
 
+  &__img {
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: rem(120);
+  }
+
   @include media(">=tablet") {
     padding-top: rem(262);
     padding-bottom: rem(388);
@@ -53,7 +57,7 @@
     align-items: center;
     justify-content: center;
 
-    img {
+    &__img {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -62,7 +66,7 @@
       left: 0;
       right: 0;
       z-index: 1;
-      object-fit: cover;
+      margin-bottom: 0;
     }
     &__overlay {
       position: absolute;

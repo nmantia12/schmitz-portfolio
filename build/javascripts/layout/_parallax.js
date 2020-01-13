@@ -1,8 +1,14 @@
 (function($) {
   $(window).on( 'scroll', function() {
-    if ($(".parallax-image, .parallax-effect").length && $(window).width() > 768) {
-      $(".parallax-image, .parallax-effect").each(function() {
-        const imageEl = $(this).children('img,svg');
+		var parallaxEls;
+		if ($(window).width() > 768) {
+			parallaxEls = $(".parallax-image, .parallax-effect");
+		} else {
+			parallaxEls = $(".parallax-image");
+		}
+    if (parallaxEls.length) {
+      parallaxEls.each(function() {
+        const imageEl = $(this).children("img,svg");
         const wy = window.pageYOffset;
         const wh = $(window).innerHeight();
         const wc = wy + wh / 2;
@@ -20,5 +26,13 @@
         }
       });
     }
-  });
+	});
+	$(window).on( 'resize', function() {
+    if ($(".parallax-image, .parallax-effect").length) {
+      $(".parallax-image, .parallax-effect").each(function() {
+        const imageEl = $(this).children("img,svg");
+        imageEl.css({ "margin-top": "inherit" });
+      });
+    }
+	});
 })(jQuery);

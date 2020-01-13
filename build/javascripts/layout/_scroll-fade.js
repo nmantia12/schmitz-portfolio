@@ -1,18 +1,27 @@
-(function($) {
-  // $(window).scroll(function() {
-  //   console.log($(window).scrollTop());
-  //   var topDivHeight = $(".hero").height();
-  //   var viewPortSize = $(window).height();
+(function() {
+  var elements;
+  var windowHeight;
 
-  //   var triggerAt = 150;
-  //   var triggerHeight = topDivHeight - viewPortSize + triggerAt;
+  function init() {
+    elements = document.querySelectorAll(".hidden");
+    windowHeight = window.innerHeight;
+  }
 
-  //   if ($(window).scrollTop() >= triggerHeight) {
-  //     $("div")
-  //       .css("visibility", "visible")
-  //       .hide()
-  //       .fadeIn();
-  //     $(this).off("scroll");
-  //   }
-  // });
-})(jQuery);
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add("fade-in-element");
+        element.classList.remove("hidden");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", checkPosition);
+  window.addEventListener("resize", init);
+
+  init();
+  checkPosition();
+})();
