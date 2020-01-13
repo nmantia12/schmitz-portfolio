@@ -32,6 +32,14 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<!-- Jira Issue tracker -->
+<?php
+$env = getenv( 'WP_ENV' );
+if ( defined( 'WP_ENV' ) && $env === 'prod' ) {
+	?>
+	<style>.atlwdg-trigger { z-index: 99999 !important; }</style>
+	<script type="text/javascript" src="https://paradowskicreative.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-40wwlj/b/20/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=fb7d38ba"></script>
+<?php } ?>
 
 </body>
 </html>
