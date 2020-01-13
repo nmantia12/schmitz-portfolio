@@ -87,6 +87,11 @@
     display: none;
   }
 
+  &.is-admin {
+    @include media(">=large") {
+    }
+  }
+
   @include media(">=large") {
     padding: rem(213) rem(80) rem(150);
     margin-right: rem(140);
@@ -116,7 +121,8 @@
       position: absolute;
       top: -50px;
       right: -140px;
-      width: 800px;
+      width: 100%;
+      max-width: 800px;
       bottom: 0;
       object-fit: cover;
     }

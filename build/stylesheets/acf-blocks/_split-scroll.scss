@@ -8,7 +8,8 @@
     height: 100vh;
   }
 
-  &__mobile {
+  &__mobile,
+  &.is-admin {
     display: inline-block;
     background-color: #eef0f0;
 
@@ -241,6 +242,41 @@
     &.active {
       transform: translateY(0);
       opacity: 1;
+    }
+  }
+
+  &.is-admin {
+    display: inline-block;
+    height: auto;
+
+    .split-scroll__col {
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid rgba($grey, 0.3);
+    }
+
+    .split-scroll__img-wrap,
+    .split-scroll__content-wrap {
+      width: 50%;
+      display: inline-block;
+      order: 1;
+    }
+
+    .split-scroll__content {
+      border-bottom: none;
+    }
+
+    .split-scroll__img-wrap {
+      order: 2;
+    }
+
+    @include media(">=tablet") {
+      .split-scroll__mobile {
+        display: inline-block;
+      }
+      .split-scroll__inner {
+        display: none;
+      }
     }
   }
 }

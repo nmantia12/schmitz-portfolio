@@ -13,9 +13,10 @@ function magnify(imgID, zoom) {
   /* Set background properties for the magnifier glass: */
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
-  glass.style.backgroundSize =
+	glass.style.backgroundSize =
     img.width * zoom + "px " + img.height * zoom + "px";
-  bw = 3;
+	bw = 3;
+
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
 
@@ -26,7 +27,7 @@ function magnify(imgID, zoom) {
   /*and also for touch screens:*/
   glass.addEventListener("touchmove", moveMagnifier);
 	img.addEventListener("touchmove", moveMagnifier);
-	 window.addEventListener("resize", moveMagnifier);
+	window.addEventListener("resize", moveMagnifier);
 
   function moveMagnifier(e) {
     var pos, x, y;
@@ -81,6 +82,13 @@ function magnify(imgID, zoom) {
 			const imageId = image.getAttribute('id');
 			magnify(String(imageId), 2);
 		}
+	});
+
+	$(window).on("orientationchange", function() {
+	});
+
+	$(window).on("resize", function() {
+
 	});
 
 })(jQuery);

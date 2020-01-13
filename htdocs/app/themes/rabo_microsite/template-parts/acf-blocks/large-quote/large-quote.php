@@ -20,6 +20,10 @@ $className = 'lg-quote';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
+if ( $is_preview ) {
+	$className .= ' is-admin';
+}
+
 if ( ! empty( $block['align'] ) ) {
 	$alignClass = 'align' . $block['align'];
 } else {
@@ -46,13 +50,13 @@ if ( $quote ) : ?>
 		<?php if ( $headshot ) : ?>
 			<svg viewBox="0 0 1 1" preserveAspectRation="none">
 				<defs>
-					<clipPath id="headshot_mask" clipPathUnits="objectBoundingBox">
+					<clipPath id="headshot_mask-<?php echo $id; ?>" clipPathUnits="objectBoundingBox">
 					<path d="M 0.05 0.24 C 0.08 0.18 0.13 0.13 0.18 0.09 C 0.29 0.02 0.42 -0.01 0.55 0 C 0.67 0.01 0.8 0.04 0.88 0.14 C 0.89 0.14 0.89 0.14 0.89 0.15 C 0.97 0.23 0.99 0.37 1 0.48 C 1 0.62 0.96 0.78 0.86 0.87 C 0.78 0.95 0.67 0.98 0.56 0.99 C 0.43 1.01 0.29 1 0.18 0.91 C 0.08 0.83 0.02 0.71 0.01 0.58 C -0.01 0.46 0 0.34 0.05 0.24 Z"/>
 					</clipPath>
 				</defs>
 			</svg>
-			<div style="clip-path: url(#headshot_mask);
-			-webkit-clip-path: url(#headshot_mask);" class="lg-quote__headshot">
+			<div style="clip-path: url(#headshot_mask-<?php echo $id; ?>);
+			-webkit-clip-path: url(#headshot_mask-<?php echo $id; ?>);" class="lg-quote__headshot">
 				<div class="overlay"></div>
 				<img src="<?php echo esc_url( $headshot ); ?>"/>
 			</div>

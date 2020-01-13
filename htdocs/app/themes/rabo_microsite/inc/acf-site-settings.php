@@ -102,7 +102,7 @@ function register_acf_block_types() {
 		'content-image-quote' => [
 			'title'    => 'Content / Image / Quote',
 			'supports' => [
-				'align' => [ 'full' ],
+				'align' => false,
 			],
 		],
 		'infographic'         => [
