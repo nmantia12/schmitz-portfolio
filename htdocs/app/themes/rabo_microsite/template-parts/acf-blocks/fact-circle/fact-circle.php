@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'testimonial-' . $block['id'];
+$id = 'fact-circle-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'testimonial';
+$className = 'fact-circle';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
@@ -25,11 +25,22 @@ if ( ! empty( $block['align'] ) ) {
 }
 
 // Load values and assign defaults.
-$text             = get_field( 'testimonial' ) ?: 'Your testimonial here...';
-$author           = get_field( 'author' ) ?: 'Author name';
-$role             = get_field( 'role' ) ?: 'Author role';
-$image            = get_field( 'image' ) ?: 295;
-$background_color = get_field( 'background_color' );
-$text_color       = get_field( 'text_color' );
-
-
+$fact         = get_field( 'fact_subhead' ) ?: 'Fact Subhead';
+$fact_sub     = get_field( 'fact' ) ?: 'Fact Goes Here....';
+$fact_content = get_field( 'bullet_points' );
+?>
+<div class="<?php echo $className; ?>" id="<?php echo $id; ?>" >
+	<div class="fact-circle__shape">
+		<?php if ( $fact_sub ) : ?>
+			<h4 class="fact-circle__subhead has-white-color"><?php echo $fact_sub; ?></h4>
+		<?php endif; ?>
+		<?php if ( $fact ) : ?>
+			<h2 class="fact-circle__fact has-white-color"><?php echo $fact; ?></h2>
+		<?php endif; ?>
+	</div>
+	<?php if ( $fact_content ) : ?>
+		<div class="fact-circle__content">
+			<?php echo $fact_content; ?>
+		</div>
+	<?php endif; ?>
+</div>

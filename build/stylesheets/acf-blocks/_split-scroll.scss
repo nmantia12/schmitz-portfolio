@@ -247,7 +247,7 @@
 
   &.is-admin {
     display: inline-block;
-    height: auto;
+    height: auto !important;
 
     .split-scroll__col {
       width: 100%;
@@ -273,6 +273,7 @@
     @include media(">=tablet") {
       .split-scroll__mobile {
         display: inline-block;
+        width: 100%;
       }
       .split-scroll__inner {
         display: none;

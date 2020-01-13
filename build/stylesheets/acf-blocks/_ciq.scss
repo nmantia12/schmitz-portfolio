@@ -95,7 +95,7 @@
   }
 
   @include media(">=tablet") {
-    padding-top: rem(250);
+    padding-top: rem(150);
     padding-bottom: rem(70);
 
     &__img-wrap {
@@ -103,9 +103,10 @@
       right: 0;
       top: 0;
       bottom: 0;
-      transform: translateX(calc(#{$content-width} / 2 + 70px));
+      transform: translateX(calc(50% + 70px));
       pointer-events: none;
       max-width: $content-width;
+      width: 100%;
     }
     &__img {
       height: 100%;
@@ -114,12 +115,13 @@
     &__content,
     &__button-wrap,
     &__quote-wrap {
+      width: 50%;
       max-width: calc(#{$content-width} / 2);
       margin-left: 0;
       padding-right: 0;
     }
     &__quote-wrap {
-      margin-top: rem(200);
+      margin-top: rem(100);
     }
     &__quote {
       padding-left: $block-margin !important;
@@ -143,14 +145,18 @@
     }
   }
   @include break($content-width) {
-    padding-top: rem(349);
+    padding-top: rem(300);
 
     &__content,
     &__button-wrap,
     &__quote-wrap {
       margin-left: calc(((100vw - #{$content-width}) / 2));
     }
+    &__quote-wrap {
+      margin-top: rem(200);
+    }
     &__img-wrap {
+      max-width: $content-width;
       transform: translateX(calc(#{$content-width} / 2 + 140px));
     }
   }
