@@ -87,4 +87,71 @@
       }
     }
   }
+  @include media("<tablet") {
+    &__img-wrap {
+      clip-path: none !important;
+      -webkit-clip-path: none !important;
+    }
+  }
+
+  @include media(">=tablet") {
+    padding-top: rem(250);
+    padding-bottom: rem(70);
+
+    &__img-wrap {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateX(calc(#{$content-width} / 2 + 70px));
+      pointer-events: none;
+      max-width: $content-width;
+    }
+    &__img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &__content,
+    &__button-wrap,
+    &__quote-wrap {
+      max-width: calc(#{$content-width} / 2);
+      margin-left: 0;
+      padding-right: 0;
+    }
+    &__quote-wrap {
+      margin-top: rem(200);
+    }
+    &__quote {
+      padding-left: $block-margin !important;
+    }
+    &__quote::before {
+      left: $block-margin;
+    }
+    &__headshot {
+      display: inline-block;
+      order: 1;
+    }
+    &__author {
+      order: 2;
+      margin-left: rem(20) !important;
+      margin-bottom: 0 !important;
+    }
+    &__author-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: rem(30);
+    }
+  }
+  @include break($content-width) {
+    padding-top: rem(349);
+
+    &__content,
+    &__button-wrap,
+    &__quote-wrap {
+      margin-left: calc(((100vw - #{$content-width}) / 2));
+    }
+    &__img-wrap {
+      transform: translateX(calc(#{$content-width} / 2 + 140px));
+    }
+  }
 }

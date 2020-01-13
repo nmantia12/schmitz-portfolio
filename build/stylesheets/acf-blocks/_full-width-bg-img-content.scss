@@ -23,6 +23,7 @@
 
     @include break($content-width) {
       transform: translateY(50%);
+      top: auto;
       bottom: 0;
       left: calc(((100vw - #{$content-width}) / 2));
     }
@@ -94,7 +95,8 @@
 
     @include media(">=tablet") {
       max-width: calc(#{$content-width} / 2);
-      margin-left: calc(((100vw - #{$content-width}) / 2));
+      margin-left: 0;
+      margin-right: auto;
     }
   }
 
@@ -115,6 +117,9 @@
     }
   }
   @include break($content-width) {
+    &__content {
+      margin-left: calc(((100vw - #{$content-width}) / 2));
+    }
     &.right {
       .fwb__content {
         margin-left: auto;
