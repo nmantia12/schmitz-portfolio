@@ -41,8 +41,8 @@ $button       = get_field( '50_50_button' );
 <div class="<?php echo $className . ' ' . $img_position; ?>" id="<?php echo $id; ?>">
 	<?php if ( 'left' === $img_position ) : ?>
 		<div class="split-content__col">
-			<div class="split-content__image">
-				<img src="<?php echo esc_url( $img ); ?>"/>
+			<div class="split-content__image parallax-effect">
+				<img src="<?php echo esc_url( $img ); ?>" data-parallax="100"/>
 			</div>
 		</div>
 	<?php endif; ?>
@@ -59,12 +59,14 @@ $button       = get_field( '50_50_button' );
 	</div>
 	<?php if ( 'right' === $img_position ) : ?>
 		<div class="split-content__col">
-			<div class="split-content__image">
-				<img src="<?php echo esc_url( $img ); ?>"/>
+			<div class="split-content__image parallax-effect">
+				<img src="<?php echo esc_url( $img ); ?>" data-parallax="250"/>
 			</div>
 		</div>
 	<?php endif; ?>
-	<svg viewBox="0 0 1 1" preserveAspectRation="none">
-		<path d="M 0.05 0.24 C 0.08 0.18 0.13 0.13 0.18 0.09 C 0.29 0.02 0.42 -0.01 0.55 0 C 0.67 0.01 0.8 0.04 0.88 0.14 C 0.89 0.14 0.89 0.14 0.89 0.15 C 0.97 0.23 0.99 0.37 1 0.48 C 1 0.62 0.96 0.78 0.86 0.87 C 0.78 0.95 0.67 0.98 0.56 0.99 C 0.43 1.01 0.29 1 0.18 0.91 C 0.08 0.83 0.02 0.71 0.01 0.58 C -0.01 0.46 0 0.34 0.05 0.24 Z"/>
-	</svg>
+	<div class="svg-wrap parallax-effect">
+		<svg viewBox="0 0 1 1" preserveAspectRation="none" data-parallax="150">
+			<path d="M 0.05 0.24 C 0.08 0.18 0.13 0.13 0.18 0.09 C 0.29 0.02 0.42 -0.01 0.55 0 C 0.67 0.01 0.8 0.04 0.88 0.14 C 0.89 0.14 0.89 0.14 0.89 0.15 C 0.97 0.23 0.99 0.37 1 0.48 C 1 0.62 0.96 0.78 0.86 0.87 C 0.78 0.95 0.67 0.98 0.56 0.99 C 0.43 1.01 0.29 1 0.18 0.91 C 0.08 0.83 0.02 0.71 0.01 0.58 C -0.01 0.46 0 0.34 0.05 0.24 Z"/>
+		</svg>
+	</div>
 </div>

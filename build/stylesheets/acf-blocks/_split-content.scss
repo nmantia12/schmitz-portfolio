@@ -1,6 +1,5 @@
 .split-content {
   position: relative;
-  overflow: hidden;
   z-index: 4;
   padding: 0;
   @include columns-mobile(1, div, 0px);
@@ -22,12 +21,14 @@
     @include media(">=tablet") {
       padding-bottom: rem(200);
 
-      svg {
+      .svg-wrap {
         position: absolute;
         bottom: 0;
         right: 0;
         transform: translateX(75%);
         height: 50%;
+        width: 50%;
+        max-width: rem(585);
         max-height: rem(585);
       }
     }
@@ -55,9 +56,10 @@
 
   &.left {
     padding-top: rem(70);
-    svg {
+    .svg-wrap {
       position: absolute;
       height: rem(140);
+      width: rem(140);
       top: 0;
       left: 50%;
       transform: translateX(-75%);
@@ -81,7 +83,7 @@
     }
   }
 
-  svg {
+  .svg-wrap {
     display: none;
     fill: $orange;
     opacity: 0.9;

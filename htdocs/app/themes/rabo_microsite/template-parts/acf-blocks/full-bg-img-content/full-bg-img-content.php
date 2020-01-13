@@ -20,9 +20,8 @@ $className = 'fwb';
 if ( ! empty( $block['className'] ) ) {
 	$className .= ' ' . $block['className'];
 }
-if ( ! empty( $block['align'] ) ) {
-	$className .= ' alignfull';
-}
+$className .= ' alignfull parallax-effect';
+
 
 // Load values and assign defaults.
 $fw_align   = get_field( 'content_alignment' );
@@ -35,7 +34,7 @@ if ( ! empty( $fw_align ) ) {
 ?>
 
 <div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
-	<img src="<?php echo esc_url( $fw_bg ); ?>"/>
+	<img src="<?php echo esc_url( $fw_bg ); ?>" data-parallax="200"/>
 	<div class="fwb__overlay"></div>
 	<?php if ( $fw_content ) : ?>
 		<div class="fwb__content alignwide">
@@ -49,7 +48,7 @@ if ( ! empty( $fw_align ) ) {
 			</clipPath>
 		</defs>
 	</svg>
-	<div style="clip-path: url(#bee_mask); -webkit-clip-path: url(#bee_mask);" class="fwb__accent">
-		<img src="<?php echo esc_url( $fw_accent ); ?>"/>
+	<div class="fwb__accent parallax-effect">
+		<img style="clip-path: url(#bee_mask); -webkit-clip-path: url(#bee_mask);" src="<?php echo esc_url( $fw_accent ); ?>" data-parallax="500"/>
 	</div>
 </div>
