@@ -70,14 +70,20 @@ nav {
 
   [role="menu"] ul {
     list-style: none;
-    margin: 0;
-    margin-left: $block-margin;
-    padding: 0;
-    width: auto;
+		margin: 0 auto;
+		margin-left: rem(80);
+		padding-left: 0;
 
     @include media("<=tablet") {
-      margin-left: 0;
-    }
+			margin-left: 0;
+			padding-left: rem(15);
+		}
+		@include break(1300px) {
+			margin-left: rem(80);
+		}
+		@include break(1400px) {
+			margin-left: auto;
+		}
   }
 
   [role="menu"] ul li {
@@ -86,9 +92,7 @@ nav {
     float: left;
     clear: both;
   }
-  .menu-secondary-menu-container,
-  .menu-main-menu-container,
-  .menu-main-nav-container,
+
   .main-menu {
     float: left;
     clear: both;
@@ -136,7 +140,7 @@ nav {
   }
 
   [role="menu"] .menu-secondary-menu-container {
-    margin-top: rem(50);
+    margin-top: rem(30);
 
     li {
       margin-top: 0;
@@ -191,7 +195,7 @@ nav {
     overflow: hidden;
     visibility: hidden;
     transition: all 0.5s 0.5s $cubic-ease;
-    background-color: $blue;
+    background-color: $navy;
     transition: all 0.5s 0.25s $cubic-ease;
 
     &.fade {
@@ -260,11 +264,19 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: rem(1300);
-  width: 100%;
+	width: 100%;
+
+	.menu-main-menu-container,
+	.menu-main-nav-container,
+	.menu-secondary-menu-container {
+		@include content-width;
+		max-width: rem(1300);
+		width: 100%;
+	}
 
   @include media("<=tablet") {
     transform: none;
-    top: 80px;
+    top: rem(90);
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -276,7 +288,7 @@ nav {
   }
 
   ul li {
-    padding: 2vh rem(16);
+    padding: 2vh rem(16) 2vh 0;
     background-color: transparent;
     margin-top: 1vh;
 

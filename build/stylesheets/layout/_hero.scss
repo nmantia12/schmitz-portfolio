@@ -2,7 +2,7 @@
   @include fixed-viewport;
   max-width: 100%;
   overflow: hidden;
-  background-color: $blue;
+  background-color: $navy;
 
   @include media(">=tablet") {
     &::before {
@@ -58,10 +58,10 @@
 
   &__overlay {
     z-index: 2;
-    background: linear-gradient(to right, $blue, rgba($blue, 0));
+    background: linear-gradient(to right, $navy, rgba($navy, 0));
 
     @include media("<=tablet") {
-      background: rgba($blue, 0.95);
+      background: rgba($navy, 0.95);
     }
   }
 

@@ -21,10 +21,9 @@
     padding-top: rem(54);
   }
 
-  @include break(1440px) {
-    .site-branding {
-      margin-left: -80px;
-      width: calc(100% + 80px);
-    }
+  @include break(1400px) {
+    .site-logo {
+			margin-left: 0;
+		}
   }
 }
