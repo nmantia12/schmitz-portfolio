@@ -16,7 +16,7 @@
 		const $window = $(window);
 		const sections = block.find(".split-scroll__inner .split-scroll__title");
 		const inner = $(".split-scroll__inner");
-		const sectionSceneDuration = $window.innerHeight() * 2;
+		const sectionSceneDuration = $window.innerHeight();
 		const sceneCount = sections.length;
 		const blockSceneDuration = sectionSceneDuration * sceneCount;
 		const blockSceneHeight =

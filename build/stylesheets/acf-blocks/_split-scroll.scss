@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
 
-  @include media(">=tablet") {
+  @include media(">tablet") {
     height: 100vh;
   }
 
@@ -64,7 +64,7 @@
       border-bottom: 1px solid rgba($grey, 0.3);
     }
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       display: none;
     }
   }
@@ -78,7 +78,7 @@
     background-color: #eef0f0;
     display: none;
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       display: inline-block;
 
       &.fixed {
@@ -88,7 +88,7 @@
       }
     }
   }
-  @include media(">=tablet") {
+  @include media(">tablet") {
     .duration-bar {
       position: fixed;
       top: 0;
@@ -107,10 +107,10 @@
     max-height: 100vh;
     float: right;
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       width: 50%;
     }
-    @include media(">=desktop") {
+    @include media(">desktop") {
       width: 40%;
       &.content {
         width: 60%;
@@ -124,11 +124,11 @@
       overflow: auto;
       padding: $block-margin 0 $block-margin $block-margin;
 
-      @include media(">=tablet") {
+      @include media(">tablet") {
         padding: calc(#{$block-margin} * 3) 0 calc(#{$block-margin} * 2)
           $block-margin;
       }
-      @include media(">=desktop") {
+      @include media(">desktop") {
         padding: rem(90) 0 rem(134) calc(#{$block-margin} * 3);
       }
     }
@@ -142,23 +142,24 @@
     float: right;
     clear: both;
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       padding-right: $block-margin;
       max-width: calc(#{$content-width} * 0.5);
     }
-    @include media(">=desktop") {
+    @include media(">desktop") {
       padding-right: calc(#{$block-margin} * 3);
       max-width: calc(#{$content-width} * 0.6);
     }
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       &.active {
         &:not(:last-child) {
           padding-bottom: rem(70);
         }
 
         .split-scroll__title {
-          margin-top: $block-margin;
+					margin-top: $block-margin;
+					margin-bottom: rem(12);
           position: relative;
           font-size: rem(25);
           font-weight: normal;
@@ -168,11 +169,11 @@
           color: $orange;
           opacity: 1;
 
-          @include media(">=tablet") {
+          @include media(">tablet") {
             margin-top: calc(#{$block-margin} * 2);
           }
 
-          @include media(">=desktop") {
+          @include media(">desktop") {
             margin-top: rem(70);
           }
 
@@ -270,7 +271,7 @@
       order: 2;
     }
 
-    @include media(">=tablet") {
+    @include media(">tablet") {
       .split-scroll__mobile {
         display: inline-block;
         width: 100%;
