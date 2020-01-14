@@ -27,7 +27,7 @@
       position: relative;
       padding-bottom: rem(500);
 
-      @include break($tablet) {
+      @include media(">tablet") {
         padding-bottom: 56.25%;
       }
     }

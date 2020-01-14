@@ -15,6 +15,7 @@
 				<div role="menu" data-menu-origin="left">
 					<img class="menu-close" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/x.svg'; ?>"/>
 					<div class="alignfull overlay-menu-wrap">
+						<div class="menu-center">
 						<?php
 						wp_nav_menu(
 							array(
@@ -31,6 +32,7 @@
 							)
 						);
 						?>
+						</div>
 					</div>
 				</div>
 			</div>

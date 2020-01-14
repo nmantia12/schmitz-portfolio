@@ -25,7 +25,7 @@
     height: auto;
     top: 90px;
 
-    @include break($tablet) {
+    @include media(">tablet") {
       top: auto;
       transform: translateX(-50%) translateY(0) !important;
     }
@@ -33,7 +33,7 @@
     & > * {
       max-width: 100%;
 
-      @include break($tablet) {
+      @include media(">tablet") {
         max-width: 50%;
       }
     }
@@ -50,7 +50,7 @@
   .hero__overlay {
     background: rgba(0, 38, 100, 0.95);
 
-    @include break($tablet) {
+    @include media(">tablet") {
       background: linear-gradient(to top, $navy, rgba($navy, 0));
     }
   }
@@ -62,7 +62,7 @@
   position: relative;
   padding: 0 $block-margin rem(250);
 
-  @include break($tablet) {
+  @include media(">tablet") {
     padding-top: rem(70);
     padding-bottom: rem(250);
     margin-top: 0;

@@ -79,7 +79,9 @@
 
   &__info {
     @include content-width;
-    max-width: rem(1300);
+		max-width: rem(1300);
+		max-height: calc(100vh - 160px);
+		overflow: auto;
     position: absolute;
     top: calc(50% + 60px);
     left: 50%;
@@ -110,14 +112,14 @@
       }
     }
 
-    @include break($tablet) {
+    @include media(">tablet") {
       & > * {
         max-width: 50%;
         margin-left: 0;
       }
     }
 
-    @include break($desktop) {
+    @include media(">desktop") {
       & > * {
         max-width: 33.33%;
         margin-left: 0;
@@ -288,7 +290,7 @@ body.menu-open {
   &:not(.home) {
     .hero__info,
     .hero__body.active .hero__info {
-      @include break($tablet) {
+      @include media(">tablet") {
         left: -100%;
       }
     }

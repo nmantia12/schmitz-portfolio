@@ -73,6 +73,7 @@ nav {
 		margin: 0 auto;
 		margin-left: rem(80);
 		padding-left: 0;
+		width: auto;
 
     @include media("<=tablet") {
 			margin-left: 0;
@@ -83,6 +84,7 @@ nav {
 		}
 		@include break(1400px) {
 			margin-left: auto;
+			width: 100%;
 		}
   }
 
@@ -259,33 +261,29 @@ nav {
 }
 
 .overlay-menu-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: rem(1300);
-	width: 100%;
+	position: absolute;
+	transform: none;
+	top: rem(90);
+	bottom: 0;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
+	left: 0;
+	max-height: calc(100vh - 90px);
+	overflow: auto;
 
-	.menu-main-menu-container,
-	.menu-main-nav-container,
-	.menu-secondary-menu-container {
+	.menu-center {
 		@include content-width;
 		max-width: rem(1300);
 		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
-
-  @include media("<=tablet") {
-    transform: none;
-    top: rem(90);
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    max-height: calc(100vh - 80px);
-    overflow: auto;
-  }
 
   ul li {
     padding: 2vh rem(16) 2vh 0;
