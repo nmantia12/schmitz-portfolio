@@ -121,7 +121,8 @@ jQuery(document).ready(function ($) {
 				height: "auto",
 				overflow: "visible"
 			});
-			if (!$('body').hasClass('home')) {
+
+			if (!$(".hero__body").hasClass('active')) {
 				$(".hero__body").removeClass("active");
 				$(".hero__body.initial").addClass("active");
 					var heroVideos = $(".hero__body.initial .hero__video");

@@ -302,7 +302,13 @@ body.menu-open {
       transition: 0.5s $cubic-ease;
       opacity: 0.6;
     }
-  }
+	}
+
+	.main-navigation [data-opens-menu] {
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.5s $cubic-ease;
+	}
 
   @include media("<=tablet") {
     nav [data-opens-menu] {

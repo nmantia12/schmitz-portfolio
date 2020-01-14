@@ -111,7 +111,19 @@ nav {
     svg {
       display: block;
     }
-  }
+	}
+	[data-opens-menu] {
+		position: fixed;
+		right: auto;
+		top: rem(48);
+		left: rem(25);
+
+		@include media("<=tablet") {
+			top: rem(54);
+			right: rem(25);
+			left: auto;
+		}
+	}
   [role="menu"] a {
     font-size: rem(37);
     font-weight: 300;
@@ -349,7 +361,13 @@ body.home {
         &:hover::after {
           width: 100%;
         }
-      }
+			}
+			&.current_page_item,
+			&.current-menu-item {
+				a::after {
+					width: 100%;
+				}
+			}
     }
   }
 }
