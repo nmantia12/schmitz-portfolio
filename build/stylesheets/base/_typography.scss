@@ -40,7 +40,7 @@ p {
   padding: 0;
   font-family: $sans;
   font-weight: 300;
-  color: $grey;
+  color: rgba($grey, .5);
 
   &:last-child {
     margin-bottom: 0;

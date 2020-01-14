@@ -2,7 +2,7 @@
   display: none;
 }
 .site-footer {
-  background: #001e50;
+  background: $navy;
   font-size: rem(15);
   font-weight: normal;
   font-style: normal;
@@ -10,7 +10,7 @@
   letter-spacing: -0.15px;
 
   @include media("<medium") {
-    background: $blue;
+    background: $navy;
   }
 
   .site-info {
