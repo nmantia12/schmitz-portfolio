@@ -79,9 +79,9 @@
 
   &__info {
     @include content-width;
-		max-width: rem(1300);
-		max-height: calc(100vh - 160px);
-		overflow: auto;
+    max-width: rem(1300);
+    max-height: calc(100vh - 160px);
+    overflow: auto;
     position: absolute;
     top: calc(50% + 60px);
     left: 50%;
@@ -262,6 +262,10 @@
 }
 
 body.menu-open {
+  // .hero {
+  //   position: fixed !important;
+  //   z-index: 99;
+  // }
   .hero__info,
   .hero__body.active .hero__info {
     $neg_left: calc(
@@ -304,13 +308,13 @@ body.menu-open {
       transition: 0.5s $cubic-ease;
       opacity: 0.6;
     }
-	}
+  }
 
-	.main-navigation [data-opens-menu] {
-		pointer-events: none;
-		opacity: 0;
-		transition: opacity 0.5s $cubic-ease;
-	}
+  .main-navigation [data-opens-menu] {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s $cubic-ease;
+  }
 
   @include media("<=tablet") {
     nav [data-opens-menu] {

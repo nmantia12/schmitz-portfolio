@@ -1,6 +1,32 @@
 // Document ready
 // eslint-disable-next-line no-undef
 jQuery(document).ready(function ($) {
+	var scrollTop, scrollLeft;
+
+	const disableScroll = () => {
+		// scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		// scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+		// if any scroll is attempted,
+		// set this to the previous value
+		// window.onscroll = function () {
+		// 	window.scrollTo(scrollLeft, scrollTop);
+		// };
+
+		$('body, html').css({
+			overflow: 'hidden'
+		});
+	}
+
+	const enableScroll = () => {
+		// console.log(scrollLeft, scrollTop);
+
+		// window.onscroll = function () {};
+		// window.scrollTo(scrollLeft, scrollTop);
+		$("body, html").css({
+			overflow: "auto"
+		});
+
+	}
 
 	const removeActiveHeros = () => {
 		$(".hero__tab, nav [role='menu'] li, .hero__body").removeClass("active");
@@ -112,17 +138,11 @@ jQuery(document).ready(function ($) {
 		$('nav [role="menu"]').removeClass("fade");
 		$('nav [role="menu"] li').removeClass("active");
 		if ($('body').hasClass('menu-open')) {
-			$("body").css({
-        height: "100vh",
-        overflow: "hidden"
-      });
+			disableScroll();
 		} else {
-			$("body").css({
-				height: "auto",
-				overflow: "visible"
-			});
+			enableScroll();
 
-			if (!$(".hero__body").hasClass('active')) {
+			if (!$('body').hasClass('home') || !$(".hero__body").hasClass('active')) {
 				$(".hero__body").removeClass("active");
 				$(".hero__body.initial").addClass("active");
 					var heroVideos = $(".hero__body.initial .hero__video");

@@ -75,6 +75,9 @@ function register_acf_block_types() {
 		'large-quote'         => [
 			'title' => 'Large Quote',
 		],
+		'small-quote'         => [
+			'title' => 'Standard Quote',
+		],
 		'parallax-image'      => [
 			'title' => 'Parallax Image',
 		],
