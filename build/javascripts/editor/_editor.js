@@ -24,7 +24,8 @@ wp.domReady(() => {
     "acf/full-bg-img-content",
     "acf/image-slider",
     "acf/split-content",
-    "acf/responsive-spacer"
+		"acf/responsive-spacer",
+		"acf/small-quote"
 	];
 
 	wp.blocks.getBlockTypes().forEach(function(blockType) {
