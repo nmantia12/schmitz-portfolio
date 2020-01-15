@@ -56,36 +56,36 @@
       right: 0;
       z-index: 1;
       object-fit: cover;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      // filter: grayscale(100%);
       width: 100%;
       height: 100%;
       max-width: none;
     }
 
-    .overlay {
-      background-color: $orange;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0.9;
-      mix-blend-mode: multiply;
-      z-index: 2;
+    // .overlay {
+    //   background-color: $orange;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   opacity: 0.9;
+    //   mix-blend-mode: multiply;
+    //   z-index: 2;
 
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        display: none;
-      }
+    //   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //     display: none;
+    //   }
 
-      @supports (-ms-accelerator: true) {
-        display: none;
-      }
+    //   @supports (-ms-accelerator: true) {
+    //     display: none;
+    //   }
 
-      @supports (-ms-ime-align: auto) {
-        display: none;
-      }
-    }
+    //   @supports (-ms-ime-align: auto) {
+    //     display: none;
+    //   }
+    // }
   }
   @include media("<tablet") {
     &__img-wrap {

@@ -30,7 +30,9 @@ if ( $is_preview ) {
 if ( have_rows( 'split_scrolling_sections' ) ) :
 	?>
 	<div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
-		<div class="duration-bar"></div>
+		<div class="duration-bar-wap">
+			<div class="duration-bar"></div>
+		</div>
 		<div class="split-scroll__mobile">
 			<?php
 			while ( have_rows( 'split_scrolling_sections' ) ) :

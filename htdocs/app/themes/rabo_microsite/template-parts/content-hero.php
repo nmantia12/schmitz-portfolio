@@ -42,11 +42,6 @@
 			if ( $hero_description ) :
 				echo '<h2>' . $hero_description . '</h2>';
 			endif;
-
-			// link
-			if ( $hero_link && is_front_page() ) :
-				echo '<a class="button button__inline" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
-			endif;
 			?>
 		</div>
 	</div>

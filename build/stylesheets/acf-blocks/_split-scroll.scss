@@ -89,13 +89,22 @@
     }
   }
   @include media(">tablet") {
-    .duration-bar {
+    .duration-bar-wap {
       position: fixed;
       top: 0;
-      height: rem(5);
       left: 0;
-      background-color: $blue;
+      height: rem(8);
+      width: 50%;
       z-index: 999;
+      overflow: hidden;
+    }
+
+    .duration-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: rem(8);
+      background-color: $orange;
       transition: all 0.25s $cubic-ease;
     }
   }
@@ -110,12 +119,6 @@
     @include media(">tablet") {
       width: 50%;
     }
-    @include media(">desktop") {
-      width: 40%;
-      &.content {
-        width: 60%;
-      }
-    }
 
     &.content {
       position: absolute;
@@ -125,10 +128,6 @@
       padding: $block-margin 0 $block-margin $block-margin;
 
       @include media(">tablet") {
-        padding: calc(#{$block-margin} * 3) 0 calc(#{$block-margin} * 2)
-          $block-margin;
-      }
-      @include media(">desktop") {
         padding: rem(90) 0 rem(134) calc(#{$block-margin} * 3);
       }
     }
@@ -143,7 +142,7 @@
     clear: both;
 
     @include media(">tablet") {
-      padding-right: $block-margin;
+      padding-right: calc(#{$block-margin} * 2);
       max-width: calc(#{$content-width} * 0.5);
     }
     @include media(">desktop") {
@@ -158,14 +157,15 @@
         }
 
         .split-scroll__title {
-					margin-top: $block-margin;
-					margin-bottom: rem(12);
+          margin-top: $block-margin;
+          margin-bottom: rem(12);
           position: relative;
           font-size: rem(25);
           font-weight: normal;
           line-height: 1.4;
           letter-spacing: -0.25px;
           text-align: left;
+          text-transform: unset;
           color: $orange;
           opacity: 1;
 
@@ -213,6 +213,7 @@
     letter-spacing: 1.2px;
     text-align: left;
     color: $grey;
+    text-transform: uppercase;
     transition: all 0.5s $cubic-ease;
     transition-property: opacity, color;
   }

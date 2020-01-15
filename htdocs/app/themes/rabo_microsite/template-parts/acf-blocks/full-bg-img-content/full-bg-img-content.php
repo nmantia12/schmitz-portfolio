@@ -34,7 +34,7 @@ if ( ! empty( $fw_align ) ) {
 ?>
 
 <div class="<?php echo $className; ?>" id="<?php echo $id; ?>">
-	<img class="fwb__img" src="<?php echo esc_url( $fw_bg ); ?>" data-parallax="200"/>
+	<img class="fwb__img" src="<?php echo esc_url( $fw_bg ); ?>" data-parallax="50"/>
 	<div class="fwb__overlay"></div>
 	<?php if ( $fw_content ) : ?>
 		<div class="fwb__content alignwide">
@@ -49,6 +49,6 @@ if ( ! empty( $fw_align ) ) {
 		</defs>
 	</svg>
 	<div class="fwb__accent parallax-effect">
-		<img style="clip-path: url(#bee_mask); -webkit-clip-path: url(#bee_mask);" src="<?php echo esc_url( $fw_accent ); ?>" data-parallax="500"/>
+		<img style="clip-path: url(#bee_mask); -webkit-clip-path: url(#bee_mask);" src="<?php echo esc_url( $fw_accent ); ?>" data-parallax="50"/>
 	</div>
 </div>

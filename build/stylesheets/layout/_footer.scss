@@ -57,20 +57,12 @@
       }
       &::before {
         left: 0;
-        background-image: linear-gradient(
-          to right,
-          #002664,
-          rgba(0, 38, 100, 0) 92%
-        );
+        background-image: linear-gradient(to right, $navy, rgba($navy, 0) 92%);
         width: 50px;
       }
       &::after {
         right: 0;
-        background-image: linear-gradient(
-          to left,
-          #002664,
-          rgba(0, 38, 100, 0) 92%
-        );
+        background-image: linear-gradient(to left, $navy, rgba($navy, 0) 92%);
       }
     }
   }
