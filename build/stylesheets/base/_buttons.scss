@@ -1,4 +1,4 @@
-.button {
+.pc_button {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -88,5 +88,12 @@
         contain;
       background-size: 15px 12px;
     }
+  }
+}
+.button-block {
+  text-align: center;
+
+  .pc_button {
+    margin: 0 auto;
   }
 }

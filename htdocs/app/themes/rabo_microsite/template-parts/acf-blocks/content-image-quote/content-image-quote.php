@@ -56,7 +56,7 @@ $CIQ_headshot = get_field( 'ciq_author_headshot' );
 	<?php endif; ?>
 	<?php if ( $CIQ_button ) : ?>
 		<div class="ciq__button-wrap">
-			<a class="button" href="<?php echo $CIQ_button['url']; ?>" <?php echo $CIQ_button['target'] ? $CIQ_button['target'] : ''; ?>><?php echo $CIQ_button['title']; ?></a>
+			<a class="pc_button" href="<?php echo $CIQ_button['url']; ?>" <?php echo $CIQ_button['target'] ? $CIQ_button['target'] : ''; ?>><?php echo $CIQ_button['title']; ?></a>
 		</div>
 	<?php endif; ?>
 	<?php if ( $CIQ_quote ) : ?>

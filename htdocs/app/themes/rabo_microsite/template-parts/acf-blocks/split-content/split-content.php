@@ -53,7 +53,7 @@ $button       = get_field( '50_50_button' );
 			<?php endif; ?>
 			<p class="split-content__content"><?php echo $copy; ?></p>
 			<?php if ( $button ) : ?>
-				<a class="button" href="<?php echo $button['url']; ?>" <?php echo $button['target'] ? $button['target'] : ''; ?>><?php echo $button['title']; ?></a>
+				<a class="pc_button" href="<?php echo $button['url']; ?>" <?php echo $button['target'] ? $button['target'] : ''; ?>><?php echo $button['title']; ?></a>
 			<?php endif; ?>
 		</div>
 	</div>

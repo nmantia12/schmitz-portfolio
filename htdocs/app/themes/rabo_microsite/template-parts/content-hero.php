@@ -97,7 +97,7 @@ if ( $menu_array ) :
 
 						// link
 						if ( $hero_link && is_front_page() ) :
-							echo '<a class="button button__inline" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
+							echo '<a class="pc_button pc_button__inline" href="' . esc_url( $hero_link ) . '">' . __( 'Learn More', 'para_theme' ) . '</a>';
 						endif;
 						?>
 					</div>

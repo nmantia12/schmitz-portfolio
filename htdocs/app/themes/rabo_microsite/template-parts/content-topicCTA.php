@@ -51,7 +51,7 @@ if ( $next_id ) :
 
 			if ( $topic_cta_link ) :
 				?>
-				<a class="button button__white" href="<?php echo $topic_cta_link; ?>">Learn More</a>
+				<a class="pc_button pc_button__white" href="<?php echo $topic_cta_link; ?>">Learn More</a>
 			<?php endif; ?>
 		</div>
 	</div>

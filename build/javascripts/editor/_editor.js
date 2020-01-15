@@ -10,7 +10,6 @@ wp.domReady(() => {
     "core/freeform",
     "core/heading",
     "core/list",
-    "core/button",
     "core/separator",
     "core/columns",
     "core/column",
@@ -25,7 +24,8 @@ wp.domReady(() => {
     "acf/image-slider",
     "acf/split-content",
 		"acf/responsive-spacer",
-		"acf/small-quote"
+		"acf/small-quote",
+		"acf/button"
 	];
 
 	wp.blocks.getBlockTypes().forEach(function(blockType) {
