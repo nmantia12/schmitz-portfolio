@@ -1,8 +1,8 @@
 ![Paradowski Creative](/pc_logo.svg?raw=true "Paradowski Creative")
 
-# Wordpress Project - Base Install: Beaver Builder
+# Wordpress Project - Base Install: Gutenberg
 
-The hope of this repository is to have standard starting point when beginning a Wordpress project at Paradowski Creative. We will strive to follow the best practices to enable semantic, performant, and accessible websites. The Beaver Builder can be used as a page builder instead of Gutenberg and tooling should reflect that.
+The hope of this repository is to have standard starting point when beginning a Wordpress project at Paradowski Creative. We will strive to follow the best practices to enable semantic, performant, and accessible websites.
 
 ## Documentation
 
