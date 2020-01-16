@@ -13,7 +13,7 @@ const OUTPUT_DIRECTORY = `htdocs${publicPath}`;
 // grab environment name from .env
 const ENV = require('dotenv').config()
 const WP_ENV = process.env.WP_ENV || 'local'
-const WP_HOME = process.env.WP_HOME || "http://localhost:9008"
+const WP_HOME = process.env.WP_HOME || "http://localhost:9001"
 
 const PROXY_URL = WP_HOME
 
@@ -38,7 +38,7 @@ const plugins = [
 
 	new BrowserSyncPlugin({
 		host: 'localhost',
-		port: 9008,
+		port: 9001,
 		proxy: PROXY_URL,
 		files: ['**/**/**/**/*.php'],
 		reloadDelay: 0
