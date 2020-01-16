@@ -13,19 +13,6 @@ wp.domReady(() => {
     "core/separator",
     "core/columns",
     "core/column",
-    "acf/large-quote",
-    "acf/parallax-image",
-    "acf/fact-circle",
-    "acf/split-scroll",
-    "acf/content-image-quote",
-    "acf/infographic",
-    "acf/video-modal",
-    "acf/full-bg-img-content",
-    "acf/image-slider",
-    "acf/split-content",
-		"acf/responsive-spacer",
-		"acf/small-quote",
-		"acf/button"
 	];
 
 	wp.blocks.getBlockTypes().forEach(function(blockType) {

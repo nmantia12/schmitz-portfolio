@@ -83,10 +83,4 @@ $(function () {
     });
   });
 
-		var topicVideos = $(".topic-cta__video");
-    topicVideos.each(function(index) {
-      $(this)
-        .get(0)
-        .play();
-    });
 });

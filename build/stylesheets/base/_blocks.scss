@@ -23,13 +23,13 @@
   &.alignleft {
     /*rtl:ignore*/
     float: left;
-    margin: 0 $block-margin $block-margin 0;
+    margin: 0 $default-padding $default-padding 0;
   }
 
   &.alignright {
     /*rtl:ignore*/
     float: right;
-    margin: 0 0 $block-margin $block-margin;
+    margin: 0 0 $default-padding $default-padding;
   }
 
   &.aligncenter {
@@ -44,7 +44,7 @@
 }
 
 .entry-content {
-  padding: 0px $block-margin;
+  padding: 0px $default-padding;
 
   ul,
   ol {
@@ -142,7 +142,7 @@ blockquote.wp-block-quote {
 
   &.is-large,
   &.is-style-large {
-    margin: calc(2 * $block-margin) auto;
+    margin: calc(2 * $default-padding) auto;
 
     p {
       @include font-sizes(24, 36);
@@ -237,7 +237,7 @@ figcaption {
   border-collapse: collapse;
   width: 100%;
   max-width: $grid-width;
-  margin-bottom: $block-margin;
+  margin-bottom: $default-padding;
 
   th,
   td {

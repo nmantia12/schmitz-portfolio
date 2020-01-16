@@ -8,12 +8,12 @@ $desktop4k: 2559px;
 
 // Content
 $content-width: 1300px;
-$block-margin: 25px;
+$default-padding: 25px;
 
 // Grid
 $grid-width: $desktop;
-$grid-gap: 32px;
-$base-margin: $block-margin;
+$grid-gap: $default-padding;
+$base-margin: $default-padding;
 $wrap_edge: $base-margin;
 $margin_2x: $base-margin * 2;
 $margin_4x: $base-margin * 4;

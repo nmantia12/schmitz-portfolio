@@ -15,7 +15,7 @@ If you've never used a PC Wordpress project before, please refer to the "Install
 To create a Wordpress project, you just need to:
 
 1. Get a copy of this repo to your computer. Rename the directory to match your new project: `git clone git@bitbucket.org:paradowskicreative/wp-base-install.git <name>`.
-2. Run a search and replace for `rabo_microsite` to your new project's name. This is also the name of the theme.
+2. Run a search and replace for `wp_base_install_gutenberg` to your new project's name. This is also the name of the theme.
 3. Duplicate and remove the extension `.example` on all config files found and update to your new project's configurations.
 4. Run `npm run setup` to install dependencies and `docker compose up -d` to turn on the virtual machine on your computer!
 
