@@ -20,10 +20,10 @@
     arrows: true,
     vertical: false,
     prevArrow:
-      "<button type='button' class='slick-prev'><img src='/app/themes/rabo_microsite/assets/img/left_arrow.svg'/></button>",
+      "<button type='button' class='slick-prev'><img src='/app/themes/wp_base_install_gutenberg/assets/img/left_arrow.svg'/></button>",
     nextArrow:
-      "<button type='button' class='slick-next'><img src='/app/themes/rabo_microsite/assets/img/right_arrow.svg'/></button>"
-	};
+      "<button type='button' class='slick-next'><img src='/app/themes/wp_base_install_gutenberg/assets/img/right_arrow.svg'/></button>"
+  };
 
   var initializeBlock = function($block) {
     $block.find(".image-slider").slick(sliderSettings);
