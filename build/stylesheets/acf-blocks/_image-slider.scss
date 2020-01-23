@@ -16,10 +16,6 @@
 .image-slider {
   position: relative;
 
-  @include media(">=tablet") {
-    padding: 0 $block-margin;
-  }
-
   &__image {
     position: relative;
     padding-bottom: 56.25%;
