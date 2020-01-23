@@ -1,0 +1,103 @@
+.pc_button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: $blue;
+  background: transparent;
+  border: 1.5px solid $blue;
+  padding: 8.5px 32px;
+  margin-right: rem(43);
+  font-size: rem(17);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.17px;
+  text-align: center;
+  transition: all 0.5s $cubic-ease;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1.5px;
+    width: rem(44);
+    height: calc(100% + 3px);
+    right: rem(-43.5);
+    background: url("../img/button_arrow_teal.svg") no-repeat center center /
+      contain;
+    background-size: 15px 12px;
+    border: 1.5px solid $blue;
+    transition: all 0.5s $cubic-ease;
+  }
+
+  &:focus {
+    color: white;
+  }
+
+  &:hover {
+    background: $blue;
+    border-color: $blue;
+    color: white;
+
+    &::after {
+      border-color: $teal;
+      background: url("../img/button_arrow.svg") no-repeat center center /
+        contain;
+      background-color: $teal;
+      background-size: 15px 12px;
+    }
+  }
+
+  &__inline {
+    background: transparent;
+    border: none;
+    font-size: rem(17);
+    line-height: rem(24);
+    padding: 0;
+    margin-right: rem(25);
+
+    &::after {
+      background: transparent;
+      border: none;
+      background: url("../img/button_arrow_teal.svg") no-repeat center center /
+        contain;
+      width: rem(15);
+      height: rem(12);
+      top: 50%;
+      right: rem(-25);
+      transform: translateY(-50%);
+      margin-top: 1px;
+    }
+
+    &:hover {
+      color: $teal;
+      background-color: transparent;
+
+      &::after {
+        background-color: transparent;
+        right: -30px;
+        background: url("../img/button_arrow_teal.svg") no-repeat center center /
+          contain;
+        background-size: 15px 12px;
+      }
+    }
+  }
+
+  &__white {
+    border-color: white;
+
+    &::after {
+      border-color: white;
+      background: url("../img/button_arrow.svg") no-repeat center center /
+        contain;
+      background-size: 15px 12px;
+    }
+  }
+}
+.button-block {
+  text-align: center;
+
+  .pc_button {
+    margin: 0 auto;
+  }
+}
