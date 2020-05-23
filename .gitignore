@@ -16,8 +16,8 @@ sql-dump-*.sql
 
 # generated files
 # /dist
-htdocs/app/themes/wp_base_install_gutenberg/assets/js/*.js
-htdocs/app/themes/wp_base_install_gutenberg/assets/css/*.css
+htdocs/app/themes/schmitz_portfolio/assets/js/*.js
+htdocs/app/themes/schmitz_portfolio/assets/css/*.css
 
 # Application
 htdocs/app/plugins/*

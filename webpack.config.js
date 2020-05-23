@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
-const THEME_NAME = 'wp_base_install_gutenberg'
+const THEME_NAME = 'schmitz_portfolio'
 const publicPath = `/app/themes/${THEME_NAME}/assets/js/`
 const OUTPUT_DIRECTORY = `htdocs${publicPath}`;
 

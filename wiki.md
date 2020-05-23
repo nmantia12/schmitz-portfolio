@@ -33,7 +33,7 @@ This project's technology stack is a Linux, (E)nginx, MySQL, PHP (LEMP) stack bu
 **If you have the above installed, follow these steps to install the site locally:**
 
 1. Clone this repo into `www/domains` directory and `cd` into the new directory.
-1. In your code editor do a search and replace for `wp_base_install_gutenberg` and replace with a short name for the project, ie: `prosoco.com`, `12footbeard.com`.
+1. In your code editor do a search and replace for `schmitz_portfolio` and replace with a short name for the project, ie: `prosoco.com`, `12footbeard.com`.
 1. Copy the `.env.example` file and rename to `.env`, fill in database credentials.
 1. Copy the `.environments.json.example` file and rename to `.environments.json`, nothing needs to change in this file. This file is used for tooling tasks.
 1. Copy the `docker-compose.yml.example` file and rename to `docker-compose.yml`, nothing needs to change in this file. This file describes the virtual machine Docker will create.
@@ -85,7 +85,7 @@ This project's technology stack is a Linux, (E)nginx, MySQL, PHP (LEMP) stack bu
 
 ### Passwords
 
-All associated passwords can be found using the search term 'wp_base_install_gutenberg' in LastPass. If you are adding new passwords, please make sure 'wp_base_install_gutenberg' is contained somewhere in the title so that this rule can remain true.
+All associated passwords can be found using the search term 'schmitz_portfolio' in LastPass. If you are adding new passwords, please make sure 'schmitz_portfolio' is contained somewhere in the title so that this rule can remain true.
 
 ### Known Issues / Room for Improvement
 

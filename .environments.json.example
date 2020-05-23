@@ -1,21 +1,21 @@
 {
   "LOCAL": {
-    "connect": "wp_base_install_gutenberg_wordpress",
+    "connect": "schmitz_portfolio_wordpress",
     "root_directory": "/var/www",
     "url": "http://localhost:9000"
   },
   "QA": {
     "connect": "pcrw@indium.server.paradowski.com",
-    "root_directory": "/var/www/domains/parado.cz/wp_base_install_gutenberg",
-    "asset_path": "htdocs/app/themes/wp_base_install_gutenberg/assets",
-    "url": "https://wp_base_install_gutenberg.parado.cz",
-    "db_name": "wp_base_install_gutenberg_db"
+    "root_directory": "/var/www/domains/parado.cz/schmitz_portfolio",
+    "asset_path": "htdocs/app/themes/schmitz_portfolio/assets",
+    "url": "https://schmitz_portfolio.parado.cz",
+    "db_name": "schmitz_portfolio_db"
   },
   "PROD": {
     "connect": "pcrw@tin.server.paradowski.com",
-    "root_directory": "/var/www/domains/wp_base_install_gutenberg",
-    "asset_path": "htdocs/app/themes/wp_base_install_gutenberg/assets",
+    "root_directory": "/var/www/domains/schmitz_portfolio",
+    "asset_path": "htdocs/app/themes/schmitz_portfolio/assets",
     "url": "http://unitedinsustainability.farm",
-    "db_name": "wp_base_install_gutenberg_db"
+    "db_name": "schmitz_portfolio_db"
   }
 }

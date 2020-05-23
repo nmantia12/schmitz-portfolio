@@ -1,7 +1,7 @@
 # Javascript Dependencies
 
 ```{
-  "name": "wp_base_install_gutenberg",
+  "name": "schmitz_portfolio",
   "version": "1.0.0",
   "description": "WP Base Install Javascript Dependencies",
   "main": "index.js",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/paradowskicreative/wp_base_install_gutenberg.git"
+    "url": "git+https://bitbucket.org/paradowskicreative/schmitz_portfolio.git"
   },
   "jest": {
     "verbose": true,
@@ -44,7 +44,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/paradowskicreative/wp_base_install_gutenberg#readme",
+  "homepage": "https://bitbucket.org/paradowskicreative/schmitz_portfolio#readme",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
