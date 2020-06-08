@@ -113,7 +113,7 @@ $lowest_break: 0;
  */
 @mixin columns($columns, $grid_item_element: article, $gap: null) {
   @if ($gap == null) {
-    $gap: $grid-gap;
+    $gap: 20px;
   }
 
   & > #{$grid_item_element} {

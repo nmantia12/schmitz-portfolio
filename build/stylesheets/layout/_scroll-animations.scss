@@ -1,0 +1,20 @@
+.slide-in,
+.grid article {
+  opacity: 0;
+  transform: translateY(45px) scale(.9);
+  transition: all 1.5s 0.25s $cubic-ease;
+
+  @for $i from 0 to 50 {
+    &:nth-child(#{$i}):not(.alignfull):not(.alignwide) {
+      transition-delay: #{($i * 0.1) + 0.25}s;
+    }
+  }
+  &.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.scroll-animate__scale {
+  transform: scale(1.5);
+  transition: all 3s $cubic-ease !important;
+}

@@ -1,6 +1,3 @@
-.home .site-footer {
-  display: none;
-}
 .site-footer {
   background: $navy;
   font-size: rem(15);
@@ -18,11 +15,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: $gap-sm $gap-md;
 
     @include media("<medium") {
-      flex-direction: column;
+			flex-direction: column;
+			padding: $gap-sm;
     }
   }
 
@@ -86,11 +83,11 @@
     li {
       display: inline-block;
       width: auto;
-      margin-left: rem(40);
+      margin-left: rem(16);
 
       @include media("<medium") {
         margin-left: 0;
-        padding: 0 rem(20);
+        padding: 0 rem(16);
       }
 
       a {

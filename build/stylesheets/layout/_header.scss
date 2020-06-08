@@ -1,0 +1,49 @@
+$headerHeight: 80px;
+
+.site-header {
+	height: $headerHeight;
+	overflow: hidden;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.33);
+}
+.site-branding {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 $gap-sm;
+	align-items: center;
+
+	@include media('>=tablet') {
+		padding: 0 $gap-md;
+	}
+}
+
+.menu-right {
+	display: flex;
+	align-items: center;
+}
+.site-logo {
+	padding: 10px 0;
+}
+.site-logo img {
+	width: 142px;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+.main-menu {
+	display: flex;
+}
+.main-menu li {
+	display: inline-block;
+	width: auto;
+	margin-right: 16px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.menu-close {
+	width: 20px;
+	display: none;
+}

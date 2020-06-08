@@ -4,15 +4,20 @@ wp.domReady(() => {
 	wp.blocks.unregisterBlockStyle("core/button", "squared");
 
 	var allowedBlocks = [
-		"core/paragraph",
-		"core/image",
-		"core/html",
-		"core/freeform",
-		"core/heading",
+    "core/paragraph",
+    "core/image",
+    "core/html",
+    "core/freeform",
+    "core/heading",
+    "core/list",
+    "core/separator",
+    "core/columns",
+		"core/column",
 		"core/list",
-		"core/separator",
-		"core/columns",
-		"core/column"
+		"core/shortcode",
+		'core/block',
+		'core/group',
+		"gravityforms/block"
 	];
 
 	wp.blocks.getBlockTypes().forEach(function (blockType) {

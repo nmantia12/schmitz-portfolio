@@ -1,0 +1,5 @@
+.grid {
+	@include columns(3);
+	max-width: $content-width;
+	margin: 0 auto;
+}

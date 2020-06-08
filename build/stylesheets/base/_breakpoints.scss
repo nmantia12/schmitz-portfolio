@@ -8,15 +8,18 @@ $desktop4k: 2559px;
 
 // Content
 $content-width: 1300px;
-$default-padding: 25px;
+$default-padding: 20px;
+$gap-sm: 20px;
+$gap-md: 50px;
+$gap-lg: 80px;
 
 // Grid
 $grid-width: $desktop;
 $grid-gap: $default-padding;
 $base-margin: $default-padding;
 $wrap_edge: $base-margin;
-$margin_2x: $base-margin * 2;
-$margin_4x: $base-margin * 4;
+// $margin_2x: $base-margin * 2;
+// $margin_4x: $base-margin * 4;
 
 // Include Media
 $breakpoints: (

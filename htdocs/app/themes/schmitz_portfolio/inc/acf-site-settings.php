@@ -72,6 +72,41 @@ function register_acf_block_types() {
 				'align' => false,
 			],
 		],
+		'hero'            => [
+			'title' => 'Hero Section',
+			'align'          => 'full',
+			'supports'       => [
+				'align' => [ 'full' ],
+			],
+		],
+		'masonry-grid'            => [
+			'title' => 'Masonry Grid',
+			'align'          => 'none',
+			'supports'       => [
+				'align' => '',
+			],
+		],
+		'card-grid'            => [
+			'title' => 'Card Grid',
+			'align'          => 'none',
+			'supports'       => [
+				'align' => '',
+			],
+		],
+		'vimeo-feed'            => [
+			'title' => 'Vimeo Feed',
+			'align'          => 'none',
+			'supports'       => [
+				'align' => '',
+			],
+		],
+		'youtube-feed'            => [
+			'title' => 'Youtube Feed',
+			'align'          => 'none',
+			'supports'       => [
+				'align' => '',
+			],
+		],
 		'button'            => [
 			'title' => 'Button',
 		],

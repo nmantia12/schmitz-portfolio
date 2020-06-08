@@ -1,0 +1,49 @@
+article {
+	margin-bottom: 20px;
+
+	&.type-post {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		border-radius: 24px;
+		padding-bottom: $gap-md;
+		box-shadow: 0 2px 15px -3px rgba(0,0,0,0.20);
+
+		img {
+			border-top-left-radius: 24px;
+			border-top-right-radius: 24px;
+		}
+	}
+
+	.entry-header,
+	.entry-summary,
+	.entry-footer {
+		padding: 0 $gap-sm;
+		margin-bottom: 8px;
+	}
+	.entry-footer {
+		margin-bottom: 0;
+	}
+
+	.post-thumbnail {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+		margin-bottom: $gap-md;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+	// .entry {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	flex-direction: column;
+	// }
+}

@@ -44,7 +44,17 @@
 }
 
 .entry-content {
-  padding: 0px $default-padding;
+	perspective: 200px;
+	width: 100%;
+	// max-width: $content-width;
+	margin: 0 auto;
+	padding: 0px $gap-sm;
+	padding-bottom: $gap-md;
+
+	@include media(">=tablet") {
+		padding: 0px $gap-md;
+		padding-bottom: $gap-lg;
+	}
 
   ul,
   ol {

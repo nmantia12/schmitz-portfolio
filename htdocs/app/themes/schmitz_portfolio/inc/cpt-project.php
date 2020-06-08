@@ -8,8 +8,10 @@ $options = [
 		'thumbnail',
 		'revisions'
 	],
-	'rewrite'		 => [
-		'with_front' => true,
+	'has_archive' => true,
+	'rewrite' => [
+		'slug' => 'projects',
+		'with_front' => false
 	],
 	'show_in_rest' => true,
 ];
