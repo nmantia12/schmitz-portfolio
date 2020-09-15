@@ -7,16 +7,25 @@
 	border-bottom-left-radius: 24px;
 	border-bottom-right-radius: 24px;
 	overflow: hidden;
-	opacity: 0;
-	transform: scaleX(.9) scaleY(1.2) rotateX(-2deg);
-	transition: all 1.5s 0.25s $cubic-ease;
-	transform-origin: top;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.33);
 
-  &.active {
-		transform: scaleX(1) scaleY(1) rotateX(0);
-    opacity: 1;
+	&:not(.is-admin) {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all 1.5s 0.25s $cubic-ease;
+		transform-origin: center;
+
+		&.active {
+			transform: translateY(0);
+			opacity: 1;
+		}
 	}
 
+	&__title,
+	&__des,
+	&__date {
+		color: white;
+	}
 
 	&__title,
 	&__des,
@@ -42,6 +51,11 @@
 	z-index: 1;
 // border-radius: 24px;
 }
-.pc_block {
 
+.hero-wrap {
+	padding: 0 $gap-sm;
+
+	@include media('>=tablet') {
+		padding: 0 $gap-md;
+	}
 }

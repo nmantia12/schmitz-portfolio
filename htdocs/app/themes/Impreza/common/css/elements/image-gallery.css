@@ -1,0 +1,43 @@
+/* 
+ * Gallery
+ */
+
+.w-gallery:not(:last-child) {
+	margin-bottom: 1.5rem;
+	}
+.w-gallery-item {
+	display: inline-block;
+	vertical-align: top;
+	outline: none !important;
+	color: inherit !important;
+	width: 100%;
+	}
+	.w-gallery-item-img {
+		position: relative;
+		}
+		.w-gallery-item-img img {
+			display: block;
+			margin: 0 auto;
+			}
+		.w-gallery[class*="cols_"] img {
+			width: 100%;
+			}
+	.gallery-caption, /* required by Theme Checker */
+	.w-gallery-item-meta {
+		line-height: 1.6;
+		text-align: center;
+		padding: 0.3rem 1rem 0.7rem;
+		}
+		.w-gallery-item-description {
+			font-size: 0.9rem;
+			margin: 0.2rem 0;
+			opacity: 0.5;
+			}
+
+/* With indents (don't change to 'rem' units) */
+.w-gallery.with_indents .w-gallery-list {
+	margin: -4px;
+	}
+	.w-gallery.with_indents .w-gallery-item {
+		padding: 4px;
+		}

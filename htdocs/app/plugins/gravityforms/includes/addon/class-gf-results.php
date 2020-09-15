@@ -620,8 +620,8 @@ if ( ! class_exists( 'GFResults' ) ) {
 							$percent = $max > 0 ? round( $val / $max * 100, 0 ) : 0;
 							$red     = (int) ( ( $xr + ( ( $percent * ( $yr - $xr ) ) / ( $n - 1 ) ) ) );
 							$green   = (int) ( ( $xg + ( ( $percent * ( $yg - $xg ) ) / ( $n - 1 ) ) ) );
-							$blue    = (int) ( ( $xb + ( ( $percent * ( $yb - $xb ) ) / ( $n - 1 ) ) ) );
-							$clr     = 'rgb(' . $red . ',' . $green . ',' . $blue . ')';
+							$purple    = (int) ( ( $xb + ( ( $percent * ( $yb - $xb ) ) / ( $n - 1 ) ) ) );
+							$clr     = 'rgb(' . $red . ',' . $green . ',' . $purple . ')';
 							$field_results .= "<td class='gsurvey-likert-results' style='background-color:{$clr}'>" . $val . '</td>';
 						}
 

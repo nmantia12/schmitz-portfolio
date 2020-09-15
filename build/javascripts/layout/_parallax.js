@@ -19,7 +19,7 @@
         const eb = ey + eh;
         const da = imageEl.attr("data-parallax");
         const coefficient = da ? da : 300;
-        if (ey <= wb && eb > wy) {
+        if (ey <= wb) {
           const range = (ec - wc) / (wh / 2 + eh / 2);
           const pxValue = range * coefficient;
           imageEl.css({ "margin-top": pxValue + "px" });

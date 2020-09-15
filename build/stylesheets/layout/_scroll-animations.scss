@@ -1,7 +1,7 @@
 .slide-in,
 .grid article {
   opacity: 0;
-  transform: translateY(45px) scale(.9);
+  transform: translateY(45px);
   transition: all 1.5s 0.25s $cubic-ease;
 
   @for $i from 0 to 50 {
@@ -11,7 +11,7 @@
   }
   &.active {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 .scroll-animate__scale {

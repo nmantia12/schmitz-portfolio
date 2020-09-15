@@ -2,9 +2,9 @@
   position: relative;
   display: inline-block;
   text-align: center;
-  color: $blue;
+  color: $purple;
   background: transparent;
-  border: 1.5px solid $blue;
+  border: 1.5px solid $purple;
   padding: 8.5px 32px;
   margin-right: rem(43);
   font-size: rem(17);
@@ -12,8 +12,11 @@
   font-style: normal;
   line-height: 1.4;
   letter-spacing: -0.17px;
-  text-align: center;
-  transition: all 0.5s $cubic-ease;
+	text-align: center;
+	border-radius: 24px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	transition: all 0.5s $cubic-ease;
 
   &::after {
     content: "";
@@ -23,27 +26,30 @@
     width: rem(44);
     height: calc(100% + 3px);
     right: rem(-43.5);
-    background: url("../img/button_arrow_teal.svg") no-repeat center center /
+    background: url("../img/button_arrow_purple.svg") no-repeat center center /
       contain;
     background-size: 15px 12px;
-    border: 1.5px solid $blue;
-    transition: all 0.5s $cubic-ease;
+    border: 1.5px solid $purple;
+		transition: all 0.5s $cubic-ease;
+		border-radius: 0px;
+		border-top-right-radius: 24px;
+		border-bottom-right-radius: 24px;
   }
 
   &:focus {
-    color: white;
+    color: $yellow;
   }
 
   &:hover {
-    background: $blue;
-    border-color: $blue;
+    background: $purple;
+    border-color: $purple;
     color: white;
 
     &::after {
-      border-color: $teal;
+      border-color: $yellow;
       background: url("../img/button_arrow.svg") no-repeat center center /
         contain;
-      background-color: $teal;
+      background-color: $yellow;
       background-size: 15px 12px;
     }
   }
@@ -59,7 +65,7 @@
     &::after {
       background: transparent;
       border: none;
-      background: url("../img/button_arrow_teal.svg") no-repeat center center /
+      background: url("../img/button_arrow_purple.svg") no-repeat center center /
         contain;
       width: rem(15);
       height: rem(12);
@@ -70,13 +76,13 @@
     }
 
     &:hover {
-      color: $teal;
+      color: $purple;
       background-color: transparent;
 
       &::after {
         background-color: transparent;
         right: -30px;
-        background: url("../img/button_arrow_teal.svg") no-repeat center center /
+        background: url("../img/button_arrow_purple.svg") no-repeat center center /
           contain;
         background-size: 15px 12px;
       }
@@ -84,7 +90,8 @@
   }
 
   &__white {
-    border-color: white;
+		border-color: white;
+		color: white;
 
     &::after {
       border-color: white;

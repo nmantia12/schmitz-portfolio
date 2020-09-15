@@ -1,5 +1,111 @@
 .grid {
-	@include columns(3);
-	max-width: $content-width;
 	margin: 0 auto;
+	margin-bottom: $gap-lg;
+
+	&__card {
+		@include columns(3);
+	}
+
+	&__masonry {
+		$gap: 2%;
+		$columns: 4;
+		$selector: "article";
+		@include masonry(1, 0%, $selector);
+
+		@include media('>=tablet') {
+			@include masonry(4, 2%, $selector);
+		}
+
+		@if unit($gap) == "rem" {
+			$gap: strip-units($gap) * 16px;
+		}
+		$gapunit: unit($gap);
+
+		// Fallback to inline-blocks and text-align: justify
+		$half_columns: 2;
+		$half_box-width: 100 / $half_columns * 1%;
+		$half_box-width-perc: (100 - (($half_columns - 1) * $gap)) / $half_columns;
+		$half_box-subract: rem( $gap/ ($half_columns / ($half_columns - 1)));
+
+		article {
+			padding-bottom: 0;
+			float: left;
+
+			@include media('>=tablet') {
+				@for $i from 0 through 6 {
+					&:nth-child(8n+1),
+					&:nth-child(8n+2),
+					&:nth-child(8n+5),
+					&:nth-child(8n+6) {
+						@if $gapunit == '%' {
+							width: $half_box-width-perc;
+						} @else {
+							width: calc(#{$half_box-width} - #{$half_box-subract});
+						}
+					}
+
+					&:nth-child(8n+2),
+					&:nth-child(8n+5) {
+						float: right;
+						margin-right: 0;
+
+						.post-thumbnail {
+							padding-bottom: calc( 50% - #{$gap/2});
+						}
+					}
+
+					&:nth-child(8n+4),
+					&:nth-child(8n+6) {
+						float: right;
+						margin-right: 0;
+					}
+
+					&:nth-child(8n+5) {
+						float: left;
+						clear: both;
+						margin-right: $gap;
+					}
+				}
+			}
+
+			.entry-title,
+			a,
+			.entry-meta {
+				color: #fff;
+			}
+
+			img {
+				border-bottom-left-radius: 24px;
+				border-bottom-right-radius: 24px;
+			}
+
+			.post-thumbnail {
+				margin-bottom: 0;
+				padding-bottom: 100%;
+				border-radius: 24px;
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0.8;
+					background-image: linear-gradient(180deg, transparent 0%, #000000 100%);
+					z-index: 1;
+					border-radius: 24px;
+				}
+			}
+			.entry {
+				position: absolute;
+				bottom: $gap-sm;
+				z-index: 2;
+			}
+			.entry-summary,
+			.entry-footer {
+				display: none;
+			}
+		}
+	}
 }

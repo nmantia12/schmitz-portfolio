@@ -1,0 +1,36 @@
+/*
+Theme Name: Impreza Child
+Template: Impreza
+Version: 1.0
+Author:	UpSolution
+Theme URI: http://impreza.us-themes.com/
+Author URI: http://us-themes.com/
+*/
+
+/*Add your own styles here:*/
+/* @group Page-Listing-Videos */
+
+.list-item-video .list-item-inside {
+	overflow: hidden;
+	width: 240px;
+	height: 180px;
+	position: relative;
+}
+
+.vimeo-play-icon {
+	background-image: url(../images/arrow-vimeo.png);
+	width: 41px;
+	height: 39px;
+	position: absolute;
+	top:  65px;
+	left: 100px;
+}
+
+.vimeo-thumbnail {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0;
+}
+
+/* @end */

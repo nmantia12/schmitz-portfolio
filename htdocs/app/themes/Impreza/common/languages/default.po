@@ -1,0 +1,6416 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Impreza and Zephyr\n"
+"POT-Creation-Date: 2020-06-29 15:53+0300\n"
+"PO-Revision-Date: 2020-06-29 15:53+0300\n"
+"Last-Translator: Aleksandr <clients@us-themes.com>\n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: themes/Zephyr\n"
+"X-Poedit-SearchPath-1: themes/Impreza\n"
+"X-Poedit-SearchPath-2: plugins/us-core\n"
+"X-Poedit-SearchPathExcluded-0: themes/Zephyr/framework\n"
+
+#: plugins/us-core/admin/functions/demo-import.php:23
+#: plugins/us-core/admin/functions/demo-import.php:24
+msgid "Demo Import"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:52
+#, php-format
+msgid ""
+"Some of demo data may be imported incorrectly, because you are using "
+"outdated %s version. %sUpdate the theme%s to import demos without possible "
+"issues."
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:62
+msgid "Choose the demo for import"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:65
+msgid ""
+"The images used in live demos will be replaced by placeholders due to "
+"copyright/license reasons."
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:80
+#, php-format
+msgid "<a href=\"%s\">Activate the theme</a> to unlock Demo Import"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:261
+msgid "Click to choose"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:263
+msgid "View this demo in a new tab"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:294
+#: plugins/us-core/admin/functions/demo-import.php:297
+#: plugins/us-core/admin/functions/demo-import.php:692
+#: plugins/us-core/config/grid-templates.php:1690
+#: plugins/us-core/config/grid-templates.php:1779
+#: plugins/us-core/config/grid-templates.php:1854
+#: plugins/us-core/config/grid-templates.php:1928
+#: plugins/us-core/config/grid-templates.php:2000
+#: plugins/us-core/config/grid-templates.php:2075
+#: plugins/us-core/config/grid-templates.php:2145
+#: plugins/us-core/config/grid-templates.php:2243
+#: plugins/us-core/config/grid-templates.php:2319
+#: plugins/us-core/config/grid-templates.php:2391
+#: plugins/us-core/config/grid-templates.php:2471
+#: plugins/us-core/config/grid-templates.php:2555
+#: plugins/us-core/config/grid-templates.php:2633
+#: plugins/us-core/config/grid-templates.php:2728
+#: plugins/us-core/config/grid-templates.php:2805
+#: plugins/us-core/config/grid-templates.php:2877
+#: plugins/us-core/config/grid-templates.php:2954
+#: plugins/us-core/config/grid-templates.php:3037
+#: plugins/us-core/config/grid-templates.php:3126
+#: plugins/us-core/config/theme-options.php:2569
+#: plugins/us-core/config/theme-options.php:2603
+#: plugins/us-core/config/theme-options.php:2609
+#: plugins/us-core/config/theme-options.php:2610
+#: plugins/us-core/config/theme-options.php:3107
+#: plugins/us-core/config/widgets.php:151
+#: plugins/us-core/config/widgets.php:152
+#: plugins/us-core/functions/post-types.php:24
+msgid "Portfolio"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:297
+#: plugins/us-core/admin/functions/demo-import.php:312
+#, php-format
+msgid "Enable %s module"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:309
+#: plugins/us-core/admin/functions/demo-import.php:312
+#: plugins/us-core/admin/functions/demo-import.php:698
+#: plugins/us-core/config/theme-options.php:3113
+#: plugins/us-core/functions/post-types.php:98
+msgid "Testimonials"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:320
+#: plugins/us-core/admin/functions/demo-import.php:704
+#: plugins/us-core/config/elements_misc.php:96
+#: plugins/us-core/functions/post-types.php:184
+msgctxt "site top area"
+msgid "Headers"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:326
+#: plugins/us-core/admin/functions/demo-import.php:710
+#: plugins/us-core/config/widgets.php:14
+#: plugins/us-core/functions/post-types.php:159
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1077
+msgid "Grid Layouts"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:332
+#: plugins/us-core/admin/functions/demo-import.php:722
+#: plugins/us-core/config/elements_misc.php:99
+#: plugins/us-core/functions/post-types.php:209
+msgid "Content templates"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:338
+#: plugins/us-core/admin/functions/demo-import.php:716
+#: plugins/us-core/config/elements_misc.php:102
+#: plugins/us-core/functions/header.php:568
+#: plugins/us-core/functions/post-types.php:233
+msgid "Page Blocks"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:343
+#: plugins/us-core/admin/functions/demo-import.php:955
+#: plugins/us-core/admin/functions/demo-import.php:975
+#: plugins/us-core/functions/header.php:516
+#: plugins/us-core/usof/functions/interface.php:8
+#: plugins/us-core/usof/functions/interface.php:10
+#: plugins/us-core/usof/functions/interface.php:48
+msgid "Theme Options"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:352
+#: plugins/us-core/admin/functions/demo-import.php:835
+msgid "Shop Products"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:367
+msgid "Importing Demo Content..."
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:368
+msgid "Don't close or refresh this page to not interrupt the import."
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:371
+msgid "Import completed"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:372
+#, php-format
+msgid ""
+"Just check the result on %syour site%s or start customize via %sTheme Options"
+"%s."
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:546
+#: plugins/us-core/admin/functions/demo-import.php:667
+#: plugins/us-core/admin/functions/demo-import.php:835
+#: plugins/us-core/admin/functions/demo-import.php:901
+#: plugins/us-core/admin/functions/demo-import.php:914
+#: plugins/us-core/admin/functions/demo-import.php:955
+#: plugins/us-core/admin/functions/demo-import.php:975
+#, php-format
+msgid "Failed to import %s"
+msgstr ""
+
+#: plugins/us-core/admin/functions/demo-import.php:547
+#: plugins/us-core/admin/functions/demo-import.php:668
+#: plugins/us-core/admin/functions/demo-import.php:836
+#: plugins/us-core/admin/functions/demo-import.php:902
+#: plugins/us-core/admin/functions/demo-import.php:915
+#: plugins/us-core/admin/functions/demo-import.php:956
+#: plugins/us-core/admin/functions/demo-import.php:976
+msgid "Wrong path to the file or it is missing."
+msgstr ""
+
+#: plugins/us-core/admin/functions/grid-builder.php:49
+#: plugins/us-core/config/elements/grid.php:397
+#: plugins/us-core/config/widgets.php:161
+#: plugins/us-core/config/widgets.php:211
+#: plugins/us-core/functions/post-types.php:160
+msgid "Grid Layout"
+msgstr ""
+
+#: plugins/us-core/admin/functions/grid-builder.php:57
+msgid "Grid Layout Name"
+msgstr ""
+
+#: plugins/us-core/admin/functions/grid-builder.php:67
+#: plugins/us-core/admin/functions/header-builder.php:195
+#: plugins/us-core/usof/templates/fields/grid_builder.php:245
+msgid "Export / Import"
+msgstr ""
+
+#: plugins/us-core/admin/functions/grid-builder.php:69
+msgid "Choose Grid Layout Template to start with"
+msgstr ""
+
+#: plugins/us-core/admin/functions/grid-builder.php:107
+#: plugins/us-core/admin/functions/header-builder.php:239
+#: plugins/us-core/functions/post-types.php:341
+#: plugins/us-core/usof/templates/fields/grid_builder.php:71
+#: plugins/us-core/usof/templates/fields/grid_builder.php:123
+#: plugins/us-core/usof/templates/fields/grid_builder.php:206
+#: plugins/us-core/usof/templates/fields/header_builder.php:163
+#: plugins/us-core/usof/templates/fields/header_builder.php:268
+msgid "Duplicate"
+msgstr ""
+
+#: plugins/us-core/admin/functions/header-builder.php:177
+#: plugins/us-core/config/assets.php:591
+#: plugins/us-core/config/menu-dropdown.php:57
+#: plugins/us-core/config/meta-boxes.php:39
+#: plugins/us-core/config/theme-options.php:101
+#: plugins/us-core/config/theme-options.php:196
+#: plugins/us-core/config/theme-options.php:292
+#: plugins/us-core/config/theme-options.php:1095
+#: plugins/us-core/config/theme-options.php:1180
+#: plugins/us-core/config/theme-options.php:1257
+#: plugins/us-core/config/theme-options.php:2786
+#: plugins/us-core/config/theme-options.php:2865
+#: plugins/us-core/functions/header.php:566
+#: plugins/us-core/functions/post-types.php:185
+msgctxt "site top area"
+msgid "Header"
+msgstr ""
+
+#: plugins/us-core/admin/functions/header-builder.php:185
+msgid "Header Name"
+msgstr ""
+
+#: plugins/us-core/admin/functions/header-builder.php:197
+msgid "Choose Header template to start with"
+msgstr ""
+
+#: plugins/us-core/admin/functions/nav-menu-edit.php:17
+#: plugins/us-core/config/elements/post_content.php:26
+msgid "Exclude Rows and Columns"
+msgstr ""
+
+#: plugins/us-core/admin/functions/nav-menu-edit.php:28
+msgid "Show as Button"
+msgstr ""
+
+#: plugins/us-core/admin/functions/optimize-assets.php:611
+msgid "Optimization completed"
+msgstr ""
+
+#: plugins/us-core/admin/functions/theme-updater.php:176
+#: plugins/us-core/admin/functions/theme-updater.php:192
+#: plugins/us-core/admin/functions/theme-updater.php:209
+#, php-format
+msgid "%sActivate the theme%s to update it"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:140 plugins/us-core/config/assets.php:175
+#, php-format
+msgid "\"%s\" icons"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:210
+#: plugins/us-core/config/elements/cta.php:9
+msgid "ActionBox"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:226
+#: plugins/us-core/config/elements/image.php:124
+#: plugins/us-core/config/elements/itext.php:71
+#: plugins/us-core/config/elements/menu.php:229
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:88
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:80
+msgid "Animation"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:245
+#: plugins/us-core/config/elements/btn.php:9
+#: plugins/us-core/config/elements/cform.php:172
+#: plugins/us-core/config/elements/cform.php:180
+#: plugins/us-core/config/elements/cform.php:188
+#: plugins/us-core/config/elements/cform.php:196
+#: plugins/us-core/config/elements/cform.php:202
+#: plugins/us-core/config/elements/cform.php:213
+#: plugins/us-core/config/elements/cform.php:219
+#: plugins/us-core/config/elements/cform.php:229
+#: plugins/us-core/config/elements/cta.php:68
+#: plugins/us-core/config/elements/cta.php:74
+#: plugins/us-core/config/elements/cta.php:82
+#: plugins/us-core/config/elements/cta.php:89
+#: plugins/us-core/config/elements/cta.php:95
+#: plugins/us-core/config/elements/cta.php:105
+#: plugins/us-core/config/elements/cta.php:113
+#: plugins/us-core/config/elements/cta.php:120
+#: plugins/us-core/config/elements/cta.php:127
+#: plugins/us-core/config/elements/cta.php:136
+#: plugins/us-core/config/elements/cta.php:144
+#: plugins/us-core/config/elements/cta.php:151
+#: plugins/us-core/config/elements/cta.php:162
+#: plugins/us-core/config/elements/post_taxonomy.php:27
+#: plugins/us-core/config/theme-options.php:2158
+#: plugins/us-core/usof/templates/fields/grid_builder.php:97
+#: plugins/us-core/usof/templates/fields/header_builder.php:146
+#: plugins/us-core/usof/templates/fields/header_builder.php:276
+msgid "Button"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:312
+#: plugins/us-core/config/elements/carousel.php:26
+#: plugins/us-core/config/elements/carousel.php:36
+#: plugins/us-core/config/elements/carousel.php:51
+#: plugins/us-core/config/elements/carousel.php:60
+#: plugins/us-core/config/elements/carousel.php:72
+#: plugins/us-core/config/elements/carousel.php:81
+#: plugins/us-core/config/elements/carousel.php:87
+#: plugins/us-core/config/elements/carousel.php:95
+#: plugins/us-core/config/elements/carousel.php:103
+#: plugins/us-core/config/elements/carousel.php:111
+#: plugins/us-core/config/elements/carousel.php:118
+#: plugins/us-core/config/elements/carousel.php:125
+#: plugins/us-core/config/elements/carousel.php:131
+#: plugins/us-core/config/elements/carousel.php:139
+#: plugins/us-core/config/elements/carousel.php:147
+#: plugins/us-core/config/elements/carousel.php:155
+#: plugins/us-core/config/elements/carousel.php:163
+msgid "Carousel"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:328
+msgid "Charts"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:402
+#: plugins/us-core/config/elements/counter.php:7
+msgid "Counter"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:415
+#: plugins/us-core/config/elements/cform.php:48
+#: plugins/us-core/config/elements/dropdown.php:18
+#: plugins/us-core/config/elements/grid_filter.php:55
+#: plugins/us-core/config/elements/grid_filter.php:90
+#: plugins/us-core/config/elements/grid_filter.php:91
+#: plugins/us-core/config/elements/menu.php:211
+#: plugins/us-core/usof/templates/fields/group_param.php:53
+#: plugins/us-core/usof/templates/fields/group_param.php:54
+#: plugins/us-core/usof/templates/fields/group_param.php:55
+#: plugins/us-core/usof/templates/fields/header_builder.php:127
+#: plugins/us-core/usof/templates/fields/header_builder.php:274
+msgid "Dropdown"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:431
+msgid "Forms"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:451
+#: plugins/us-core/config/elements/flipbox.php:7
+msgid "FlipBox"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:464 plugins/us-core/config/assets.php:834
+#, php-format
+msgid "%s Maps"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:477
+#: plugins/us-core/config/elements/grid.php:115
+msgid "Grid"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:497
+#: plugins/us-core/config/elements/grid_filter.php:27
+msgid "Grid Filter"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:514
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1108
+#: plugins/us-core/usof/templates/window_templates.php:37
+msgid "Grid Layout Templates"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:551
+msgid "Grid Pagination"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:571
+msgid "Grid Popup"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:605
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:396
+msgid "Horizontal Parallax"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:617
+#: plugins/us-core/config/elements/hwrapper.php:7
+msgid "Horizontal Wrapper"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:635
+#: plugins/us-core/config/elements/iconbox.php:7
+msgid "IconBox"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:668
+#: plugins/us-core/config/grid-templates.php:1495
+msgid "Image Gallery"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:691
+#: plugins/us-core/config/elements/image_slider.php:7
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:462
+msgid "Image Slider"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:720
+#: plugins/us-core/config/elements/ibanner.php:7
+msgid "Interactive Banner"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:732
+#: plugins/us-core/config/elements/itext.php:7
+msgid "Interactive Text"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:750
+msgid "Popup styles"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:821
+#: plugins/us-core/config/elements/message.php:6
+msgid "Message Box"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:851
+#: plugins/us-core/config/elements/scroller.php:7
+msgid "Page Scroller"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:864
+#: plugins/us-core/config/elements/person.php:7
+msgid "Person"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:876
+msgid "Preloader"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:889
+msgid "Print styles"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:893
+#: plugins/us-core/config/elements/popup.php:7
+msgid "Popup"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:906
+#: plugins/us-core/config/elements/add_to_cart.php:9
+#: plugins/us-core/config/elements/post_author.php:9
+#: plugins/us-core/config/elements/post_comments.php:9
+#: plugins/us-core/config/elements/post_content.php:8
+#: plugins/us-core/config/elements/post_custom_field.php:51
+#: plugins/us-core/config/elements/post_date.php:14
+#: plugins/us-core/config/elements/post_image.php:10
+#: plugins/us-core/config/elements/post_navigation.php:9
+#: plugins/us-core/config/elements/post_taxonomy.php:11
+#: plugins/us-core/config/elements/post_title.php:10
+#: plugins/us-core/config/elements/post_views.php:12
+#: plugins/us-core/config/elements/product_field.php:9
+#: plugins/us-core/config/elements/product_gallery.php:7
+#: plugins/us-core/config/elements/product_ordering.php:7
+msgid "Post Elements"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:926
+#: plugins/us-core/config/elements/post_navigation.php:8
+msgid "Post Prev/Next Navigation"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:938
+#: plugins/us-core/config/elements/pricing.php:57
+msgid "Pricing Table"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:950
+#: plugins/us-core/config/elements/progbar.php:7
+msgid "Progress Bar"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:963
+msgid "Scroll events"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1006
+#: plugins/us-core/config/elements/separator.php:7
+msgid "Separator"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1018
+#: plugins/us-core/config/elements/sharing.php:7
+msgid "Sharing Buttons"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1031
+#: plugins/us-core/config/elements/additional_menu.php:7
+#: plugins/us-core/usof/templates/fields/header_builder.php:111
+#: plugins/us-core/usof/templates/fields/header_builder.php:273
+msgid "Simple Menu"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1052
+#: plugins/us-core/config/elements/socials.php:7
+#: plugins/us-core/config/widgets.php:247
+#: plugins/us-core/config/widgets.php:248
+#: plugins/us-core/usof/templates/fields/header_builder.php:138
+#: plugins/us-core/usof/templates/fields/header_builder.php:275
+msgid "Social Links"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1079
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:215
+msgid "Vertical Tabs"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1139
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:395
+msgid "Vertical Parallax"
+msgstr ""
+
+#: plugins/us-core/config/assets.php:1155
+#: plugins/us-core/config/elements/vwrapper.php:7
+msgid "Vertical Wrapper"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:13
+msgid "White Pink"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:64
+msgid "Night Fire"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:115
+msgid "Purple Pearl"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:166
+msgid "Light Pink"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:217
+msgid "Gentle Blue"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:268
+msgid "White Azure"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:314
+msgid "Fresh Mint"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:360
+msgid "White Purple"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:406
+msgid "White Alizarin"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:452
+msgid "White Sand"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:503
+msgid "White Royal"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:549
+msgid "Light Tangerine"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:595
+msgid "White Yellow"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:641
+msgid "White Blue"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:687
+#: plugins/us-core/config/elements/person.php:77
+msgid "Black & White"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:733
+msgid "Material Design"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:779
+msgid "Sunny Cocktail"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:825
+msgid "Mild Ocean"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:871
+msgid "Light Ocean"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:917
+msgid "Nautical Knot"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:963
+msgid "Red Modern"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1009
+msgid "Midnight Red"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1055
+msgid "Stylish Cyan"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1101
+msgid "Coffee Shop"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1147
+msgid "Retro Package"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1193
+msgid "Twilight"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1239
+msgid "Grey Turquoise"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1285
+msgid "City Hunter"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1331
+msgid "Black Gold"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1377
+msgid "Green Darkness"
+msgstr ""
+
+#: plugins/us-core/config/color-schemes.php:1423
+msgid "Wet Stone"
+msgstr ""
+
+#: plugins/us-core/config/elements/add_to_cart.php:14
+msgid "Show link to cart when adding products"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:20
+#: plugins/us-core/config/elements/grid_filter.php:76
+#: plugins/us-core/config/elements/person.php:56
+#: plugins/us-core/config/elements/post_navigation.php:14
+#: plugins/us-core/config/elements/search.php:25
+#: plugins/us-core/config/theme-options.php:2968
+msgid "Layout"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:23
+#: plugins/us-core/config/elements/grid_filter.php:80
+#: plugins/us-core/config/elements/popup.php:199
+#: plugins/us-core/config/header-settings.php:58
+msgid "Vertical"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:24
+#: plugins/us-core/config/elements/grid_filter.php:79
+#: plugins/us-core/config/elements/popup.php:198
+#: plugins/us-core/config/header-settings.php:57
+msgid "Horizontal"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:32
+#: plugins/us-core/config/elements/menu.php:50
+msgid "Spread menu items evenly over the available width"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:38
+msgid "Switch to vertical at screens below"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:39
+#: plugins/us-core/config/elements/additional_menu.php:60
+#: plugins/us-core/config/elements/additional_menu.php:67
+#: plugins/us-core/config/elements/additional_menu.php:77
+#: plugins/us-core/config/elements/additional_menu.php:158
+#: plugins/us-core/config/elements/carousel.php:55
+#: plugins/us-core/config/elements/carousel.php:76
+#: plugins/us-core/config/elements/carousel.php:159
+#: plugins/us-core/config/elements/cform.php:260
+#: plugins/us-core/config/elements/counter.php:14
+#: plugins/us-core/config/elements/counter.php:20
+#: plugins/us-core/config/elements/grid.php:459
+#: plugins/us-core/config/elements/grid.php:502
+#: plugins/us-core/config/elements/grid.php:511
+#: plugins/us-core/config/elements/hwrapper.php:42
+#: plugins/us-core/config/elements/popup.php:115
+#: plugins/us-core/config/elements/separator.php:27
+#: plugins/us-core/config/elements/separator.php:147
+#: plugins/us-core/config/elements/separator.php:162
+#: plugins/us-core/config/elements/socials.php:131
+#: plugins/us-core/config/elements/vwrapper.php:39
+#: plugins/us-core/config/elements_misc.php:48
+#: plugins/us-core/config/elements_misc.php:51
+#: plugins/us-core/config/elements_misc.php:54
+#: plugins/us-core/config/elements_misc.php:57
+#: plugins/us-core/config/elements_misc.php:60
+#: plugins/us-core/config/elements_misc.php:63
+#: plugins/us-core/config/elements_misc.php:66
+#: plugins/us-core/config/elements_misc.php:69
+#: plugins/us-core/config/elements_misc.php:75
+#: plugins/us-core/config/elements_misc.php:78
+#: plugins/us-core/config/elements_misc.php:81
+#: plugins/us-core/config/elements_misc.php:93
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:898
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:126
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:32
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:167
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:16
+#: plugins/us-core/usof/templates/fields/icon.php:55
+msgid "Examples:"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:39
+msgid "Leave blank to enable horizontal scrolling on small screens."
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:56
+#: plugins/us-core/config/elements/additional_menu.php:63
+#: plugins/us-core/config/elements/additional_menu.php:73
+#: plugins/us-core/config/elements/additional_menu.php:83
+#: plugins/us-core/config/elements/additional_menu.php:95
+#: plugins/us-core/config/elements/additional_menu.php:105
+#: plugins/us-core/config/elements/additional_menu.php:115
+#: plugins/us-core/config/elements/additional_menu.php:125
+#: plugins/us-core/config/elements/additional_menu.php:135
+#: plugins/us-core/config/elements/additional_menu.php:145
+msgctxt "In menus"
+msgid "Main items"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:59
+#: plugins/us-core/config/elements/additional_menu.php:157
+#: plugins/us-core/config/elements/grid.php:458
+#: plugins/us-core/config/elements/hwrapper.php:41
+#: plugins/us-core/config/elements/vwrapper.php:38
+msgid "Gap between Items"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:66
+msgid "Vertical Indents"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:76
+msgid "Horizontal Indents"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:88
+msgid "Menu Item Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:98
+msgid "Menu Item Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:108
+#: plugins/us-core/config/elements/menu.php:133
+msgid "Menu Item Background on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:118
+#: plugins/us-core/config/elements/menu.php:141
+msgid "Menu Item Text on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:128
+#: plugins/us-core/config/elements/menu.php:103
+#: plugins/us-core/config/elements/menu.php:118
+msgid "Active Menu Item Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:138
+#: plugins/us-core/config/elements/menu.php:111
+#: plugins/us-core/config/elements/menu.php:126
+msgid "Active Menu Item Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:151
+msgid "Show menu sub items"
+msgstr ""
+
+#: plugins/us-core/config/elements/additional_menu.php:154
+#: plugins/us-core/config/elements/additional_menu.php:163
+msgctxt "In menus"
+msgid "Sub items"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:7
+msgid "Breadcrumbs"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:8
+msgid "Shows current page location"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:13
+msgid "Homepage Label"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:14
+msgid "Leave blank to hide the homepage link"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:20
+msgid "Show current page"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:35
+#: plugins/us-core/config/elements/post_taxonomy.php:45
+msgid "Separator between items"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:38
+#: plugins/us-core/config/elements/btn.php:91
+#: plugins/us-core/config/elements/cart.php:18
+#: plugins/us-core/config/elements/cform.php:138
+#: plugins/us-core/config/elements/cform.php:216
+#: plugins/us-core/config/elements/cta.php:92
+#: plugins/us-core/config/elements/cta.php:147
+#: plugins/us-core/config/elements/dropdown.php:67
+#: plugins/us-core/config/elements/flipbox.php:79
+#: plugins/us-core/config/elements/iconbox.php:15
+#: plugins/us-core/config/elements/message.php:30
+#: plugins/us-core/config/elements/popup.php:96
+#: plugins/us-core/config/elements/post_author.php:81
+#: plugins/us-core/config/elements/post_comments.php:64
+#: plugins/us-core/config/elements/post_custom_field.php:12
+#: plugins/us-core/config/elements/post_custom_field.php:140
+#: plugins/us-core/config/elements/post_date.php:51
+#: plugins/us-core/config/elements/post_taxonomy.php:79
+#: plugins/us-core/config/elements/post_views.php:17
+#: plugins/us-core/config/elements/search.php:101
+#: plugins/us-core/config/elements/separator.php:95
+#: plugins/us-core/config/elements/text.php:63
+#: plugins/us-core/config/meta-boxes.php:239
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:121
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:66
+msgid "Icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/breadcrumbs.php:39
+msgid "Custom symbol"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:17
+#: plugins/us-core/config/elements/cform.php:169
+#: plugins/us-core/config/elements/cta.php:65
+#: plugins/us-core/config/elements/cta.php:116
+#: plugins/us-core/config/elements/flipbox.php:249
+#: plugins/us-core/config/elements/grid.php:363
+#: plugins/us-core/config/elements/popup.php:40
+#: plugins/us-core/config/elements/pricing.php:110
+#: plugins/us-core/config/theme-options.php:775
+msgid "Button Label"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:19
+#: plugins/us-core/config/elements/cta.php:67
+#: plugins/us-core/config/elements/cta.php:118
+#: plugins/us-core/config/elements/dropdown.php:31
+#: plugins/us-core/config/elements/flipbox.php:251
+#: plugins/us-core/config/elements/popup.php:42
+msgid "Click Me"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:28
+#: plugins/us-core/config/elements/grid.php:525
+#: plugins/us-core/config/elements/post_author.php:19
+#: plugins/us-core/config/elements/post_custom_field.php:93
+#: plugins/us-core/config/elements/post_image.php:20
+#: plugins/us-core/config/elements/post_taxonomy.php:55
+#: plugins/us-core/config/elements/post_title.php:20
+msgid "To a Post"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:29
+#: plugins/us-core/config/elements/post_custom_field.php:94
+#: plugins/us-core/config/elements/text.php:32
+msgid "Use the element value as link"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:30
+#: plugins/us-core/config/elements/image.php:87
+#: plugins/us-core/config/elements/post_custom_field.php:95
+msgid "Onclick JavaScript action"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:33
+#: plugins/us-core/config/elements/counter.php:33
+#: plugins/us-core/config/elements/flipbox.php:84
+#: plugins/us-core/config/elements/grid.php:495
+#: plugins/us-core/config/elements/image.php:90
+#: plugins/us-core/config/elements/post_author.php:20
+#: plugins/us-core/config/elements/post_comments.php:41
+#: plugins/us-core/config/elements/post_custom_field.php:98
+#: plugins/us-core/config/elements/post_date.php:38
+#: plugins/us-core/config/elements/post_image.php:24
+#: plugins/us-core/config/elements/post_image.php:79
+#: plugins/us-core/config/elements/post_taxonomy.php:57
+#: plugins/us-core/config/elements/post_title.php:23
+#: plugins/us-core/config/elements/separator.php:21
+#: plugins/us-core/config/elements/text.php:35
+#: plugins/us-core/config/grid-settings.php:34
+#: plugins/us-core/config/grid-settings.php:73
+#: plugins/us-core/config/menu-dropdown.php:16
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:95
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:139
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:72
+msgid "Custom"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:72
+#: plugins/us-core/config/elements/cform.php:200
+#: plugins/us-core/config/elements/grid.php:387
+msgid "Stretch to the full width"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:78
+#: plugins/us-core/config/theme-options.php:704
+msgid "Button Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/btn.php:96
+#: plugins/us-core/config/elements/cform.php:222
+#: plugins/us-core/config/elements/cta.php:98
+#: plugins/us-core/config/elements/cta.php:154
+#: plugins/us-core/config/elements/flipbox.php:151
+#: plugins/us-core/config/elements/iconbox.php:67
+#: plugins/us-core/config/elements/popup.php:103
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:135
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:73
+msgid "Icon Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:27
+#: plugins/us-core/config/elements/grid.php:116
+msgid "List of images, posts, pages or any custom post types"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:34
+#: plugins/us-core/config/elements/grid.php:541
+#: plugins/us-core/config/elements/image_slider.php:18
+msgid "Prev/Next arrows"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:39
+msgid "Arrows Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:44
+msgid "Circles"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:45
+msgid "Full height blocks"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:54
+msgid "Arrows Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:63
+msgid "Arrows Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:66
+msgid "Outside"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:67
+msgid "Inside"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:75
+msgid "Arrows Offset"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:85
+msgid "Navigation Dots"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:91
+msgid "First item in the center"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:99
+msgid "Slide by several items instead of one"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:107
+msgid "Infinite loop"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:115
+msgid "Auto height (for 1 column only)"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:122
+msgid "Fade transition (for 1 column only)"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:129
+#: plugins/us-core/config/elements/carousel.php:184
+#: plugins/us-core/config/elements/carousel.php:206
+#: plugins/us-core/config/elements/carousel.php:228
+#: plugins/us-core/config/elements/image_slider.php:73
+msgid "Auto Rotation"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:134
+#: plugins/us-core/config/elements/image_slider.php:83
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:522
+msgid "Auto Rotation Interval"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:143
+msgid "Continual Rotation"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:150
+#: plugins/us-core/config/elements/image_slider.php:50
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:512
+msgid "Transition Duration"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:158
+#: plugins/us-core/config/elements/image_slider.php:40
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:499
+msgid "Transition Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:159
+msgid "Use timing function"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:168
+#: plugins/us-core/config/elements/carousel.php:190
+#: plugins/us-core/config/elements/carousel.php:212
+#: plugins/us-core/config/elements/grid.php:591
+#: plugins/us-core/config/elements/grid.php:608
+#: plugins/us-core/config/elements/grid.php:625
+#: plugins/us-core/config/elements/separator.php:139
+#: plugins/us-core/config/elements/separator.php:154
+msgid "Below screen width"
+msgstr ""
+
+#: plugins/us-core/config/elements/carousel.php:175
+#: plugins/us-core/config/elements/carousel.php:197
+#: plugins/us-core/config/elements/carousel.php:219
+#: plugins/us-core/config/elements/grid.php:599
+#: plugins/us-core/config/elements/grid.php:616
+#: plugins/us-core/config/elements/grid.php:633
+msgid "show"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:23
+#: plugins/us-core/config/elements/flipbox.php:95
+#: plugins/us-core/config/elements/iconbox.php:60
+#: plugins/us-core/config/elements/menu.php:280
+#: plugins/us-core/config/elements/search.php:106
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:171
+msgid "Icon Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:30
+#: plugins/us-core/config/elements/menu.php:288
+#: plugins/us-core/config/elements/search.php:113
+msgid "Icon Size on Tablets"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:37
+#: plugins/us-core/config/elements/menu.php:296
+#: plugins/us-core/config/elements/search.php:121
+msgid "Icon Size on Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:44
+msgid "Quantity Badge Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:50
+msgid "Quantity Badge Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:59
+#: plugins/us-core/config/elements/menu.php:57
+msgid "Stretch to the full available height"
+msgstr ""
+
+#: plugins/us-core/config/elements/cart.php:63
+#: plugins/us-core/config/elements/dropdown.php:115
+#: plugins/us-core/config/elements/menu.php:79
+msgid "Dropdown Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:29
+msgid "Contact Form"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:37
+msgid "Fields"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:45
+#: plugins/us-core/usof/templates/fields/group_param.php:49
+#: plugins/us-core/usof/templates/fields/group_param.php:50
+msgid "(single line)"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:46
+msgid "(multiple lines)"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:49
+#: plugins/us-core/config/elements/grid_filter.php:54
+msgid "Checkboxes"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:50
+#: plugins/us-core/config/elements/grid_filter.php:56
+msgid "Radio buttons"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:52
+msgid "Agreement checkbox"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:53
+msgid "Captcha"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:60
+msgid "Shown above the field"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:69
+msgid "Shown below the field"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:76
+#: plugins/us-core/config/elements/search.php:13
+msgid "Placeholder"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:77
+msgid "Shown inside the field"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:84
+msgid "Values"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:85
+#: plugins/us-core/config/elements/itext.php:15
+msgid "Each value on a new line"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:98
+msgid "Required field"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:108
+msgid "Move title on focus"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:118
+msgid "Use the value of this field as sender' address of emails"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:128
+msgid "Use the value of this field as sender' name of emails"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:191
+msgid "Size on Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:205
+msgid "Button Alignment"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:234
+msgid "Receiver Email"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:235
+msgid ""
+"Requests will be sent to this email. You can insert multiple comma-separated "
+"emails as well."
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:239
+#: plugins/us-core/config/elements/cform.php:245
+#: plugins/us-core/config/elements/cform.php:256
+#: plugins/us-core/config/elements/cform.php:264
+#: plugins/us-core/config/elements/counter.php:52
+#: plugins/us-core/config/elements/counter.php:60
+#: plugins/us-core/config/elements/counter.php:68
+#: plugins/us-core/config/elements/counter.php:79
+#: plugins/us-core/config/elements/counter.php:85
+#: plugins/us-core/config/elements/grid.php:143
+#: plugins/us-core/config/elements/iconbox.php:114
+#: plugins/us-core/config/elements/iconbox.php:125
+#: plugins/us-core/config/elements/iconbox.php:133
+#: plugins/us-core/config/elements/person.php:69
+#: plugins/us-core/config/elements/person.php:83
+#: plugins/us-core/config/elements/person.php:92
+#: plugins/us-core/config/elements/person.php:99
+#: plugins/us-core/config/elements/person.php:106
+#: plugins/us-core/config/elements/person.php:113
+#: plugins/us-core/config/elements/person.php:120
+#: plugins/us-core/config/elements/person.php:127
+#: plugins/us-core/config/elements/person.php:134
+#: plugins/us-core/config/elements/person.php:141
+#: plugins/us-core/config/elements/person.php:148
+#: plugins/us-core/config/elements/post_content.php:67
+#: plugins/us-core/config/elements/post_content.php:75
+#: plugins/us-core/config/elements/post_content.php:82
+#: plugins/us-core/config/elements/post_content.php:90
+#: plugins/us-core/config/elements/post_content.php:103
+#: plugins/us-core/config/meta-boxes.php:249
+#: plugins/us-core/config/theme-options.php:3054
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:47
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:56
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:64
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:73
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:87
+msgid "More Options"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:242
+msgid "Message after sending"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:244
+msgid "Thank you! Your message was sent."
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:248
+msgid "Fields Layout"
+msgstr ""
+
+#: plugins/us-core/config/elements/cform.php:259
+msgid "Gap between Fields"
+msgstr ""
+
+#: plugins/us-core/config/elements/contacts.php:11
+#: plugins/us-core/config/elements/gmaps.php:11
+#: plugins/us-core/config/elements/gmaps.php:60
+#: plugins/us-core/config/widgets.php:93
+msgid "Address"
+msgstr ""
+
+#: plugins/us-core/config/elements/contacts.php:16
+#: plugins/us-core/config/widgets.php:98
+#: plugins/us-core/migrations/Impreza/us_migration_5_7.php:72
+#: plugins/us-core/migrations/Impreza/us_migration_5_7.php:79
+#: plugins/us-core/migrations/Zephyr/us_migration_5_4.php:72
+#: plugins/us-core/migrations/Zephyr/us_migration_5_4.php:79
+msgid "Phone"
+msgstr ""
+
+#: plugins/us-core/config/elements/contacts.php:21
+#: plugins/us-core/config/widgets.php:103
+msgid "Fax"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:8
+msgid "Animated number with text"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:13
+msgid "Initial counting value"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:14
+msgid "With all the prefixes, suffixes and decimal marks if needed."
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:19
+msgid "Final counting value"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:20
+msgid "The way it should look like, when the animation ends."
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:29
+#: plugins/us-core/config/elements/iconbox.php:23
+#: plugins/us-core/config/elements/progbar.php:79
+#: plugins/us-core/config/elements/separator.php:72
+#: plugins/us-core/config/elements/sharing.php:55
+msgid "Primary (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:30
+#: plugins/us-core/config/elements/iconbox.php:24
+#: plugins/us-core/config/elements/progbar.php:80
+#: plugins/us-core/config/elements/separator.php:73
+#: plugins/us-core/config/elements/sharing.php:56
+msgid "Secondary (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:31
+#: plugins/us-core/config/elements/progbar.php:81
+msgid "Heading (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:32
+#: plugins/us-core/config/elements/iconbox.php:26
+#: plugins/us-core/config/elements/progbar.php:82
+#: plugins/us-core/config/elements/separator.php:71
+#: plugins/us-core/config/elements/socials.php:82
+#: plugins/us-core/config/widgets.php:277
+msgid "Text (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:50
+msgid "Projects completed"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:55
+#: plugins/us-core/config/elements/cta.php:22
+#: plugins/us-core/config/elements/flipbox.php:21
+#: plugins/us-core/config/elements/flipbox.php:172
+#: plugins/us-core/config/elements/ibanner.php:35
+#: plugins/us-core/config/elements/iconbox.php:86
+#: plugins/us-core/config/elements/progbar.php:18
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:112
+msgid "Title Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:63
+#: plugins/us-core/config/elements/cta.php:30
+#: plugins/us-core/config/elements/flipbox.php:30
+#: plugins/us-core/config/elements/flipbox.php:181
+#: plugins/us-core/config/elements/ibanner.php:43
+#: plugins/us-core/config/elements/iconbox.php:94
+#: plugins/us-core/config/elements/progbar.php:26
+#: plugins/us-core/config/elements/separator.php:117
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:103
+msgid "Title HTML tag"
+msgstr ""
+
+#: plugins/us-core/config/elements/counter.php:82
+#: plugins/us-core/config/elements/flipbox.php:307
+#: plugins/us-core/config/elements/itext.php:84
+msgid "Animation Duration (in seconds)"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:10
+msgid "Content box with call to action button"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:47
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:324
+msgid "Primary bg & White text"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:48
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:325
+msgid "Secondary bg & White text"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:49
+msgid "Alternate bg & Content text"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:54
+msgid "Buttons Location"
+msgstr ""
+
+#: plugins/us-core/config/elements/cta.php:111
+msgid "Display second button"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:8
+msgid "Sidebar with Widgets"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:29
+msgid "Dropdown Title"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:35
+msgid "Dropdown Icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:41
+msgid "Dropdown Links"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:74
+#: plugins/us-core/config/meta-boxes.php:152
+#: plugins/us-core/config/theme-options.php:141
+#: plugins/us-core/config/theme-options.php:235
+#: plugins/us-core/config/theme-options.php:331
+#: plugins/us-core/config/theme-options.php:1129
+#: plugins/us-core/config/theme-options.php:1214
+#: plugins/us-core/config/theme-options.php:1293
+#: plugins/us-core/config/theme-options.php:2822
+#: plugins/us-core/config/theme-options.php:2923
+#: plugins/us-core/functions/post-types.php:695
+msgid "Sidebar"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:75
+#, php-format
+msgid "Add or edit Sidebar on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:93
+msgid "Open Dropdown"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:96
+#: plugins/us-core/config/elements/grid_filter.php:120
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:70
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:71
+msgid "On click"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:97
+#: plugins/us-core/config/elements/grid_filter.php:119
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:71
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:72
+msgid "On hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/dropdown.php:104
+msgid "Dropdown Direction"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:8
+msgid "Two-sided content element, flipping on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:16
+#: plugins/us-core/config/elements/flipbox.php:18
+#: plugins/us-core/config/elements/flipbox.php:27
+#: plugins/us-core/config/elements/flipbox.php:36
+#: plugins/us-core/config/elements/flipbox.php:43
+#: plugins/us-core/config/elements/flipbox.php:51
+#: plugins/us-core/config/elements/flipbox.php:60
+#: plugins/us-core/config/elements/flipbox.php:66
+#: plugins/us-core/config/elements/flipbox.php:76
+#: plugins/us-core/config/elements/flipbox.php:87
+#: plugins/us-core/config/elements/flipbox.php:92
+#: plugins/us-core/config/elements/flipbox.php:101
+#: plugins/us-core/config/elements/flipbox.php:113
+#: plugins/us-core/config/elements/flipbox.php:123
+#: plugins/us-core/config/elements/flipbox.php:132
+#: plugins/us-core/config/elements/flipbox.php:139
+#: plugins/us-core/config/elements/flipbox.php:148
+#: plugins/us-core/config/elements/flipbox.php:160
+msgid "Front Side"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:46
+#: plugins/us-core/config/elements/flipbox.php:196
+#: plugins/us-core/config/grid-settings.php:106
+#: plugins/us-core/config/menu-dropdown.php:122
+#: plugins/us-core/config/meta-boxes.php:204
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:84
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:152
+msgid "Background Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:54
+#: plugins/us-core/config/elements/flipbox.php:204
+#: plugins/us-core/config/grid-settings.php:113
+#: plugins/us-core/config/menu-dropdown.php:130
+#: plugins/us-core/config/meta-boxes.php:210
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:93
+msgid "Text Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:63
+#: plugins/us-core/config/elements/flipbox.php:213
+#: plugins/us-core/config/elements_design_options.php:148
+#: plugins/us-core/config/grid-settings.php:123
+#: plugins/us-core/config/header-settings.php:357
+#: plugins/us-core/config/menu-dropdown.php:139
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:334
+msgid "Background Image"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:69
+#: plugins/us-core/config/elements/flipbox.php:219
+#: plugins/us-core/config/elements_design_options.php:163
+#: plugins/us-core/config/grid-settings.php:139
+#: plugins/us-core/config/header-settings.php:366
+#: plugins/us-core/config/menu-dropdown.php:144
+#: plugins/us-core/config/theme-options.php:847
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:351
+msgid "Background Image Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:83
+msgid "Font icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:104
+#: plugins/us-core/config/elements/iconbox.php:33
+msgid "Icon Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:107
+#: plugins/us-core/config/elements/iconbox.php:36
+#: plugins/us-core/config/elements/menu.php:64
+#: plugins/us-core/config/elements/person.php:59
+#: plugins/us-core/config/elements/pricing.php:67
+#: plugins/us-core/config/elements/search.php:29
+#: plugins/us-core/config/elements/sharing.php:30
+#: plugins/us-core/config/elements/socials.php:106
+#: plugins/us-core/config/widgets.php:265
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:89
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:90
+msgid "Simple"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:108
+#: plugins/us-core/config/elements/iconbox.php:37
+msgid "Inside the Solid circle"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:116
+#: plugins/us-core/config/elements/iconbox.php:20
+#: plugins/us-core/config/elements/iconbox.php:44
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:161
+msgid "Icon Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:126
+#: plugins/us-core/config/elements/iconbox.php:52
+msgid "Icon Circle Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:154
+msgid "Above Title"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:155
+msgid "Below Title"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:156
+msgid "Below Description"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:167
+#: plugins/us-core/config/elements/flipbox.php:169
+#: plugins/us-core/config/elements/flipbox.php:178
+#: plugins/us-core/config/elements/flipbox.php:187
+#: plugins/us-core/config/elements/flipbox.php:193
+#: plugins/us-core/config/elements/flipbox.php:201
+#: plugins/us-core/config/elements/flipbox.php:210
+#: plugins/us-core/config/elements/flipbox.php:216
+#: plugins/us-core/config/elements/flipbox.php:226
+msgid "Back Side"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:236
+msgid "The whole element"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:237
+msgid "Button on the Back Side"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:257
+#: plugins/us-core/config/elements/grid.php:370
+#: plugins/us-core/config/elements/popup.php:49
+#: plugins/us-core/config/elements/pricing.php:127
+msgid "Button Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:266
+#: plugins/us-core/config/elements/grid.php:378
+#: plugins/us-core/config/elements/popup.php:58
+#: plugins/us-core/config/elements/post_taxonomy.php:33
+#: plugins/us-core/config/elements/pricing.php:120
+#: plugins/us-core/config/theme-options.php:692
+#: plugins/us-core/config/theme-options.php:781
+msgid "Button Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:277
+#: plugins/us-core/config/elements/ibanner.php:78
+#: plugins/us-core/config/elements/popup.php:190
+msgid "Animation Type"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:280
+msgid "Card Flip"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:281
+msgid "Cube Tilt"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:282
+msgid "Cube Flip"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:283
+msgid "Cover Open"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:290
+msgid "Animation Direction"
+msgstr ""
+
+#: plugins/us-core/config/elements/flipbox.php:314
+#: plugins/us-core/config/elements/ibanner.php:95
+msgid "Animation Easing"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:6
+msgid "Map"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:12
+#: plugins/us-core/config/elements/gmaps.php:61
+msgid ""
+"Specify address in accordance with the format used by the national postal "
+"service of the country concerned."
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:12
+#: plugins/us-core/config/elements/gmaps.php:61
+#, php-format
+msgid "Or use geo coordinates, for example: %s"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:18
+#: plugins/us-core/config/elements/gmaps.php:67
+msgid "Marker Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:19
+#: plugins/us-core/config/elements/gmaps.php:68
+msgid "HTML tags are allowed."
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:27
+msgid "Show Marker Text when map is loaded"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:31
+#: plugins/us-core/config/elements/gmaps.php:74
+msgid "Custom Marker Image"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:37
+#: plugins/us-core/config/elements/gmaps.php:80
+msgid "Marker Image Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:96
+msgid "Additional Markers"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:101
+msgid "Map Provider"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:104
+msgid "Google Maps"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:111
+msgid "Map Zoom"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:140
+msgid "Map Type"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:143
+msgid "Roadmap"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:144
+msgid "Roadmap + Terrain"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:145
+msgid "Satellite"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:146
+msgid "Satellite + Roadmap"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:155
+msgid "Hide all map controls"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:161
+msgid "Disable map zoom on mouse wheel scroll"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:167
+msgid "Disable dragging on touch screens"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:172
+#: plugins/us-core/config/elements/gmaps.php:180
+msgid "Map Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:173
+#: plugins/us-core/config/elements/gmaps.php:181
+#, php-format
+msgid "Check available styles on %s."
+msgstr ""
+
+#: plugins/us-core/config/elements/gmaps.php:181
+#, php-format
+msgid "Example: %s"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:36
+#: plugins/us-core/config/elements/grid_filter.php:32
+msgid "Filter by"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:62
+#, php-format
+msgid "Show Items of selected %s"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:124
+msgid "Total views"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:125
+msgid "Views for last month"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:126
+msgid "Views for last week"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:127
+msgid "Views for last day"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:145
+msgid "Items with the same taxonomy of current post"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:146
+msgid "Items of the current query (used for archives and search results)"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:147
+msgid "Сhild pages of current page"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:148
+msgid "Manually selected items"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:154
+msgid "Terms of selected taxonomy"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:155
+msgid "Child terms of current taxonomy"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:156
+msgid "Manually selected terms"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:217
+#: plugins/us-core/config/widgets.php:237
+msgid "Ignore sticky posts"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:235
+msgid "Show child terms"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:236
+msgid "Show empty"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:245
+msgid "Show past events"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:255
+#: plugins/us-core/config/elements/post_date.php:22
+#: plugins/us-core/config/widgets.php:169
+#: plugins/us-core/config/widgets.php:170
+msgid "Date of creation"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:256
+#: plugins/us-core/config/elements/post_date.php:23
+#: plugins/us-core/config/widgets.php:171
+#: plugins/us-core/config/widgets.php:172
+msgid "Date of update"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:260
+#, php-format
+msgid "\"%s\" value from \"%s\" box"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:261
+msgid "Manually for selected images and items"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:263
+#: plugins/us-core/config/elements/post_custom_field.php:60
+msgid "Custom Field"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:269
+msgid "Enter custom field name to order items by its value"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:277
+msgid "Order by numeric values"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:284
+#: plugins/us-core/config/widgets.php:170
+#: plugins/us-core/config/widgets.php:172
+msgid "Invert order"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:293
+#: plugins/us-core/config/widgets.php:223
+msgid "By title"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:295
+#: plugins/us-core/config/elements/grid.php:303
+#: plugins/us-core/config/widgets.php:192
+msgid "Items Quantity"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:296
+msgid "Manually, if available"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:310
+msgid "Exclude Items"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:315
+msgid "of previous Grids on this page"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:316
+msgid "by the given quantity from the beginning of output"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:324
+msgid "Items Quantity to skip"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:330
+msgid "Message when no items"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:339
+msgid "Numbered pagination"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:340
+msgid "Load items on button click"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:341
+msgid "Load items on page scroll"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:351
+msgid "Pagination Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:365
+msgid "Load More"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:404
+#: plugins/us-core/config/elements/post_taxonomy.php:23
+#: plugins/us-core/functions/shortcodes.php:278
+msgid "Display as"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:407
+msgid "Regular Grid"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:408
+#: plugins/us-core/functions/shortcodes.php:278
+msgid "Masonry"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:409
+msgid "METRO (works with square items only)"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:416
+msgid "Items animation on load"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:420
+#: plugins/us-core/config/elements/image.php:129
+#: plugins/us-core/config/elements/image_slider.php:44
+#: plugins/us-core/config/elements/menu.php:232
+#: plugins/us-core/config/elements/popup.php:193
+#: plugins/us-core/config/elements/socials.php:120
+#: plugins/us-core/config/elements_misc.php:26
+#: plugins/us-core/config/widgets.php:296
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:93
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:85
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:503
+msgid "Fade"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:421
+#: plugins/us-core/config/elements/image.php:130
+#: plugins/us-core/config/elements/menu.php:234
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:94
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:86
+msgid "Appear From Center"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:422
+#: plugins/us-core/config/elements/image.php:133
+#: plugins/us-core/config/elements/menu.php:235
+#: plugins/us-core/config/elements_misc.php:29
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:97
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:89
+msgid "Appear From Bottom"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:429
+msgid "Center items vertically"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:466
+msgid "Post Image Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:470
+#: plugins/us-core/config/elements/grid.php:488
+msgid "As in Grid Layout"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:477
+msgid "Post Title Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:485
+msgid "Items Aspect Ratio"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:489
+#: plugins/us-core/config/elements/ibanner.php:66
+#: plugins/us-core/config/elements/post_image.php:73
+#: plugins/us-core/config/grid-settings.php:67
+msgid "square"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:490
+#: plugins/us-core/config/elements/grid.php:491
+#: plugins/us-core/config/elements/grid.php:492
+#: plugins/us-core/config/elements/ibanner.php:67
+#: plugins/us-core/config/elements/ibanner.php:68
+#: plugins/us-core/config/elements/ibanner.php:69
+#: plugins/us-core/config/elements/post_image.php:74
+#: plugins/us-core/config/elements/post_image.php:75
+#: plugins/us-core/config/elements/post_image.php:76
+#: plugins/us-core/config/grid-settings.php:68
+#: plugins/us-core/config/grid-settings.php:69
+#: plugins/us-core/config/grid-settings.php:70
+msgid "landscape"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:493
+#: plugins/us-core/config/elements/grid.php:494
+#: plugins/us-core/config/elements/ibanner.php:70
+#: plugins/us-core/config/elements/ibanner.php:71
+#: plugins/us-core/config/elements/ibanner.php:72
+#: plugins/us-core/config/elements/post_image.php:77
+#: plugins/us-core/config/elements/post_image.php:78
+#: plugins/us-core/config/grid-settings.php:71
+#: plugins/us-core/config/grid-settings.php:72
+msgid "portrait"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:520
+msgid "Overriding Link"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:521
+msgid ""
+"Applies to every item of this Grid. All Grid Layout elements become not "
+"clickable."
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:526
+msgid "Opens a Post in a popup"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:527
+msgid "Opens a Post Image in a popup"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:533
+#: plugins/us-core/config/elements/popup.php:131
+msgid "Popup Width"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:553
+msgid "Filter Bar Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:566
+msgid "Filter Bar Alignment"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid.php:579
+msgid "Show \"All\" item in filter bar"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:39
+msgid "Taxonomies"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:57
+msgid "Number Range"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:62
+msgid "Show \"All\" value"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:69
+msgid "Show amount of relevant posts"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:91
+#: plugins/us-core/config/elements/grid_filter.php:93
+#: plugins/us-core/config/elements/person.php:64
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:91
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:92
+msgid "Trendy"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:92
+#: plugins/us-core/config/elements/grid_filter.php:93
+msgid "Switch"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:116
+msgid "Show the list of values"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:127
+msgid "Show titles before values"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:134
+msgid "Max Height of the list of values"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:141
+msgid "Hide unavailable values"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:142
+msgid ""
+"When turned off, unavailable values will remain visible, but not clickable."
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:148
+msgid "Mobile view at screen width"
+msgstr ""
+
+#: plugins/us-core/config/elements/grid_filter.php:149
+msgid "Leave blank to not apply mobile view."
+msgstr ""
+
+#: plugins/us-core/config/elements/html.php:7
+msgid "Custom HTML"
+msgstr ""
+
+#: plugins/us-core/config/elements/html.php:12
+#, php-format
+msgid "Added content will be displayed inside the %s block"
+msgstr ""
+
+#: plugins/us-core/config/elements/hwrapper.php:17
+#: plugins/us-core/config/elements/vwrapper.php:16
+msgid "Content Horizontal Alignment"
+msgstr ""
+
+#: plugins/us-core/config/elements/hwrapper.php:29
+#: plugins/us-core/config/elements/vwrapper.php:27
+msgid "Content Vertical Alignment"
+msgstr ""
+
+#: plugins/us-core/config/elements/hwrapper.php:35
+msgid "With baseline"
+msgstr ""
+
+#: plugins/us-core/config/elements/hwrapper.php:48
+#: plugins/us-core/config/elements/text.php:21
+msgid "Allow move content to the next line"
+msgstr ""
+
+#: plugins/us-core/config/elements/ibanner.php:8
+msgid "Image and text with hover effect"
+msgstr ""
+
+#: plugins/us-core/config/elements/ibanner.php:21
+#: plugins/us-core/config/elements/image.php:25
+#: plugins/us-core/config/elements/person.php:86
+#: plugins/us-core/config/elements/popup.php:74
+#: plugins/us-core/config/elements/post_custom_field.php:74
+#: plugins/us-core/config/elements/post_image.php:102
+msgid "Image Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/ibanner.php:63
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:109
+msgid "Aspect Ratio"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:8
+msgid "Icon, title, description"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:25
+#: plugins/us-core/config/elements/separator.php:70
+msgid "Border (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:27
+msgid "Custom colors"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:38
+msgid "Inside the Outlined circle"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:111
+msgid "Will be applied to the icon and title"
+msgstr ""
+
+#: plugins/us-core/config/elements/iconbox.php:129
+msgid "Will be shown instead of the icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:47
+msgid "Image Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:51
+#: plugins/us-core/config/elements/socials.php:96
+#: plugins/us-core/config/widgets.php:288
+msgid "Circle"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:52
+#: plugins/us-core/config/elements/sharing.php:32
+msgid "Outlined"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:53
+msgid "Simple Shadow"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:54
+msgid "Colored Shadow"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:55
+#: plugins/us-core/config/elements/image_slider.php:115
+msgid "Phone 6 Black Realistic"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:56
+#: plugins/us-core/config/elements/image_slider.php:116
+msgid "Phone 6 White Realistic"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:57
+#: plugins/us-core/config/elements/image_slider.php:117
+msgid "Phone 6 Black Flat"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:58
+#: plugins/us-core/config/elements/image_slider.php:118
+msgid "Phone 6 White Flat"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:65
+#: plugins/us-core/config/elements/image_slider.php:58
+#: plugins/us-core/functions/shortcodes.php:282
+msgid "Show image title and description"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:70
+msgid "Title and Description Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:73
+msgid "Below the image"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:74
+msgid "Over the image"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:86
+#: plugins/us-core/config/elements/post_image.php:21
+msgid "Open original image in a popup"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:118
+msgid "Different Image for Transparent Header"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:125
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:89
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:81
+msgid ""
+"Selected animation will be applied to this element, when it enters into the "
+"browsers viewport."
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:131
+#: plugins/us-core/config/elements/menu.php:221
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:95
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:87
+msgid "Appear From Left"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:132
+#: plugins/us-core/config/elements/menu.php:222
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:96
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:88
+msgid "Appear From Right"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:134
+#: plugins/us-core/config/elements/menu.php:233
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:98
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:90
+msgid "Appear From Top"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:135
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:99
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:91
+msgid "Height From Center"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:136
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:100
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:92
+msgid "Width From Center"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:143
+#: plugins/us-core/config/elements/itext.php:91
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:108
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:100
+msgid "Animation Delay (in seconds)"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:168
+#: plugins/us-core/config/elements/image.php:201
+msgid "Height on Tablets"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:177
+#: plugins/us-core/config/elements/image.php:210
+msgid "Height on Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/elements/image.php:186
+#: plugins/us-core/config/header-settings.php:63
+#: plugins/us-core/config/meta-boxes.php:52
+msgid "Sticky Header"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:21
+msgid "Show always"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:22
+msgid "Show on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:29
+msgid "Additional Navigation"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:33
+msgid "Dots"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:34
+msgid "Thumbnails"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:43
+#: plugins/us-core/config/elements/socials.php:121
+#: plugins/us-core/config/widgets.php:297
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:502
+msgid "Slide"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:63
+msgid "Display items in random order"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:68
+#: plugins/us-core/config/theme-options.php:2770
+msgid "Allow Full Screen view"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:78
+msgid "Pause on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:90
+msgid "Images Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:99
+msgid "Images Fit"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:102
+#: plugins/us-core/config/header-settings.php:371
+#: plugins/us-core/config/menu-dropdown.php:149
+#: plugins/us-core/config/theme-options.php:852
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:356
+msgid "Initial"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:103
+#: plugins/us-core/config/grid-settings.php:143
+#: plugins/us-core/config/header-settings.php:370
+#: plugins/us-core/config/menu-dropdown.php:148
+#: plugins/us-core/config/theme-options.php:851
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:355
+msgid "Fit to Area"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:104
+#: plugins/us-core/config/grid-settings.php:142
+#: plugins/us-core/config/header-settings.php:369
+#: plugins/us-core/config/menu-dropdown.php:147
+#: plugins/us-core/config/theme-options.php:850
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:354
+msgid "Fill Area"
+msgstr ""
+
+#: plugins/us-core/config/elements/image_slider.php:111
+msgid "Images Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:8
+msgid "Text with dynamically changing part"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:14
+msgid "Text States"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:32
+#: plugins/us-core/config/elements/post_custom_field.php:133
+#: plugins/us-core/config/elements/post_title.php:64
+#: plugins/us-core/config/elements/text.php:56
+msgid "HTML tag"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:42
+msgid "Disable Part Animation"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:43
+msgid ""
+"When enabled, lines of text will be animated without using the dynamic part."
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:49
+msgid "Use non-breaking spaces"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:56
+msgid "Make the dynamic part bold"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:62
+msgid "Dynamic Part Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:74
+msgid "Fade in the whole part"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:75
+msgid "Zoom in the whole part"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:76
+msgid "Zoom in character by character"
+msgstr ""
+
+#: plugins/us-core/config/elements/itext.php:77
+msgid "Typing"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:20
+msgid "Distance Between Main Items"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:55
+msgid "Main Items Height"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:61
+msgid "Main Items Hover Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:72
+msgid "Dropdown Indication"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:74
+msgid "Show arrows for main items with dropdown"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:76
+#: plugins/us-core/config/elements/menu.php:83
+#: plugins/us-core/config/elements/menu.php:90
+#: plugins/us-core/config/elements/menu.php:97
+msgid "Dropdowns"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:86
+#: plugins/us-core/config/elements/menu.php:250
+msgid "Dropdown Font Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:93
+msgid "Dropdown Width"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:95
+msgid "Limit full-width dropdowns by a menu width"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:118
+#: plugins/us-core/config/elements/menu.php:126
+#: plugins/us-core/config/header-settings.php:100
+#: plugins/us-core/config/header-settings.php:254
+#: plugins/us-core/config/header-settings.php:267
+#: plugins/us-core/config/header-settings.php:280
+#: plugins/us-core/config/header-settings.php:448
+#: plugins/us-core/config/header-settings.php:460
+#: plugins/us-core/config/header-settings.php:472
+#: plugins/us-core/config/header-settings.php:589
+#: plugins/us-core/config/header-settings.php:602
+#: plugins/us-core/config/header-settings.php:615
+#: plugins/us-core/config/meta-boxes.php:75
+#: plugins/us-core/config/theme-options.php:1375
+#: plugins/us-core/config/theme-options.php:1381
+#: plugins/us-core/config/theme-options.php:1387
+#: plugins/us-core/config/theme-options.php:1430
+#: plugins/us-core/config/theme-options.php:1437
+#: plugins/us-core/config/theme-options.php:1444
+msgid "Transparent Header"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:149
+msgid "Dropdown Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:157
+msgid "Dropdown Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:164
+msgid "Dropdown Item Background on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:172
+msgid "Dropdown Item Text on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:179
+msgid "Dropdown Active Item Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:187
+msgid "Dropdown Active Item Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:195
+msgid "Show mobile menu when screen width is less than"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:205
+#: plugins/us-core/config/elements/menu.php:216
+#: plugins/us-core/config/elements/menu.php:226
+#: plugins/us-core/config/elements/menu.php:239
+#: plugins/us-core/config/elements/menu.php:247
+#: plugins/us-core/config/elements/menu.php:255
+#: plugins/us-core/config/elements/menu.php:266
+#: plugins/us-core/config/elements/menu.php:277
+#: plugins/us-core/config/elements/menu.php:285
+#: plugins/us-core/config/elements/menu.php:293
+#: plugins/us-core/config/elements/menu.php:301
+#: plugins/us-core/config/elements/menu.php:314
+#: plugins/us-core/config/elements/menu.php:325
+#: plugins/us-core/config/menu-dropdown.php:187
+msgid "Mobile Menu"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:208
+msgid "Mobile Menu Layout"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:212
+msgid "Vertical Panel"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:213
+#: plugins/us-core/config/elements/search.php:32
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:290
+msgid "Full Screen"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:242
+msgid "Main Items Font Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:258
+msgid "Menu Items Alignment"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:269
+#: plugins/us-core/config/menu-dropdown.php:194
+msgid "Show dropdown by click on"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:270
+#, php-format
+msgid ""
+"You can change this behavior separately for every menu item on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:273
+#: plugins/us-core/config/menu-dropdown.php:197
+msgid "Arrow"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:274
+#: plugins/us-core/config/menu-dropdown.php:198
+msgid "Label and Arrow"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:304
+msgid "Icon Thickness"
+msgstr ""
+
+#: plugins/us-core/config/elements/menu.php:317
+#, php-format
+msgid "Position of \"%s\" word"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:7
+msgid "Colored notification box"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:16
+msgid "Blue"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:17
+msgid "Yellow"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:18
+msgid "Green"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:19
+msgid "Red"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:24
+msgid "Message Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/message.php:36
+msgid "Enable closing"
+msgstr ""
+
+#: plugins/us-core/config/elements/page_block.php:13
+#: plugins/us-core/config/elements/page_block.php:18
+#: plugins/us-core/functions/post-types.php:234
+msgid "Page Block"
+msgstr ""
+
+#: plugins/us-core/config/elements/page_block.php:25
+msgid "Exclude Rows and Columns in selected Page Block"
+msgstr ""
+
+#: plugins/us-core/config/elements/page_block.php:30
+#: plugins/us-core/config/elements/post_content.php:32
+msgid "Stretch content of Rows to the full width"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:8
+msgid "Photo, name, description and social links"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:14
+msgid "Photo"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:21
+msgid "Photo on hover (optional)"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:35
+msgid "Role"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:49
+msgid "Applies to the Name and to the Photo"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:60
+msgid "Simple (rounded photo)"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:61
+#: plugins/us-core/config/grid-templates.php:3126
+#: plugins/us-core/config/theme-options.php:2972
+msgid "Compact"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:62
+msgid "Compact (rounded photo)"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:63
+#: plugins/us-core/config/elements/search.php:30
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:90
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:91
+msgid "Modern"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:65
+#: plugins/us-core/config/elements/pricing.php:68
+msgid "Cards"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:72
+msgid "Photo Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:76
+msgid "Sepia"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:78
+msgid "Faded"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:79
+msgid "Colored"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:137
+#: plugins/us-core/config/meta-boxes.php:228
+#: plugins/us-core/config/widgets.php:305
+#: plugins/us-core/functions/helpers.php:1954
+#: plugins/us-core/functions/shortcodes.php:311
+msgid "Custom Link"
+msgstr ""
+
+#: plugins/us-core/config/elements/person.php:144
+#: plugins/us-core/config/widgets.php:315
+msgid "Custom Link Icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:8
+msgid "Window appears in the foreground of the page content"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:22
+msgid "This content will appear inside a popup..."
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:28
+msgid "Show Popup on"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:31
+msgid "Button click"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:32
+msgid "Image click"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:33
+msgid "Custom element click"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:34
+msgid "Page load"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:37
+#: plugins/us-core/config/elements/popup.php:46
+#: plugins/us-core/config/elements/popup.php:55
+#: plugins/us-core/config/elements/popup.php:64
+#: plugins/us-core/config/elements/popup.php:71
+#: plugins/us-core/config/elements/popup.php:81
+#: plugins/us-core/config/elements/popup.php:93
+#: plugins/us-core/config/elements/popup.php:100
+#: plugins/us-core/config/elements/popup.php:111
+#: plugins/us-core/config/elements/popup.php:119
+#: plugins/us-core/config/elements/popup.php:126
+msgid "Trigger"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:114
+msgid "Custom element CSS selector"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:115
+msgid "Use class or ID."
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:122
+msgid "Delay after page load (in seconds)"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:138
+msgid "Popup Padding"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:146
+msgid "Popup Corners Radius"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:154
+msgid "Title Background Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:161
+msgid "Title Text Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:169
+msgid "Popup Background Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:176
+msgid "Popup Text Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:184
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:532
+msgid "Background Overlay"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:194
+msgid "Scale Up"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:195
+msgid "Scale Down"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:196
+msgid "Slide from the Top"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:197
+msgid "Slide from the Bottom"
+msgstr ""
+
+#: plugins/us-core/config/elements/popup.php:198
+#: plugins/us-core/config/elements/popup.php:199
+msgid "3D Flip"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:8
+msgid "Post Author"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:17
+msgid "To the page with the Author's posts"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:18
+msgid "To the Author's website (if specified on his profile)"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:35
+#: plugins/us-core/config/elements/post_comments.php:57
+#: plugins/us-core/config/elements/post_custom_field.php:126
+#: plugins/us-core/config/elements/post_taxonomy.php:72
+#: plugins/us-core/config/elements/post_title.php:45
+msgid "Link Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:37
+#: plugins/us-core/config/elements/post_comments.php:59
+#: plugins/us-core/config/elements/post_custom_field.php:128
+#: plugins/us-core/config/elements/post_taxonomy.php:74
+#: plugins/us-core/config/elements/post_title.php:47
+msgid "Inherit from text color"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:47
+msgid "Picture Width"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:55
+msgid "Picture Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_author.php:67
+msgid "Posts count"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:8
+msgid "Post Comments"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:17
+msgid "List of comments with response form"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:18
+msgid "Comments amount"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:26
+msgid "Hide this element if no comments"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:32
+msgid "Show only number"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_comments.php:40
+msgid "To a Post comments"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:7
+msgid "Post Content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:17
+msgid "Excerpt, if it's empty, show part of a content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:18
+msgid "Excerpt, if it's empty, show nothing"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:19
+msgid "Part of a content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:20
+msgid "Full content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:38
+msgid "Amount of words in Excerpt"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:39
+#: plugins/us-core/config/elements/post_content.php:52
+msgid "HTML tags, line-breaks and shortcodes will be stripped."
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:39
+msgid "Set \"0\" to show full Excerpt."
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:51
+msgid "Amount of words in Content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:65
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:43
+msgid "Hide part of a content with the \"Show More\" link"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:70
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:51
+msgid "Height of visible content"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:71
+#: plugins/us-core/config/elements_misc.php:72
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:52
+msgid "In pixels:"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:78
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:60
+msgid "Text when content is hidden"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:80
+#: plugins/us-core/config/shortcodes.php:177
+msgid "Show More"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:85
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:68
+msgid "Text when content is shown"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:86
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:69
+msgid "Leave blank to prevent content from being hidden again."
+msgstr ""
+
+#: plugins/us-core/config/elements/post_content.php:88
+#: plugins/us-core/config/shortcodes.php:178
+msgid "Show Less"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:11
+#: plugins/us-core/config/elements/post_custom_field.php:12
+#: plugins/us-core/config/grid-settings.php:36
+#: plugins/us-core/config/meta-boxes.php:198
+#: plugins/us-core/functions/helpers.php:1954
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:97
+msgid "Custom appearance in Grid"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:11
+#: plugins/us-core/config/grid-settings.php:36
+#: plugins/us-core/config/meta-boxes.php:234
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:97
+msgid "Additional Image"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:18
+#: plugins/us-core/config/elements/post_custom_field.php:19
+#: plugins/us-core/config/elements/post_custom_field.php:20
+#: plugins/us-core/config/elements/post_custom_field.php:21
+#: plugins/us-core/config/grid-templates.php:3197
+#: plugins/us-core/config/grid-templates.php:3303
+#: plugins/us-core/config/grid-templates.php:3405
+#: plugins/us-core/config/grid-templates.php:3502
+#: plugins/us-core/config/grid-templates.php:3569
+#: plugins/us-core/config/grid-templates.php:3640
+#: plugins/us-core/functions/helpers.php:1959
+#: plugins/us-core/functions/post-types.php:99
+msgid "Testimonial"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:18
+#: plugins/us-core/config/meta-boxes.php:255
+msgid "Author Name"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:19
+#: plugins/us-core/config/meta-boxes.php:260
+msgid "Author Role"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:20
+#: plugins/us-core/config/meta-boxes.php:265
+msgid "Author Company"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:21
+#: plugins/us-core/config/meta-boxes.php:276
+msgid "Rating"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:50
+msgid "Post Custom Field"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:66
+msgid "Enter custom field name to retrieve its value."
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:83
+msgid "Hide this element if its value is empty"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:146
+#: plugins/us-core/config/elements/post_date.php:56
+#: plugins/us-core/config/elements/post_taxonomy.php:84
+#: plugins/us-core/config/elements/post_views.php:22
+msgid "Text before value"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_custom_field.php:154
+#: plugins/us-core/config/elements/post_views.php:29
+msgid "Text after value"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_date.php:9
+#: plugins/us-core/functions/helpers.php:2031
+msgid "Yesterday"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_date.php:13
+msgid "Post Date"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_date.php:29
+msgid "Format"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_date.php:32
+msgid "Human friendly"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_date.php:44
+msgid "Documentation on date and time formatting."
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:9
+msgid "Post Image"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:47
+msgid "Show placeholder when post image is absent"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:52
+msgid "Show media preview for posts with video, audio and gallery format"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:57
+msgid "Stretch the image to the container width"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:62
+msgid "Enable rounded image"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_image.php:66
+#: plugins/us-core/config/grid-settings.php:60
+msgid "Set Aspect Ratio"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:17
+msgid "Simple links"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:18
+msgid "On sides of the screen"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:25
+msgid "Invert position of previous and next"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:30
+msgid "Navigate within the specified taxonomy"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:41
+msgid "Previous Post subtitle"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_navigation.php:48
+msgid "Next Post subtitle"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_taxonomy.php:10
+msgid "Post Taxonomy"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_taxonomy.php:37
+msgid "Badge by default"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_taxonomy.php:56
+msgid "To a Post Archive"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_title.php:9
+msgid "Post Title"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_views.php:11
+msgid "Post Views"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_views.php:37
+msgid "Use \"K\" shorthand for thousands"
+msgstr ""
+
+#: plugins/us-core/config/elements/post_views.php:41
+msgid "Thousand separator"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:69
+msgid "Flat"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:88
+msgid "Mark this item as featured"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:92
+msgid "Price"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:99
+msgid "Price Substring"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:105
+msgid "Features List"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:115
+msgid "Button Link"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:133
+msgid "Button Icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/pricing.php:138
+msgid "Button Icon Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/product_field.php:18
+msgid "Sale Badge"
+msgstr ""
+
+#: plugins/us-core/config/elements/product_field.php:23
+msgid "Actions for plugins compatibility"
+msgstr ""
+
+#: plugins/us-core/config/elements/product_field.php:29
+msgid "Sale Badge Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/product_gallery.php:11
+#, php-format
+msgid "Edit Product gallery appearance on %sTheme Options%s."
+msgstr ""
+
+#: plugins/us-core/config/elements/product_ordering.php:6
+msgid "Product ordering"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:34
+msgid "Progress Value"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:41
+msgid "Final Value"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:49
+msgid "Hide progress value counter"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:56
+msgid "Hide final value"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:76
+msgid "Progress Bar Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/progbar.php:95
+msgid "Progress Bar Height"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:8
+msgid "Accurate scroll to page sections"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:13
+msgid "Disable scrolling at width"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:14
+msgid ""
+"When screen width is less than this value, scrolling by rows will be "
+"disabled."
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:20
+msgid "Scroll Speed (milliseconds)"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:26
+msgid "Show Navigation Dots"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:30
+msgid "Dots Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:43
+msgid "Dots Position"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:54
+msgid "Dots Size"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:62
+msgid "Dots Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/scroller.php:72
+msgid "Show dots for Footer"
+msgstr ""
+
+#: plugins/us-core/config/elements/search.php:20
+msgid "Search Shop Products only"
+msgstr ""
+
+#: plugins/us-core/config/elements/search.php:37
+msgid "Field Width"
+msgstr ""
+
+#: plugins/us-core/config/elements/search.php:59
+msgid "Field Width on Tablets"
+msgstr ""
+
+#: plugins/us-core/config/elements/search.php:82
+msgid "Search Field Background"
+msgstr ""
+
+#: plugins/us-core/config/elements/search.php:91
+msgid "Search Field Text"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:8
+msgid "Gap between elements"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:17
+#: plugins/us-core/config/theme-options.php:928
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:286
+msgid "Small"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:18
+#: plugins/us-core/config/theme-options.php:929
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:287
+msgid "Medium"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:19
+#: plugins/us-core/config/theme-options.php:930
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:288
+msgid "Large"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:20
+#: plugins/us-core/config/theme-options.php:931
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:289
+msgid "Huge"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:36
+msgid "Show horizontal line in the middle"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:40
+msgid "Line Width"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:43
+msgid "Container width"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:44
+msgid "Screen width"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:45
+#: plugins/us-core/config/elements/separator.php:46
+#, php-format
+msgid "%s of container width"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:53
+msgid "Line Thickness"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:67
+msgid "Line Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:80
+msgid "Line Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:83
+#: plugins/us-core/config/elements/sharing.php:31
+#: plugins/us-core/config/elements_design_options.php:322
+msgid "Solid"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:84
+#: plugins/us-core/config/elements_design_options.php:323
+msgid "Dashed"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:85
+#: plugins/us-core/config/elements_design_options.php:324
+msgid "Dotted"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:86
+#: plugins/us-core/config/elements_design_options.php:325
+msgid "Double"
+msgstr ""
+
+#: plugins/us-core/config/elements/separator.php:99
+#: plugins/us-core/config/elements/separator.php:107
+#: plugins/us-core/config/elements/separator.php:114
+#: plugins/us-core/config/elements/separator.php:122
+#: plugins/us-core/config/elements/separator.php:134
+msgid "Icon and Title"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:33
+#: plugins/us-core/config/elements_design_options.php:190
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:397
+msgid "Fixed"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:54
+#: plugins/us-core/config/elements/socials.php:81
+#: plugins/us-core/config/widgets.php:276
+msgid "Default brands colors"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:63
+msgid "Share Counters"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:73
+msgid "Allow to share selected text"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:74
+msgid ""
+"When you select text on a page, a panel with buttons appears, and you can "
+"quickly share the selected text."
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:79
+msgid "Text selection inside post content only"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:86
+msgid "Sharing URL (optional)"
+msgstr ""
+
+#: plugins/us-core/config/elements/sharing.php:87
+msgid "If not specified, the opened page URL will be used by default"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:22
+msgid "Custom Icon"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:78
+#: plugins/us-core/config/widgets.php:274
+msgid "Icons Color"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:83
+#: plugins/us-core/config/widgets.php:278
+msgid "Link (theme color)"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:90
+#: plugins/us-core/config/widgets.php:284
+msgid "Icons Shape"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:94
+#: plugins/us-core/config/widgets.php:286
+msgid "Square"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:95
+#: plugins/us-core/config/widgets.php:287
+msgid "Rounded Square"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:103
+#: plugins/us-core/config/widgets.php:263
+msgid "Icons Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:107
+#: plugins/us-core/config/widgets.php:266
+msgid "With outline"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:108
+#: plugins/us-core/config/widgets.php:267
+msgid "With light background"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:109
+#: plugins/us-core/config/widgets.php:268
+msgid "With colored background"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:117
+#: plugins/us-core/config/theme-options.php:1895
+#: plugins/us-core/config/widgets.php:294
+msgid "Hover Style"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:130
+msgid "Gap between Icons"
+msgstr ""
+
+#: plugins/us-core/config/elements/socials.php:138
+msgid "Hide tooltip on hover"
+msgstr ""
+
+#: plugins/us-core/config/elements/text.php:9
+msgid "Custom text with link and icon"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:13
+msgid "Extra class"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:18
+#: plugins/us-core/config/elements_design_options.php:27
+#: plugins/us-core/config/elements_design_options.php:34
+#: plugins/us-core/config/elements_design_options.php:501
+#: plugins/us-core/config/elements_design_options.php:508
+#: plugins/us-core/config/elements_design_options.php:525
+#: plugins/us-core/config/elements_design_options.php:540
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:448
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:56
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:64
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:74
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:48
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:56
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_inner.php:66
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:25
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:33
+#: plugins/us-core/plugins-support/js_composer/map/vc_column_text.php:98
+#: plugins/us-core/plugins-support/js_composer/map/vc_custom_heading.php:15
+#: plugins/us-core/plugins-support/js_composer/map/vc_custom_heading.php:23
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:44
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:52
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:62
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:37
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:45
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:55
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:41
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:49
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:59
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:109
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:41
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:49
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:59
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:42
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:50
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:60
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:25
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:33
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:43
+msgid "Design"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:23
+msgid "Element ID"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:63
+#: plugins/us-core/config/theme-options.php:1998
+#: plugins/us-core/config/theme-options.php:2400
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:109
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:144
+msgid "Font"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:70
+#: plugins/us-core/config/theme-options.php:483
+#: plugins/us-core/config/theme-options.php:1833
+#: plugins/us-core/config/theme-options.php:2083
+#: plugins/us-core/config/theme-options.php:2473
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:118
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:153
+msgid "Font Weight"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:74
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:122
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:157
+#: plugins/us-core/usof/templates/fields/font.php:167
+#: plugins/us-core/usof/templates/fields/font.php:168
+msgid "thin"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:75
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:123
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:158
+#: plugins/us-core/usof/templates/fields/font.php:169
+#: plugins/us-core/usof/templates/fields/font.php:170
+msgid "extra-light"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:76
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:124
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:159
+#: plugins/us-core/usof/templates/fields/font.php:171
+#: plugins/us-core/usof/templates/fields/font.php:172
+msgid "light"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:77
+#: plugins/us-core/config/elements_design_options.php:107
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:125
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:160
+#: plugins/us-core/usof/templates/fields/font.php:173
+#: plugins/us-core/usof/templates/fields/font.php:174
+msgid "normal"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:78
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:126
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:161
+#: plugins/us-core/usof/templates/fields/font.php:175
+#: plugins/us-core/usof/templates/fields/font.php:176
+msgid "medium"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:79
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:127
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:162
+#: plugins/us-core/usof/templates/fields/font.php:177
+#: plugins/us-core/usof/templates/fields/font.php:178
+msgid "semi-bold"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:80
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:128
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:163
+#: plugins/us-core/usof/templates/fields/font.php:179
+#: plugins/us-core/usof/templates/fields/font.php:180
+msgid "bold"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:81
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:129
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:164
+#: plugins/us-core/usof/templates/fields/font.php:181
+#: plugins/us-core/usof/templates/fields/font.php:182
+msgid "extra-bold"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:82
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:130
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:165
+#: plugins/us-core/usof/templates/fields/font.php:183
+#: plugins/us-core/usof/templates/fields/font.php:184
+msgid "ultra-bold"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:89
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:139
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:174
+msgid "Text Transform"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:103
+msgid "Font Style"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:108
+#: plugins/us-core/usof/templates/fields/font.php:168
+#: plugins/us-core/usof/templates/fields/font.php:170
+#: plugins/us-core/usof/templates/fields/font.php:172
+#: plugins/us-core/usof/templates/fields/font.php:174
+#: plugins/us-core/usof/templates/fields/font.php:176
+#: plugins/us-core/usof/templates/fields/font.php:178
+#: plugins/us-core/usof/templates/fields/font.php:180
+#: plugins/us-core/usof/templates/fields/font.php:182
+#: plugins/us-core/usof/templates/fields/font.php:184
+msgid "italic"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:115
+#: plugins/us-core/config/theme-options.php:444
+#: plugins/us-core/config/theme-options.php:1707
+#: plugins/us-core/config/theme-options.php:2018
+#: plugins/us-core/config/theme-options.php:2429
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:155
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:190
+msgid "Font Size"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:123
+#: plugins/us-core/config/theme-options.php:466
+#: plugins/us-core/config/theme-options.php:1719
+#: plugins/us-core/config/theme-options.php:2053
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:165
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:200
+msgid "Line height"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:131
+#: plugins/us-core/config/theme-options.php:496
+#: plugins/us-core/config/theme-options.php:2108
+#: plugins/us-core/config/theme-options.php:2508
+msgid "Letter Spacing"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:141
+msgid "Background Сolor"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:145
+#: plugins/us-core/config/elements_design_options.php:151
+#: plugins/us-core/config/elements_design_options.php:159
+#: plugins/us-core/config/elements_design_options.php:168
+#: plugins/us-core/config/elements_design_options.php:182
+#: plugins/us-core/config/elements_design_options.php:194
+msgid "Background"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:154
+#: plugins/us-core/config/grid-settings.php:148
+#: plugins/us-core/config/header-settings.php:387
+#: plugins/us-core/config/menu-dropdown.php:169
+#: plugins/us-core/config/theme-options.php:870
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:368
+msgid "Background Image Position"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:172
+#: plugins/us-core/config/grid-settings.php:165
+#: plugins/us-core/config/header-settings.php:376
+#: plugins/us-core/config/menu-dropdown.php:156
+#: plugins/us-core/config/theme-options.php:858
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:409
+msgid "Background Image Repeat"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:175
+#: plugins/us-core/config/grid-settings.php:169
+#: plugins/us-core/config/header-settings.php:379
+#: plugins/us-core/config/menu-dropdown.php:159
+#: plugins/us-core/config/theme-options.php:861
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:412
+msgid "Repeat"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:176
+#: plugins/us-core/config/grid-settings.php:170
+#: plugins/us-core/config/header-settings.php:380
+#: plugins/us-core/config/menu-dropdown.php:160
+#: plugins/us-core/config/theme-options.php:862
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:413
+msgid "Horizontally"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:177
+#: plugins/us-core/config/grid-settings.php:171
+#: plugins/us-core/config/header-settings.php:381
+#: plugins/us-core/config/menu-dropdown.php:161
+#: plugins/us-core/config/theme-options.php:863
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:414
+msgid "Vertically"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:186
+msgid "Background Image Attachment"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:205
+#: plugins/us-core/config/elements_design_options.php:213
+#: plugins/us-core/config/elements_design_options.php:221
+#: plugins/us-core/config/elements_design_options.php:229
+#: plugins/us-core/config/elements_design_options.php:237
+#: plugins/us-core/config/elements_design_options.php:245
+msgid "Sizes"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:232
+msgid "Min Width"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:240
+msgid "Min Height"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:255
+#: plugins/us-core/config/elements_design_options.php:264
+#: plugins/us-core/config/elements_design_options.php:272
+#: plugins/us-core/config/elements_design_options.php:280
+#: plugins/us-core/config/elements_design_options.php:288
+#: plugins/us-core/config/elements_design_options.php:297
+#: plugins/us-core/config/elements_design_options.php:305
+#: plugins/us-core/config/elements_design_options.php:313
+msgid "Spacing"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:318
+msgid "Border Style"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:329
+#: plugins/us-core/config/elements_design_options.php:337
+#: plugins/us-core/config/elements_design_options.php:345
+#: plugins/us-core/config/elements_design_options.php:361
+#: plugins/us-core/config/elements_design_options.php:370
+#: plugins/us-core/config/elements_design_options.php:379
+#: plugins/us-core/config/elements_design_options.php:388
+msgid "Border"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:332
+#: plugins/us-core/config/grid-settings.php:180
+#: plugins/us-core/config/theme-options.php:2070
+#: plugins/us-core/config/theme-options.php:2486
+msgid "Border Radius"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:340
+#: plugins/us-core/config/theme-options.php:2096
+#: plugins/us-core/config/theme-options.php:2521
+msgid "Border Width"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:383
+msgid "Border Сolor"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:403
+#: plugins/us-core/config/elements_design_options.php:406
+#: plugins/us-core/config/elements_design_options.php:411
+#: plugins/us-core/config/elements_design_options.php:421
+#: plugins/us-core/config/elements_design_options.php:430
+#: plugins/us-core/config/elements_design_options.php:439
+#: plugins/us-core/config/elements_design_options.php:447
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:100
+msgid "Position"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:453
+msgid "Horizontal Offset"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:458
+#: plugins/us-core/config/elements_design_options.php:466
+#: plugins/us-core/config/elements_design_options.php:474
+#: plugins/us-core/config/elements_design_options.php:482
+#: plugins/us-core/config/elements_design_options.php:490
+msgid "Box Shadow"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:461
+msgid "Vertical Offset"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:469
+#: plugins/us-core/config/theme-options.php:2296
+#: plugins/us-core/config/theme-options.php:2354
+msgid "Blur"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:477
+#: plugins/us-core/config/theme-options.php:2308
+#: plugins/us-core/config/theme-options.php:2366
+msgid "Spread"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:499
+msgid "Hide this element when the header is sticky"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:506
+msgid "Hide this element when the header is NOT sticky"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:514
+msgid "Hide on screens LESS than"
+msgstr ""
+
+#: plugins/us-core/config/elements_design_options.php:529
+msgid "Hide on screens MORE than"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:10
+msgid "Enable hover effect"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:11
+msgid "Change appearance of this element when hover on the whole Grid Layout"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:14
+#: plugins/us-core/config/elements_hover_options.php:30
+#: plugins/us-core/config/elements_hover_options.php:46
+#: plugins/us-core/config/elements_hover_options.php:62
+#: plugins/us-core/config/elements_hover_options.php:78
+#: plugins/us-core/config/elements_hover_options.php:102
+#: plugins/us-core/config/elements_hover_options.php:126
+#: plugins/us-core/config/elements_hover_options.php:150
+#: plugins/us-core/config/elements_hover_options.php:174
+#: plugins/us-core/config/elements_hover_options.php:184
+#: plugins/us-core/config/elements_hover_options.php:195
+#: plugins/us-core/config/elements_hover_options.php:206
+#: plugins/us-core/config/elements_hover_options.php:222
+#: plugins/us-core/config/elements_hover_options.php:237
+#: plugins/us-core/config/elements_hover_options.php:252
+msgid "Hover Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:18
+msgid "Opacity"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:34
+msgid "Opacity on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:50
+msgid "Scale"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:66
+msgid "Scale on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:82
+msgid "Horizontal Shift"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:106
+msgid "Horizontal Shift on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:130
+msgid "Vertical Shift"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:154
+msgid "Vertical Shift on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:178
+msgid "Background Сolor on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:188
+msgid "Border Сolor on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:199
+msgid "Text Сolor on Hover"
+msgstr ""
+
+#: plugins/us-core/config/elements_hover_options.php:210
+msgid "Hover Transition Duration"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:27
+msgid "SlideDown"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:28
+msgid "Fade + SlideDown"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:30
+msgid "Horizontal Slide"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:31
+msgid "Material Design Effect"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:84
+#, php-format
+msgid "Add or edit a menu on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:87
+msgid "Edit image sizes"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:90
+#, php-format
+msgid "Add or edit Button Styles on %sTheme Options%s"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:93
+#, php-format
+msgid ""
+"To apply a URL from a custom field, use its name between the %s symbols."
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:96
+#, php-format
+msgid "Add or edit Header on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:99
+#, php-format
+msgid "Add or edit content template on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:102
+#, php-format
+msgid "Add or edit Footer on the %s page"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:105
+msgid "In seconds:"
+msgstr ""
+
+#: plugins/us-core/config/elements_misc.php:108
+msgid "In milliseconds:"
+msgstr ""
+
+#: plugins/us-core/config/grid-settings.php:100
+msgid "Hide Overflowing Content"
+msgstr ""
+
+#: plugins/us-core/config/grid-settings.php:192
+#: plugins/us-core/config/theme-options.php:1958
+#: plugins/us-core/config/theme-options.php:1966
+#: plugins/us-core/config/theme-options.php:1970
+#: plugins/us-core/config/theme-options.php:2253
+#: plugins/us-core/config/theme-options.php:2261
+#: plugins/us-core/config/theme-options.php:2267
+msgid "Shadow"
+msgstr ""
+
+#: plugins/us-core/config/grid-settings.php:204
+#: plugins/us-core/config/theme-options.php:1983
+msgid "Shadow on hover"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:13
+msgid "Blog Templates"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1293
+msgid "Read More"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1398
+msgid "News Templates"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1496
+msgid "Gallery Templates"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1515
+msgid "Image Gallery with titles BELOW the image"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1596
+msgid "Image Gallery with titles OVER the image"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:1691
+msgid "Portfolio Templates"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:3198
+msgid "Testimonial Templates"
+msgstr ""
+
+#: plugins/us-core/config/grid-templates.php:3745
+msgid "Shop Templates"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:37
+msgid "Apply when the screen width is less than"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:54
+msgid "Orientation"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:65
+msgid "Fix the header at the top of a page during scroll"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:71
+msgid "Auto-hide on scroll down"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:82
+msgid "Header Scroll Breakpoint"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:83
+msgid ""
+"This option sets scroll distance from the top of a page after which the "
+"sticky header will be shrunk"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:102
+msgid "Make the header transparent at its initial position"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:108
+msgid "Header Width"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:125
+msgid "Elements Alignment"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:136
+#: plugins/us-core/config/meta-boxes.php:98
+msgid "Header Shadow"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:140
+msgid "Thin"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:141
+msgid "Wide"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:150
+#: plugins/us-core/config/header-settings.php:486
+msgid "Show Area"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:155
+#: plugins/us-core/config/header-settings.php:296
+#: plugins/us-core/config/header-settings.php:491
+msgid "Area Height"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:172
+#: plugins/us-core/config/header-settings.php:309
+#: plugins/us-core/config/header-settings.php:507
+msgid "Sticky Area Height"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:190
+#: plugins/us-core/config/header-settings.php:325
+#: plugins/us-core/config/header-settings.php:525
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:310
+msgid "Full Width Content"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:202
+#: plugins/us-core/config/header-settings.php:335
+#: plugins/us-core/config/header-settings.php:537
+msgid "Center the middle cell"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:242
+#: plugins/us-core/config/header-settings.php:280
+#: plugins/us-core/config/header-settings.php:437
+#: plugins/us-core/config/header-settings.php:472
+#: plugins/us-core/config/header-settings.php:576
+#: plugins/us-core/config/header-settings.php:615
+#: plugins/us-core/config/theme-options.php:1368
+#: plugins/us-core/config/theme-options.php:1387
+#: plugins/us-core/config/theme-options.php:1423
+#: plugins/us-core/config/theme-options.php:1444
+#: plugins/us-core/config/theme-options.php:1497
+#: plugins/us-core/config/theme-options.php:1565
+#: plugins/us-core/config/theme-options.php:1628
+#: plugins/us-core/config/theme-options.php:1676
+msgid "Link on hover"
+msgstr ""
+
+#: plugins/us-core/config/header-settings.php:342
+msgid "Elements Vertical Alignment"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:47
+msgid "Stretch background to the screen edges"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:53
+msgid "Drop from"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:56
+msgid "Menu item"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:65
+msgid "Drop to"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:78
+msgid "Columns for sub-items"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:92
+msgid "Inner indents"
+msgstr ""
+
+#: plugins/us-core/config/menu-dropdown.php:189
+msgid "Override settings for this menu item"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:31
+msgid "Page Layout"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:44
+#: plugins/us-core/config/meta-boxes.php:126
+#: plugins/us-core/config/meta-boxes.php:142
+#: plugins/us-core/config/meta-boxes.php:156
+#: plugins/us-core/config/meta-boxes.php:185
+#: plugins/us-core/functions/post.php:329
+msgid "As in Theme Options"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:45
+#: plugins/us-core/config/meta-boxes.php:127
+#: plugins/us-core/config/meta-boxes.php:157
+#: plugins/us-core/config/meta-boxes.php:186
+#: plugins/us-core/config/theme-options.php:107
+#: plugins/us-core/config/theme-options.php:120
+#: plugins/us-core/config/theme-options.php:146
+#: plugins/us-core/config/theme-options.php:173
+#: plugins/us-core/config/theme-options.php:202
+#: plugins/us-core/config/theme-options.php:215
+#: plugins/us-core/config/theme-options.php:240
+#: plugins/us-core/config/theme-options.php:267
+#: plugins/us-core/config/theme-options.php:298
+#: plugins/us-core/config/theme-options.php:311
+#: plugins/us-core/config/theme-options.php:336
+#: plugins/us-core/config/theme-options.php:363
+#: plugins/us-core/config/theme-options.php:1100
+#: plugins/us-core/config/theme-options.php:1111
+#: plugins/us-core/config/theme-options.php:1133
+#: plugins/us-core/config/theme-options.php:1157
+#: plugins/us-core/config/theme-options.php:1185
+#: plugins/us-core/config/theme-options.php:1196
+#: plugins/us-core/config/theme-options.php:1218
+#: plugins/us-core/config/theme-options.php:1242
+#: plugins/us-core/config/theme-options.php:1263
+#: plugins/us-core/config/theme-options.php:1275
+#: plugins/us-core/config/theme-options.php:1298
+#: plugins/us-core/config/theme-options.php:1323
+#: plugins/us-core/config/theme-options.php:2792
+#: plugins/us-core/config/theme-options.php:2804
+#: plugins/us-core/config/theme-options.php:2827
+#: plugins/us-core/config/theme-options.php:2852
+#: plugins/us-core/config/theme-options.php:2871
+#: plugins/us-core/config/theme-options.php:2883
+#: plugins/us-core/config/theme-options.php:2928
+#: plugins/us-core/config/theme-options.php:2953
+msgid "Do not display"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:54
+#: plugins/us-core/config/meta-boxes.php:77
+msgid "Override this setting"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:62
+#: plugins/us-core/config/meta-boxes.php:85
+msgid "On Desktops"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:63
+#: plugins/us-core/config/meta-boxes.php:86
+msgid "On Tablets"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:64
+#: plugins/us-core/config/meta-boxes.php:87
+msgid "On Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:100
+msgid "Remove header shadow"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:106
+msgid "Sticky Header Initial Position"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:109
+msgid "At the Top of this page"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:110
+msgid "At the Bottom of the first content row"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:111
+msgid "Above the first content row"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:112
+msgid "Below the first content row"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:121
+#: plugins/us-core/config/theme-options.php:114
+#: plugins/us-core/config/theme-options.php:209
+#: plugins/us-core/config/theme-options.php:305
+#: plugins/us-core/config/theme-options.php:1106
+#: plugins/us-core/config/theme-options.php:1191
+#: plugins/us-core/config/theme-options.php:1269
+#: plugins/us-core/config/theme-options.php:2798
+#: plugins/us-core/config/theme-options.php:2877
+#: plugins/us-core/functions/post-types.php:694
+msgid "Titlebar"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:137
+#: plugins/us-core/config/theme-options.php:128
+#: plugins/us-core/config/theme-options.php:223
+#: plugins/us-core/config/theme-options.php:319
+#: plugins/us-core/config/theme-options.php:1118
+#: plugins/us-core/config/theme-options.php:1203
+#: plugins/us-core/config/theme-options.php:1282
+#: plugins/us-core/config/theme-options.php:2811
+#: plugins/us-core/config/theme-options.php:2890
+#: plugins/us-core/functions/header.php:567
+#: plugins/us-core/functions/post-types.php:210
+msgid "Content template"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:143
+#: plugins/us-core/config/theme-options.php:134
+#: plugins/us-core/config/theme-options.php:1123
+msgid "Show content as is"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:180
+#: plugins/us-core/config/theme-options.php:167
+#: plugins/us-core/config/theme-options.php:261
+#: plugins/us-core/config/theme-options.php:357
+#: plugins/us-core/config/theme-options.php:1152
+#: plugins/us-core/config/theme-options.php:1237
+#: plugins/us-core/config/theme-options.php:1317
+#: plugins/us-core/config/theme-options.php:2846
+#: plugins/us-core/config/theme-options.php:2947
+#: plugins/us-core/functions/header.php:569
+#: plugins/us-core/functions/post-types.php:697
+msgid "Footer"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:217
+msgid "Custom Size"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:270
+#: plugins/us-core/functions/helpers.php:1959
+msgid "Author Link"
+msgstr ""
+
+#: plugins/us-core/config/meta-boxes.php:294
+#: plugins/us-core/functions/post-types.php:364
+msgid "Used in"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:106
+#: plugins/us-core/config/theme-options.php:119
+#: plugins/us-core/config/theme-options.php:133
+#: plugins/us-core/config/theme-options.php:145
+#: plugins/us-core/config/theme-options.php:172
+#: plugins/us-core/config/theme-options.php:2791
+#: plugins/us-core/config/theme-options.php:2803
+#: plugins/us-core/config/theme-options.php:2826
+#: plugins/us-core/config/theme-options.php:2851
+#: plugins/us-core/config/theme-options.php:2870
+#: plugins/us-core/config/theme-options.php:2882
+#: plugins/us-core/config/theme-options.php:2927
+#: plugins/us-core/config/theme-options.php:2952
+msgid "As in Pages"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:201
+#: plugins/us-core/config/theme-options.php:214
+#: plugins/us-core/config/theme-options.php:228
+#: plugins/us-core/config/theme-options.php:239
+#: plugins/us-core/config/theme-options.php:266
+#: plugins/us-core/config/theme-options.php:1262
+#: plugins/us-core/config/theme-options.php:1274
+#: plugins/us-core/config/theme-options.php:1287
+#: plugins/us-core/config/theme-options.php:1297
+#: plugins/us-core/config/theme-options.php:1322
+msgid "As in Archives"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:297
+#: plugins/us-core/config/theme-options.php:310
+#: plugins/us-core/config/theme-options.php:324
+#: plugins/us-core/config/theme-options.php:335
+#: plugins/us-core/config/theme-options.php:362
+msgid "As in Shop Page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:376
+#, php-format
+msgid "%s different images sizes are registered."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:384
+#, php-format
+msgid "To change the default image sizes, go to %s."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:389
+#, php-format
+msgid "To change the Product image sizes, go to %s."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:428
+#, php-format
+msgid "Heading %s Preview"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:516
+#: plugins/us-core/config/theme-options.php:1738
+msgid "Font Size on Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:538
+msgid "Bottom indent"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:562
+#: plugins/us-core/config/theme-options.php:2124
+msgid "Uppercase"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:563
+#: plugins/us-core/config/theme-options.php:1848
+#: plugins/us-core/config/theme-options.php:2125
+msgid "Italic"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:591
+#: plugins/us-core/functions/post.php:221
+msgid "Maintenance Mode"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:592
+msgid ""
+"When this option is ON, all not logged in users will see only specific page "
+"selected by you. This is useful when your site is under construction."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:594
+msgid "Show for site visitors only specific page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:601
+#, php-format
+msgid ""
+"It's not possible to switch off this setting, while %s is activated for "
+"development."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:601
+#: themes/Impreza/common/admin/functions/about.php:111
+#: themes/Zephyr/common/admin/functions/about.php:111
+#, php-format
+msgid "You can deactivate it on your %sLicenses%s page."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:615
+msgid ""
+"When this option is ON, your site will send HTTP 503 response to search "
+"engines. Use this option only for short period of time."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:617
+msgid "Enable \"503 Service Unavailable\" status"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:629
+msgid "Preloader Screen"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:633
+#: plugins/us-core/config/theme-options.php:634
+#: plugins/us-core/config/theme-options.php:635
+#: plugins/us-core/config/theme-options.php:636
+#: plugins/us-core/config/theme-options.php:637
+#, php-format
+msgid "Shows Preloader %d"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:638
+msgid "Shows Custom Image"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:649
+msgid "Images Placeholder"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:655
+msgid "Ripple Effect"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:657
+msgid "Show the ripple effect when clicking on theme elements"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:661
+msgid "Rounded Corners"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:663
+msgid "Enable rounded corners of theme elements"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:667
+msgid "Links Underline"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:669
+msgid "Underline text links on hover"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:673
+msgid "Keyboard Accessibility"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:675
+msgid "Highlight theme elements on focus"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:681
+#, php-format
+msgid "\"%s\" button"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:681
+#: plugins/us-core/templates/footer.php:62
+msgid "Back to top"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:683
+msgid "Enable button which scrolls a page back to the top"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:693
+#: plugins/us-core/config/theme-options.php:782
+#: plugins/us-core/config/theme-options.php:2674
+#: plugins/us-core/config/theme-options.php:2681
+msgid "Edit Button Styles"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:715
+msgid "Button Color"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:721
+msgid "Show Button after page is scrolled to"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:722
+#, php-format
+msgid "1vh equals 1% of the screen height"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:740
+msgid "Cookie Notice"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:742
+msgid "Show notice that will be shown to new site visitors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:759
+#, php-format
+msgid "Show link to the %s page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:793
+msgid "Smooth Scroll Duration"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:805
+msgid "Google Maps API Key"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:806
+msgid "The API key is required for the domains created after June 22, 2016."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:806
+msgid "Get API key"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:815
+msgid "Site Layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:818
+msgid "Site Canvas Layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:828
+msgid "Body Background Color"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:833
+msgid "Body Background Image"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:886
+msgid "Site Canvas Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:899
+msgid "Site Content Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:911
+msgid "Sidebar Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:924
+msgid "Row Height by default"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:927
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:285
+msgid "Equals the content height"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:958
+msgid "Text Blocks bottom indent"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:974
+msgid "Effects Disabling Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:975
+msgid ""
+"When screen width is less than this value, vertical parallax and animation "
+"of elements appearance will be disabled."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:987
+msgid "Responsive Layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:989
+msgid "Enable responsive layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:993
+msgid "Columns Stacking Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:994
+msgid ""
+"When screen width is less than this value, all columns within a row will "
+"become a single column."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1007
+msgid "Tablets Screen Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1008
+#: plugins/us-core/config/theme-options.php:1022
+msgid "Used in Design settings of theme elements."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1021
+msgid "Mobiles Screen Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1039
+msgid "Pages Layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1046
+#: plugins/us-core/config/theme-options.php:1065
+msgid ""
+"Selected page must contain Grid element showing items of the current query."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1049
+#: plugins/us-core/config/theme-options.php:1068
+#: plugins/us-core/config/theme-options.php:1208
+msgid "Show results via Grid element with defaults"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1056
+msgid "Exclude from Search Results"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1077
+msgid "Page \"404 Not Found\""
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1078
+msgid "Selected page will be shown instead of the \"Page not found\" message."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1169
+msgid "Archives Layout"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1252
+#: plugins/us-core/functions/post-types.php:731
+msgid "Authors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1350
+msgid "Header colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1392
+msgid "Toolbar in Chrome for Android"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1405
+msgid "Alternate Header colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1457
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:322
+msgid "Content colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1468
+#: plugins/us-core/config/theme-options.php:1536
+#: plugins/us-core/config/theme-options.php:1604
+#: plugins/us-core/config/theme-options.php:1652
+msgid "Alternate Background"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1479
+#: plugins/us-core/config/theme-options.php:1547
+msgid "Headings"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1502
+#: plugins/us-core/config/theme-options.php:1570
+msgid "Primary Color"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1507
+#: plugins/us-core/config/theme-options.php:1575
+msgid "Secondary Color"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1512
+#: plugins/us-core/config/theme-options.php:1580
+msgid "Faded Text"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1525
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:323
+msgid "Alternate Content colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1593
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:326
+msgid "Footer colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1641
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:327
+msgid "Alternate Footer colors"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1688
+msgid "Typography"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1696
+msgid ""
+"This is how your site will show the <strong>text by default</strong>, while "
+"you can change the typography settings for most elements separately. Note "
+"the font size will affect all elements in \"rem\" units, that is, almost all "
+"areas of your site."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1750
+msgid "Line height on Mobiles"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1769
+#: plugins/us-core/functions/helpers.php:1231
+msgid "Additional Google Fonts"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1770
+msgid "In case when you need more Google Fonts in theme elements."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1784
+msgid "Google Font Preview"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1793
+msgid "Google Fonts Display"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1794
+msgid "Sets behavior of fonts rendering."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1794
+#, php-format
+msgid "Read about %s property"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1811
+#: plugins/us-core/functions/helpers.php:1246
+#: plugins/us-core/functions/helpers.php:1291
+#: plugins/us-core/usof/templates/fields/font.php:144
+msgid "Uploaded Fonts"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1812
+#, php-format
+msgid "Add custom fonts via uploading %s files."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1812
+msgid "Read about usage of uploaded fonts"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1827
+msgid "Font Name"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1854
+msgid "Font Files"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1871
+msgid "Button Styles"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1889
+msgid "Button Style Name"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1896
+msgid ""
+"\"Slide background from the top\" may not work with buttons of 3rd-party "
+"plugins."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1899
+msgid "Simple color change"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1900
+msgid "Slide background from the top"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:1916
+msgid "Colors on hover"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2005
+msgid "Relative Height"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2040
+msgid "Relative Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2121
+msgid "Text Styles"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2134
+msgid "Default Button"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2188
+msgid "Fields Style"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2209
+msgid "Colors on focus"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2272
+#: plugins/us-core/config/theme-options.php:2330
+msgid "Hor. offset"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2284
+#: plugins/us-core/config/theme-options.php:2342
+msgid "Ver. offset"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2325
+msgid "Shadow on focus"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2384
+#: plugins/us-core/config/theme-options.php:2392
+msgid "Inner shadow"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2451
+msgid "Side Indents"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2574
+msgid "Intermediate Breadcrumbs Page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2584
+msgid "Portfolio Page Slug"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2589
+msgid "Portfolio Category Slug"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2595
+msgid "Portfolio Tag Slug"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2603
+#, php-format
+msgid "Rename \"%s\" labels"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2616
+#: plugins/us-core/config/theme-options.php:2617
+#: plugins/us-core/functions/post-types.php:25
+msgid "Portfolio Page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2623
+#: plugins/us-core/config/theme-options.php:2624
+#: plugins/us-core/functions/post-types.php:26
+#: plugins/us-core/functions/post-types.php:27
+msgid "Add Portfolio Page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2630
+#: plugins/us-core/config/theme-options.php:2631
+#: plugins/us-core/functions/post-types.php:28
+msgid "Edit Portfolio Page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2637
+#: plugins/us-core/config/theme-options.php:2638
+#: plugins/us-core/functions/post-types.php:48
+msgid "Portfolio Categories"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2644
+#: plugins/us-core/config/theme-options.php:2645
+#: plugins/us-core/functions/post-types.php:61
+msgid "Portfolio Tags"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2667
+msgid "Catalog Mode"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2669
+#, php-format
+msgid "Remove \"%s\" buttons"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2673
+msgid "Primary Buttons Style"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2680
+msgid "Secondary Buttons Style"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2692
+msgid "Slider"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2702
+msgid "Thumbnails Position"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2732
+msgid "Thumbnails Width"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2754
+msgid "Gap between Thumbnails"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2769
+msgid "Zoom images on hover"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2816
+#: plugins/us-core/config/theme-options.php:2895
+msgid "Default WooCommerce template"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2971
+msgid "Standard"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:2996
+msgid "Image Sizes"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3006
+msgid "Additional Image Sizes"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3044
+msgid "Crop to exact dimensions"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3059
+msgid "Big Image Size Threshold"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3060
+#, php-format
+msgid ""
+"If an image height or width is above this threshold, it will be scaled down "
+"and used as the \"%s\"."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3060
+msgid "Set \"0px\" to disable threshold."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3060
+#, php-format
+msgid "This is built-in WordPress feature, described in %sthe article%s."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3073
+msgid "Unused Thumbnails"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3074
+msgid ""
+"When this option is ON, all image files that do not match the registered "
+"image sizes will be deleted."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3074
+msgid "This is helpful for increasing free space in your storage."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3076
+msgid "Delete unused image thumbnails"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3085
+msgctxt "Advanced Settings"
+msgid "Advanced"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3088
+msgid "Theme Modules"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3094
+msgid "Titlebars & Sidebars"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3100
+msgid "Use Page Blocks for Sidebars"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3119
+#: plugins/us-core/functions/post-types.php:140
+msgid "Media Categories"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3125
+msgid "Open Graph meta tags"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3131
+msgid "Schema.org markup"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3136
+msgid "FAQs page"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3137
+#, php-format
+msgid "Selected page must contain \"%s\" element."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3137
+msgid "Read why it may useful"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3150
+msgid "Website Performance"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3156
+msgid "Lazy Load"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3157
+msgid ""
+"When this option is ON, your site will load images when they're in the "
+"viewport only."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3157
+#: plugins/us-core/config/theme-options.php:3171
+#: plugins/us-core/config/theme-options.php:3178
+#: plugins/us-core/config/theme-options.php:3186
+#: plugins/us-core/config/theme-options.php:3193
+#: plugins/us-core/config/theme-options.php:3200
+#: plugins/us-core/config/theme-options.php:3208
+#: plugins/us-core/config/theme-options.php:3216
+#: plugins/us-core/config/theme-options.php:3244
+msgid "This will improve pages loading speed."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3163
+msgid "Keep \"http/https\" in the paths to files"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3164
+msgid ""
+"If your site uses both \"HTTP\" and \"HTTPS\" and has some appearance "
+"issues, turn OFF this option."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3170
+msgid "Use modern jQuery library"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3171
+msgid ""
+"When this option is ON, the latest version of jQuery will be used instead of "
+"the one that comes with WordPress."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3177
+msgid "Disable jQuery migrate script"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3178
+msgid ""
+"When this option is ON, \"jquery-migrate.min.js\" file won't be loaded in "
+"front-end."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3185
+msgid "Move jQuery scripts to the footer"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3186
+msgid ""
+"When this option is ON, jQuery library files will be loaded after page "
+"content."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3192
+msgid "Dynamically load theme JS components"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3193
+msgid ""
+"When this option is ON, theme components JS files will be loaded dynamically "
+"without additional external requests."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3199
+msgid "Disable extra features of WPBakery Page Builder"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3200
+msgid ""
+"When this option is ON, original CSS and JS files of WPBakery Page Builder "
+"won't be loaded in front-end."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3207
+msgid "Disable Gutenberg (block editor) CSS files"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3208
+msgid ""
+"When this option is ON, original CSS files of Gutenberg won't be loaded in "
+"front-end."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3215
+msgid "Optimize JS and CSS size"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3216
+msgid ""
+"When this option is ON, your site will load single JS file and single CSS "
+"file. You can disable unused components to reduce its sizes."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3222
+msgid ""
+"Your uploads folder is not writable. Change your server permissions to use "
+"this option."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3243
+msgid "Merge Google Fonts styles into single CSS file"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3244
+msgid ""
+"When this option is ON, Google Fonts CSS file won't be loaded separately."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3255
+msgid "Custom Code"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3258
+msgid "Custom CSS"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3259
+#, php-format
+msgid ""
+"CSS code from this field will overwrite theme styles. It will be located "
+"inside the %s tags just before the %s tag of every site page."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3264
+#: plugins/us-core/config/theme-options.php:3270
+#, php-format
+msgid "Code before %s"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3265
+#: plugins/us-core/config/theme-options.php:3271
+#, php-format
+msgid ""
+"Use this field for Google Analytics code or other tracking code. If you "
+"paste custom JavaScript, use it inside the %s tags."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3265
+#: plugins/us-core/config/theme-options.php:3271
+#, php-format
+msgid ""
+"Content from this field will be located just before the %s tag of every site "
+"page."
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3279
+msgid "Manage Options"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3282
+msgid "Reset Theme Options"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3286
+msgid "Backup Theme Options"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3290
+msgid "Transfer Theme Options"
+msgstr ""
+
+#: plugins/us-core/config/theme-options.php:3292
+msgid ""
+"You can transfer the saved options data between different installations by "
+"copying the text inside the text box. To import data from another "
+"installation, replace the data in the text box with the one from another "
+"installation and click \"Import Options\"."
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:17
+msgid "Activate White Label"
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:23
+msgid "Theme Name"
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:24
+msgid ""
+"Will be shown on all admin pages, except the current one. The theme "
+"directory won't be renamed due to server security reasons."
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:30
+msgid "Theme Image"
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:31
+#, php-format
+msgid "Will be shown on the \"%s\" page."
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:31
+msgid "Use the 4:3 aspect ratio to display correctly."
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:36
+msgid "Theme Menu Icon"
+msgstr ""
+
+#: plugins/us-core/config/white-label.php:37
+msgid "Will be shown in the admin menu."
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:117
+msgid "Login"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:118
+msgid "Login Form"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:127
+msgid "Register URL"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:132
+msgid "Lost Password URL"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:137
+msgid "Login Redirect URL"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:142
+msgid "Logout Redirect URL"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:219
+msgid "By date of creation (newer first)"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:220
+msgid "By date of creation (older first)"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:221
+msgid "By date of update (newer first)"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:222
+msgid "By date of update (older first)"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:310
+msgid "Custom Link Title"
+msgstr ""
+
+#: plugins/us-core/config/widgets.php:320
+msgid "Custom Link Color"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:143
+msgid "The sender has given his consent."
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:144
+msgid "Agreement text"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:145
+msgid "Agreement date and time"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:146
+msgid "IP address"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:188
+msgid "You received a message from"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:195
+#, php-format
+msgid "Message from %s"
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:198
+msgid "Cannot send empty message. Please fill any of the fields."
+msgstr ""
+
+#: plugins/us-core/functions/ajax/cform.php:221
+msgid "Cannot send the message. Please contact the website administrator."
+msgstr ""
+
+#: plugins/us-core/functions/header.php:434
+#: themes/Impreza/common/functions/menu.php:152
+#: themes/Zephyr/common/functions/menu.php:152
+msgid "Custom Menu"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1209
+msgid "Preset Fonts"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1214
+msgid "used as default font"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1221
+#, php-format
+msgid "used in Heading %s"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1264
+#: plugins/us-core/functions/helpers.php:1318
+#: plugins/us-core/usof/templates/fields/font.php:142
+msgid "Web safe font combinations (do not need to be loaded)"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1298
+msgid "No font specified"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1301
+msgid "As in Heading 1"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1330
+#: plugins/us-core/usof/templates/fields/font.php:143
+msgid "Google Fonts (loaded from Google servers)"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1793
+#: plugins/us-core/functions/helpers.php:1795
+msgid "any"
+msgstr ""
+
+#: plugins/us-core/functions/helpers.php:1797
+msgid "cropped"
+msgstr ""
+
+#: plugins/us-core/functions/media.php:324
+msgid "Without categories"
+msgstr ""
+
+#: plugins/us-core/functions/media.php:330
+msgid "Filter by Categories"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:100
+#: plugins/us-core/functions/post-types.php:101
+msgid "Add Testimonial"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:102
+msgid "Edit Testimonial"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:103
+msgid "Author Photo"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:121
+msgid "Testimonial Categories"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:161
+#: plugins/us-core/functions/post-types.php:162
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1108
+msgid "Add Grid Layout"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:163
+msgid "Edit Grid Layout"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:186
+#: plugins/us-core/functions/post-types.php:187
+msgctxt "site top area"
+msgid "Add Header"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:188
+msgctxt "site top area"
+msgid "Edit Header"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:211
+#: plugins/us-core/functions/post-types.php:212
+msgid "Add Content template"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:213
+#: plugins/us-core/functions/post-types.php:814
+msgid "Edit Content template"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:235
+#: plugins/us-core/functions/post-types.php:236
+msgid "Add Page Block"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:237
+#: plugins/us-core/functions/post-types.php:810
+msgid "Edit Page Block"
+msgstr ""
+
+#: plugins/us-core/functions/post-types.php:718
+#: plugins/us-core/functions/post-types.php:738
+#: plugins/us-core/functions/post-types.php:758
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:271
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:86
+msgid "edit in Theme Options"
+msgstr ""
+
+#: plugins/us-core/functions/post.php:350
+msgid "Archive Content template"
+msgstr ""
+
+#: plugins/us-core/functions/post.php:362
+#, php-format
+msgid "Will apply to the \"%s\" archive page."
+msgstr ""
+
+#: plugins/us-core/functions/post.php:372
+msgid "Pages Content template"
+msgstr ""
+
+#: plugins/us-core/functions/post.php:384
+#, php-format
+msgid "Will apply to all pages with the \"%s\" taxonomy."
+msgstr ""
+
+#: plugins/us-core/functions/shortcodes.php:274
+msgid "Add indents between items"
+msgstr ""
+
+#: plugins/us-core/functions/widget_areas.php:34
+msgid "Sidebar Name"
+msgstr ""
+
+#: plugins/us-core/functions/widget_areas.php:35
+msgid "Add Sidebar"
+msgstr ""
+
+#: plugins/us-core/functions/widget_areas.php:38
+msgid "Do you really want to delete this sidebar?"
+msgstr ""
+
+#: plugins/us-core/functions/widget_areas.php:115
+msgid "Custom Sidebar"
+msgstr ""
+
+#: plugins/us-core/functions/widget_areas.php:176
+msgid "Default Sidebar"
+msgstr ""
+
+#: plugins/us-core/migrations/Impreza/us_migration_5_7.php:104
+#: plugins/us-core/migrations/Zephyr/us_migration_5_4.php:104
+#: plugins/us-core/templates/form/captcha.php:92
+msgid "Enter the equation result to proceed"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:898
+#: plugins/us-core/usof/templates/fields/icon.php:55
+msgid "Enter icon name from the list"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1105
+#, php-format
+msgctxt "Grid Layout"
+msgid "%sEdit selected%s or %screate a new one%s."
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1108
+#, php-format
+msgid "See %s"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1494
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1540
+msgid "Paste Row/Section"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/js_composer.php:1555
+msgid "Append Section"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:117
+msgid "Sticky Column"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:119
+msgid "Fix this column at the top of a page during scroll"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:125
+msgid "Sticky Column Top Position"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:126
+msgid "Set the distance from the top of a page where the column will stick."
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:126
+msgid "Leave blank to use the default."
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:134
+msgid "Stretched Column"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_column.php:136
+msgid "Stretch to the screen edge"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:29
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:13
+msgid "Additional gap"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:122
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:149
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:162
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:178
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:194
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:209
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:224
+msgid "Shape Divider"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:130
+msgid "Tilt"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:131
+msgid "Curve"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:132
+msgid "Curve (inv)"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:133
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:127
+msgid "Triangle"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:134
+msgid "Triangle (inv)"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:135
+msgid "Triangle 2"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:136
+msgid "Triangle 2 (inv)"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:137
+msgid "Wave"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:138
+msgid "Zigzag"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:200
+msgid "Overlap the content of this Row"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:215
+msgid "Flip horizontally"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:247
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:63
+msgid "Columns Content Position"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:261
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:77
+msgid "Improves appearance of columns with background"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:263
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:79
+msgid "Add extra padding around columns content"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:271
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:86
+msgid "The last column will be shown on the top."
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:271
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:86
+#, php-format
+msgid "Applied when the screen width is less than %s"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:273
+#: plugins/us-core/plugins-support/js_composer/map/vc_row_inner.php:88
+msgid "Reverse order for columns stacking"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:281
+msgid "Row Height"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:284
+msgid "Default from Theme Options"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:297
+msgid "Row Content Position"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:312
+msgid "Stretch content of this row to the screen width"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:319
+msgid "Row Color Style"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:391
+msgid "Parallax Effect"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:427
+msgid "Parallax Background Width"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:443
+msgid "Reverse Vertical Parallax Effect"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:456
+msgid "Show on background"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:473
+msgid "Link to YouTube, Vimeo or video file (mp4, webm, ogg)"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:481
+msgid "Hide video at width"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:482
+msgid ""
+"When screen width is less than this value, background video will be hidden"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:541
+msgid "Sticky Row"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:543
+msgid "Fix this row at the top of a page during scroll"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_row.php:557
+msgid ""
+"Background Image, Background Video, Background Overlay settings located "
+"below will override the settings located at \"Background\" and \"Effect\" "
+"tabs."
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:69
+msgid "Allow several sections to be opened at the same time"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:77
+msgid "Remove left and right indents"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:85
+msgid "Scroll to the beginning of the section when opening"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:91
+msgid "Title Alignment"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:125
+msgid "Chevron"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_accordion.php:126
+msgid "Plus"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:53
+msgid "Show this section open"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:60
+msgid "Stretch this section content to the full available area"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:76
+msgid "Before title"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_section.php:77
+msgid "After title"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:67
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:68
+msgid "Switch sections"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:78
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tour.php:79
+msgid "Sections Title HTML tag"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:92
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:93
+msgid "Timeline"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_tta_tabs.php:102
+msgid "Stretch tabs to the full available width"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:85
+msgid "Video link"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:86
+#, php-format
+msgid "Check supported formats on %s"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:96
+msgid "Hide YouTube controls while watching"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:103
+msgid "Hide Vimeo video title (only if the owner allows)"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:123
+msgid "Video Alignment"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:137
+msgid "Image Overlay"
+msgstr ""
+
+#: plugins/us-core/plugins-support/js_composer/map/vc_video.php:145
+msgid "Show Play icon"
+msgstr ""
+
+#: plugins/us-core/templates/404.php:81 themes/Impreza/404.php:23
+#: themes/Zephyr/404.php:23
+msgid "The link you followed may be broken, or the page may have been removed."
+msgstr ""
+
+#: plugins/us-core/templates/comments.php:16
+msgid "Leave new"
+msgstr ""
+
+#: plugins/us-core/templates/comments.php:82
+#: plugins/us-core/templates/comments.php:83
+#: plugins/us-core/templates/form/password.php:87
+#: plugins/us-core/templates/form/text.php:92
+#: plugins/us-core/templates/form/textarea.php:90
+msgid "Fill out this field"
+msgstr ""
+
+#: plugins/us-core/templates/elements/grid_filter.php:71
+#: plugins/us-core/templates/elements/grid_filter.php:77
+msgid "Filters"
+msgstr ""
+
+#: plugins/us-core/templates/elements/grid_filter.php:332
+#: plugins/us-core/templates/elements/grid_filter.php:519
+#: plugins/us-core/templates/us_grid/listing.php:221
+msgid "All"
+msgstr ""
+
+#: plugins/us-core/templates/elements/grid_filter.php:439
+#: plugins/us-core/templates/elements/grid_filter.php:440
+msgid "Min"
+msgstr ""
+
+#: plugins/us-core/templates/elements/grid_filter.php:445
+#: plugins/us-core/templates/elements/grid_filter.php:446
+msgid "Max"
+msgstr ""
+
+#: plugins/us-core/templates/elements/post_author.php:101
+#, php-format
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plugins/us-core/templates/elements/progbar.php:113
+#, php-format
+msgctxt "Example: 33% of 100%"
+msgid "of %s"
+msgstr ""
+
+#: plugins/us-core/templates/elements/sharing.php:39
+msgid "Email this"
+msgstr ""
+
+#: plugins/us-core/templates/elements/sharing.php:42
+#: plugins/us-core/templates/elements/sharing.php:48
+#: plugins/us-core/templates/elements/sharing.php:54
+#: plugins/us-core/templates/elements/sharing.php:57
+#: plugins/us-core/templates/elements/sharing.php:60
+#: plugins/us-core/templates/elements/sharing.php:63
+msgid "Share this"
+msgstr ""
+
+#: plugins/us-core/templates/elements/sharing.php:45
+msgid "Tweet this"
+msgstr ""
+
+#: plugins/us-core/templates/elements/sharing.php:51
+msgid "Pin this"
+msgstr ""
+
+#: plugins/us-core/templates/footer.php:92
+msgid "Previous (Left arrow key)"
+msgstr ""
+
+#: plugins/us-core/templates/footer.php:93
+msgid "Next (Right arrow key)"
+msgstr ""
+
+#: plugins/us-core/templates/footer.php:94
+msgctxt "Example: 3 of 12"
+msgid "%curr% of %total%"
+msgstr ""
+
+#: plugins/us-core/templates/form/agreement.php:66
+msgid "You need to agree with the terms to proceed"
+msgstr ""
+
+#: plugins/us-core/templates/form/checkboxes.php:89
+#: plugins/us-core/templates/form/radio.php:86
+#: plugins/us-core/templates/form/select.php:88
+msgid "Select an option"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax-menu-dropdown.php:57
+#: plugins/us-core/usof/functions/menu-dropdown.php:30
+msgid "Dropdown Settings"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:34
+msgid "There's no options to save"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:77
+#: plugins/us-core/usof/templates/fields/reset.php:25
+msgid "Options were reset"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:100
+#: plugins/us-core/usof/templates/fields/backup.php:24
+msgid "Last Backup"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:122
+msgid "There's no backup to restore"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:132
+msgid "Backup was restored"
+msgstr ""
+
+#: plugins/us-core/usof/functions/ajax.php:272
+#: plugins/us-core/usof/functions/ajax.php:289
+#: plugins/us-core/usof/usof.php:415
+msgid "Add the current color to the palette"
+msgstr ""
+
+#: plugins/us-core/usof/functions/interface.php:53
+#: plugins/us-core/usof/templates/fields/style_scheme.php:33
+msgid "Color Schemes"
+msgstr ""
+
+#: plugins/us-core/usof/functions/interface.php:116
+msgid "New"
+msgstr ""
+
+#: plugins/us-core/usof/templates/field.php:103
+#: plugins/us-core/usof/templates/fields/grid_builder.php:203
+#: plugins/us-core/usof/templates/fields/header_builder.php:265
+#: plugins/us-core/usof/templates/fields/style_scheme.php:77
+msgid "Are you sure want to delete the element?"
+msgstr ""
+
+#: plugins/us-core/usof/templates/field.php:187
+msgid "Edit selected"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/backup.php:26
+msgid "No backups yet"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/backup.php:29
+msgid "Backup Options"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/backup.php:36
+msgid "Restore Options"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/backup.php:40
+msgid "Are you sure want to restore options from the backup?"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/check_table.php:38
+msgid "Auto Optimize"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/check_table.php:44
+msgid ""
+"The checkboxes will be checked / unchecked depending on the components and "
+"settings used on the website."
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/check_table.php:71
+msgid "All sizes in kilobytes"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/color.php:68
+msgid "Colors from the Color Scheme"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/design_options.php:29
+#: plugins/us-core/usof/templates/fields/header_builder.php:25
+msgid "Tablets"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/design_options.php:30
+#: plugins/us-core/usof/templates/fields/header_builder.php:26
+msgid "Mobiles"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:69
+#: plugins/us-core/usof/templates/fields/grid_builder.php:204
+#: plugins/us-core/usof/templates/fields/header_builder.php:59
+#: plugins/us-core/usof/templates/fields/header_builder.php:266
+msgid "Add element into wrapper"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:70
+#: plugins/us-core/usof/templates/fields/grid_builder.php:208
+#: plugins/us-core/usof/templates/fields/header_builder.php:60
+#: plugins/us-core/usof/templates/fields/header_builder.php:270
+msgid "Edit wrapper"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:122
+#: plugins/us-core/usof/templates/fields/grid_builder.php:205
+#: plugins/us-core/usof/templates/fields/header_builder.php:162
+#: plugins/us-core/usof/templates/fields/header_builder.php:267
+msgid "Edit element"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:140
+#: plugins/us-core/usof/templates/fields/header_builder.php:188
+#: plugins/us-core/usof/templates/window_add.php:11
+msgid "Add element"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:149
+msgid "Grid Layout Settings"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:201
+#: plugins/us-core/usof/templates/fields/header_builder.php:263
+msgid ""
+"Selected template will overwrite all your current elements and settings! Are "
+"you sure want to apply it?"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:202
+#: plugins/us-core/usof/templates/fields/header_builder.php:264
+msgid ""
+"Are you sure want to change the header orientation? Some of your elements' "
+"positions may be changed"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:246
+msgid ""
+"To import another Grid Layout replace the text in this field and click "
+"\"Import\" button."
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/grid_builder.php:247
+msgid "Import Grid Layout"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:197
+msgid "Hidden Elements"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:207
+msgid "General Header Settings"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:208
+msgid "Top Area"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:209
+msgid "Main Area"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:210
+msgid "Bottom Area"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:300
+msgid "Header Export / Import"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:301
+msgid ""
+"You can export the saved Header by copying the text inside this field. To "
+"import another Header replace the text in this field and click \"Import "
+"Header\" button."
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/header_builder.php:302
+msgid "Import Header"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/reset.php:19
+msgid "Reset Options"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/reset.php:24
+msgid "Are you sure want to reset all the options to default values?"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/slider.php:81
+msgid "No units"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/style_scheme.php:40
+msgid "Save current colors as"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/style_scheme.php:41
+msgid "Color Scheme Name"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/style_scheme.php:43
+msgctxt "color scheme"
+msgid "Save as new"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/transfer.php:20
+msgctxt "verb"
+msgid "Import Options"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/transfer.php:24
+msgid "Wrong import data format"
+msgstr ""
+
+#: plugins/us-core/usof/templates/fields/transfer.php:25
+msgid "Options imported"
+msgstr ""
+
+#: plugins/us-core/usof/templates/window_header_templates.php:29
+msgid "Header Templates"
+msgstr ""
+
+#: plugins/us-core/usof/usof.php:422
+msgctxt "color type"
+msgid "Solid"
+msgstr ""
+
+#: plugins/us-core/usof/usof.php:426
+msgctxt "color type"
+msgid "Gradient"
+msgstr ""
+
+#: plugins/us-core/usof/usof.php:432
+msgid "Angle"
+msgstr ""
+
+#: plugins/us-core/widgets/us_blog.php:137
+#: plugins/us-core/widgets/us_portfolio.php:144
+msgid "Display Items of selected categories"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:83
+#: themes/Zephyr/common/admin/functions/about.php:83
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:87
+#: themes/Zephyr/common/admin/functions/about.php:87
+msgid "Online Documentation"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:90
+#: themes/Zephyr/common/admin/functions/about.php:90
+msgid "Support Portal"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:93
+#: themes/Zephyr/common/admin/functions/about.php:93
+msgid "Theme Changelog"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:104
+#: themes/Zephyr/common/admin/functions/about.php:104
+#, php-format
+msgid "%s is activated for development"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:108
+#: themes/Zephyr/common/admin/functions/about.php:108
+#, php-format
+msgid "%s is activated"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:128
+#: themes/Zephyr/common/admin/functions/about.php:128
+#, php-format
+msgid "%s is not activated"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:132
+#: themes/Zephyr/common/admin/functions/about.php:132
+msgid "By activating theme license you will unlock premium options:"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:134
+#: themes/Zephyr/common/admin/functions/about.php:134
+msgid "White Label feature"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:135
+#: themes/Zephyr/common/admin/functions/about.php:135
+msgid ""
+"Theme update notifications and ability to update the theme via one click"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:136
+#: themes/Zephyr/common/admin/functions/about.php:136
+msgid "Ability to install and update premium addons via one click"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:137
+#: themes/Zephyr/common/admin/functions/about.php:137
+msgid "Ability to import any of theme demos"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:139
+#: themes/Zephyr/common/admin/functions/about.php:139
+msgid "Don't have valid license yet?"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:139
+#: themes/Zephyr/common/admin/functions/about.php:139
+#, php-format
+msgid "Purchase %s license"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:217
+#: themes/Zephyr/common/admin/functions/about.php:217
+msgid "Install Addons"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:219
+#: themes/Zephyr/common/admin/functions/about.php:219
+#, php-format
+msgid ""
+"%s comes with popular plugins which increase theme abilities, install them "
+"via one click."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:221
+#: themes/Zephyr/common/admin/functions/about.php:221
+msgid "Go to Addons page"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:224
+#: themes/Zephyr/common/admin/functions/about.php:224
+msgid "Import Demo Content"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:226
+#: themes/Zephyr/common/admin/functions/about.php:226
+msgid ""
+"Installed this theme for the first time? Import demo content to build your "
+"site not from scratch."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:228
+#: themes/Zephyr/common/admin/functions/about.php:228
+msgid "Go to Demo Import"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:231
+#: themes/Zephyr/common/admin/functions/about.php:231
+msgid "Customize Appearance"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:233
+#: themes/Zephyr/common/admin/functions/about.php:233
+msgid ""
+"To customize the look of your site (colors, layouts, fonts) go to the Theme "
+"Options panel."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/about.php:234
+#: themes/Zephyr/common/admin/functions/about.php:234
+msgid "Go to Theme Options"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:25
+#: themes/Zephyr/common/admin/functions/addons.php:25
+#, php-format
+msgid ""
+"To enable all features used by %s theme, install and activate %s plugin."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:29
+#: themes/Zephyr/common/admin/functions/addons.php:29
+msgid "Read more about it"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:42
+#: themes/Zephyr/common/admin/functions/addons.php:42
+#, php-format
+msgid "This theme recommends to use %s plugin."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:80
+#: themes/Zephyr/common/admin/functions/addons.php:80
+msgid "Addons"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:119
+#: themes/Zephyr/common/admin/functions/addons.php:119
+msgid "Recommended Plugins"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:120
+#: themes/Zephyr/common/admin/functions/addons.php:120
+#, php-format
+msgid "Premium and free plugins, compatible with %s"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:191
+#: themes/Zephyr/common/admin/functions/addons.php:191
+#, php-format
+msgid "<a href=\"%s\">Activate the theme</a> to install premium addons"
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:237
+#: themes/Zephyr/common/admin/functions/addons.php:237
+msgid "Activating..."
+msgstr ""
+
+#: themes/Impreza/common/admin/functions/addons.php:405
+#: themes/Zephyr/common/admin/functions/addons.php:405
+msgid "Please adjust file permissions to allow plugins installation"
+msgstr ""
+
+#: themes/Impreza/config/addons.php:14 themes/Zephyr/config/addons.php:14
+msgid "Adds plenty of features for Impreza and Zephyr themes."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:24 themes/Zephyr/config/addons.php:24
+msgid "Save time working on your website content."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:33 themes/Zephyr/config/addons.php:33
+msgid "Create interactive sliders and presentations."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:41 themes/Zephyr/config/addons.php:41
+msgid "Most popular eCommerce plugin that allows you to sell anything."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:46 themes/Zephyr/config/addons.php:46
+msgid "Create and manage custom post types and taxonomies."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:51 themes/Zephyr/config/addons.php:51
+msgid "Add fields to edit screens and display their values on website pages."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:56 themes/Zephyr/config/addons.php:56
+msgid "Create and manage tables."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:61 themes/Zephyr/config/addons.php:61
+msgid "Create customizable contact forms and edit the mail contents."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:66 themes/Zephyr/config/addons.php:66
+msgid "Improve your website search engine optimization."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:71 themes/Zephyr/config/addons.php:71
+msgid "Resize, optimize and compress all of your images."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:77 themes/Zephyr/config/addons.php:77
+msgid "Improve your website pages loading speed."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:82 themes/Zephyr/config/addons.php:82
+msgid "Backup your website files and database."
+msgstr ""
+
+#: themes/Impreza/config/addons.php:88 themes/Zephyr/config/addons.php:88
+msgid ""
+"Allows you to display how many times a post, page or custom post type had "
+"been viewed."
+msgstr ""

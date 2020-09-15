@@ -1,5 +1,5 @@
 .site-footer {
-  background: $navy;
+  background: $purple;
   font-size: rem(15);
   font-weight: normal;
   font-style: normal;
@@ -7,7 +7,7 @@
   letter-spacing: -0.15px;
 
   @include media("<medium") {
-    background: $navy;
+    background: $purple;
   }
 
   .site-info {
@@ -54,12 +54,12 @@
       }
       &::before {
         left: 0;
-        background-image: linear-gradient(to right, $navy, rgba($navy, 0) 92%);
+        background-image: linear-gradient(to right, $purple, rgba($purple, 0) 92%);
         width: 50px;
       }
       &::after {
         right: 0;
-        background-image: linear-gradient(to left, $navy, rgba($navy, 0) 92%);
+        background-image: linear-gradient(to left, $purple, rgba($purple, 0) 92%);
       }
     }
   }

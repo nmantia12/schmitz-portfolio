@@ -1,0 +1,12 @@
+.pc_block {
+
+	&__title {
+		display: inline-block;
+		margin-left: 0;
+		@extend h2;
+	}
+	.pc_button__inline {
+		float: right;
+		margin-top: 12px;
+	}
+}

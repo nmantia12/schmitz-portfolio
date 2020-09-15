@@ -1,19 +1,6 @@
 article {
 	margin-bottom: 20px;
-
-	&.type-post {
-		display: flex;
-		flex-direction: column;
-		background-color: white;
-		border-radius: 24px;
-		padding-bottom: $gap-md;
-		box-shadow: 0 2px 15px -3px rgba(0,0,0,0.20);
-
-		img {
-			border-top-left-radius: 24px;
-			border-top-right-radius: 24px;
-		}
-	}
+	text-align: left;
 
 	.entry-header,
 	.entry-summary,
@@ -24,7 +11,6 @@ article {
 	.entry-footer {
 		margin-bottom: 0;
 	}
-
 	.post-thumbnail {
 		position: relative;
 		width: 100%;
@@ -46,4 +32,32 @@ article {
 	// 	justify-content: space-between;
 	// 	flex-direction: column;
 	// }
+}
+
+.grid	{
+	&__card {
+		article {
+			padding-bottom: $gap-md;
+		}
+	}
+	article {
+		background-color: white;
+		border-radius: 24px;
+		box-shadow: 0 2px 15px -3px rgba(0,0,0,0.20);
+
+		img {
+			border-top-left-radius: 24px;
+			border-top-right-radius: 24px;
+		}
+	}
+}
+
+.single-project,
+.single-post {
+	article {
+		.entry-header,
+		.post-thumbnail {
+			display: none;
+		}
+	}
 }

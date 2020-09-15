@@ -1,0 +1,162 @@
+/*
+ * Post Prev/Next navigation
+ */
+
+.w-post-elm.post_navigation {
+	display: flex;
+	}
+	.post_navigation-item-img img {
+		display: block;
+		}
+	.post_navigation-item-meta {
+		display: block;
+		font-size: 0.8em;
+		opacity: 0.5;
+		}
+		.post_navigation .order_first .post_navigation-item-arrow:before {
+			content: '\f104';
+			font-family: fontawesome;
+			font-weight: 400;
+			}
+		.post_navigation .order_second .post_navigation-item-arrow:before {
+			content: '\f105';
+			font-family: fontawesome;
+			font-weight: 400;
+			}
+
+/* Remove navigation when page is opened inside a popup */
+.us_iframe .w-post-elm.post_navigation {
+	display: none;
+	}
+
+/* Hide navigation when popup is opened */
+.mfp-wrap ~ .l-canvas .post_navigation.layout_sided .post_navigation-item {
+	opacity: 0;
+	}
+
+/* Layout Simple */
+.post_navigation.layout_simple .post_navigation-item {
+	line-height: 1.5;
+	padding: 0 2.2em;
+	width: 50%;
+	position: relative;
+	color: inherit !important;
+	transition: none;
+	}
+.post_navigation.layout_simple .order_first {
+	text-align: left;
+	}
+	.post_navigation.layout_simple .order_first .post_navigation-item-arrow {
+		left: 0;
+		}
+.post_navigation.layout_simple .order_second {
+	text-align: right;
+	}
+	.post_navigation.layout_simple .order_second .post_navigation-item-arrow {
+		right: 0;
+		}
+	.post_navigation.layout_simple .post_navigation-item-arrow {
+		position: absolute;
+		top: 0.08em;
+		font-size: 2.5em;
+		line-height: 1;
+		opacity: 0.3;
+		}
+	.post_navigation.layout_simple .post_navigation-item-title {
+		transition: color 0.3s;
+		}
+
+/* Layout Sided */
+.post_navigation.layout_sided .post_navigation-item {
+	display: flex;
+	position: fixed;
+	z-index: 98;
+	top: 50%;
+	width: 16em;
+	margin-top: -4em;
+	transition: right 0.3s cubic-bezier(.78,.13,.15,.86), left 0.3s cubic-bezier(.78,.13,.15,.86), opacity 0.3s;
+	color: #fff !important;
+	}
+.post_navigation.layout_sided .order_first {
+	left: -14em;
+	text-align: left;
+	}
+.no-touch .post_navigation.layout_sided .order_first:hover {
+	left: 0;
+	}
+.post_navigation.layout_sided .order_second {
+	flex-direction: row-reverse;
+	right: -14em;
+	text-align: right;
+	}
+.no-touch .post_navigation.layout_sided .order_second:hover {
+	right: 0;
+	}
+	.post_navigation.layout_sided .post_navigation-item-img {
+		flex-shrink: 0;
+		height: 8em;
+		width: 8em;
+		}
+		.post_navigation.layout_sided .post_navigation-item-img img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			}
+	.post_navigation.layout_sided .post_navigation-item-arrow {
+		flex-shrink: 0;
+		text-align: center;
+		height: 8em;
+		width: 8em;
+		background: rgba(0,0,0,0.3);
+		color: #fff;
+		position: relative;
+		transition: background 0.3s cubic-bezier(.78,.13,.15,.86);
+		}
+		.post_navigation.layout_sided .post_navigation-item-arrow:before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 1.8em;
+			line-height: 1;
+			transition: transform 0.3s cubic-bezier(.78,.13,.15,.86);
+			}
+		.post_navigation.layout_sided .order_first .post_navigation-item-arrow:before {
+			transform: translate(1.45em,-50%);
+			}
+		.post_navigation.layout_sided .order_second .post_navigation-item-arrow:before {
+			transform: translate(-1.79em,-50%);
+			}
+		.no-touch .post_navigation.layout_sided .post_navigation-item:hover .post_navigation-item-arrow:before {
+			transform: translate(-50%,-50%);
+			}
+	.post_navigation.layout_sided .post_navigation-item-title {
+		font-size: 0.9em;
+		line-height: 1.4;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		}
+		.post_navigation.layout_sided .post_navigation-item-title span {
+			display: block;
+			padding: 0.7em 1em;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			background: rgba(30,30,30,0.9);
+			opacity: 0;
+			transform: translate(0,-100%);
+			transition: transform 0.3s cubic-bezier(.78,.13,.15,.86), opacity 0.3s cubic-bezier(.78,.13,.15,.86);
+			}
+		.no-touch .post_navigation.layout_sided .post_navigation-item:hover .post_navigation-item-title span {
+			opacity: 1;
+			transform: translate(0,0);
+			transition-delay: 0.1s;
+			}
+			
+/* Links Hover Underline 
+   ========================================================================== */
+.no-touch .links_underline .post_navigation.layout_simple a:hover .post_navigation-item-title span {
+	border-bottom: 1px solid;
+	}

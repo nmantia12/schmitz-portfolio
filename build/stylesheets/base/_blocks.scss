@@ -44,9 +44,9 @@
 }
 
 .entry-content {
-	perspective: 200px;
+	perspective: 50px;
 	width: 100%;
-	// max-width: $content-width;
+	max-width: $content-width;
 	margin: 0 auto;
 	padding: 0px $gap-sm;
 	padding-bottom: $gap-md;
@@ -74,6 +74,11 @@
     }
   }
 }
+
+.home .entry-content {
+	max-width: 1300px;
+}
+
 $default: nth(nth($colors, 1), 1);
 
 .wp-block-button__link {
@@ -130,7 +135,7 @@ blockquote.wp-block-quote {
   text-align: left;
 
   p {
-    color: $highlight;
+    color: rgba(0,0,0,.6);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -138,7 +143,7 @@ blockquote.wp-block-quote {
 
   cite,
   .wp-block-quote__citation {
-    color: $highlight;
+    color: $grey;
     display: block;
     font-size: 16px;
     font-weight: 700;
