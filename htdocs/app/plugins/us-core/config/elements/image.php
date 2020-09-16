@@ -1,0 +1,220 @@
+<?php defined( 'ABSPATH' ) OR die( 'This script cannot be accessed directly.' );
+
+$misc = us_config( 'elements_misc' );
+$design_options = us_config( 'elements_design_options' );
+$link_custom_values = us_get_elm_link_options();
+
+return array(
+	'title' => us_translate( 'Image' ),
+	'icon' => 'icon-wpb-single-image',
+	'params' => array_merge( array(
+
+		// General
+		'img' => array(
+			'type' => 'upload',
+			'extension' => 'png,jpg,jpeg,gif,svg',
+			'context' => array( 'header', 'grid' ),
+		),
+		'image' => array(
+			'type' => 'upload',
+			'extension' => 'png,jpg,jpeg,gif,svg',
+			'shortcode_cols' => 2,
+			'context' => array( 'shortcode' ),
+		),
+		'size' => array(
+			'title' => __( 'Image Size', 'us' ),
+			'description' => $misc['desc_img_sizes'],
+			'type' => 'select',
+			'options' => us_get_image_sizes_list(),
+			'std' => 'large',
+			'cols' => 2,
+			'admin_label' => TRUE,
+		),
+		'align' => array(
+			'title' => us_translate( 'Alignment' ),
+			'type' => 'select',
+			'options' => array(
+				'none' => us_translate( 'None' ),
+				'left' => us_translate( 'Left' ),
+				'center' => us_translate( 'Center' ),
+				'right' => us_translate( 'Right' ),
+			),
+			'std' => 'none',
+			'cols' => 2,
+			'context' => array( 'shortcode' ),
+		),
+		'style' => array(
+			'title' => __( 'Image Style', 'us' ),
+			'type' => 'select',
+			'options' => array(
+				'' => us_translate( 'None' ),
+				'circle' => __( 'Circle', 'us' ),
+				'outlined' => __( 'Outlined', 'us' ),
+				'shadow-1' => __( 'Simple Shadow', 'us' ),
+				'shadow-2' => __( 'Colored Shadow', 'us' ),
+				'phone6-1' => __( 'Phone 6 Black Realistic', 'us' ),
+				'phone6-2' => __( 'Phone 6 White Realistic', 'us' ),
+				'phone6-3' => __( 'Phone 6 Black Flat', 'us' ),
+				'phone6-4' => __( 'Phone 6 White Flat', 'us' ),
+			),
+			'std' => '',
+			'cols' => 2,
+		),
+		'meta' => array(
+			'type' => 'switch',
+			'switch_text' => __( 'Show image title and description', 'us' ),
+			'std' => FALSE,
+			'context' => array( 'shortcode' ),
+		),
+		'meta_style' => array(
+			'title' => __( 'Title and Description Style', 'us' ),
+			'type' => 'select',
+			'options' => array(
+				'simple' => __( 'Below the image', 'us' ),
+				'modern' => __( 'Over the image', 'us' ),
+			),
+			'std' => 'simple',
+			'show_if' => array( 'meta', '!=', FALSE ),
+			'context' => array( 'shortcode' ),
+		),
+		'onclick' => array(
+			'title' => us_translate( 'Link' ),
+			'type' => 'select',
+			'options' => array_merge(
+				array(
+					'none' => us_translate( 'None' ),
+					'lightbox' => __( 'Open original image in a popup', 'us' ),
+					'onclick' => __( 'Onclick JavaScript action', 'us' ),
+				),
+				$link_custom_values,
+				array( 'custom_link' => __( 'Custom', 'us' ) )
+			),
+			'std' => 'none',
+			'admin_label' => TRUE,
+		),
+		'link' => array(
+			'placeholder' => us_translate( 'Enter the URL' ),
+			'description' => $misc['desc_grid_custom_link'],
+			'type' => 'link',
+			'std' => array(),
+			'shortcode_std' => '',
+			'classes' => 'for_above desc_3',
+			'show_if' => array( 'onclick', '=', 'custom_link' ),
+		),
+		'link_new_tab' => array(
+			'type' => 'switch',
+			'switch_text' => us_translate( 'Open link in a new tab' ),
+			'std' => FALSE,
+			'classes' => 'for_above',
+			'show_if' => array( 'onclick', '=', array_keys( $link_custom_values ) ) ,
+		),
+		'onclick_code' => array(
+			'type' => 'text',
+			'std' => 'return false',
+			'classes' => 'for_above',
+			'show_if' => array( 'onclick', '=', 'onclick' ),
+		),
+		'img_transparent' => array(
+			'title' => __( 'Different Image for Transparent Header', 'us' ),
+			'type' => 'upload',
+			'extension' => 'png,jpg,jpeg,gif,svg',
+			'context' => array( 'header' ),
+		),
+		'animate' => array(
+			'title' => __( 'Animation', 'us' ),
+			'description' => __( 'Selected animation will be applied to this element, when it enters into the browsers viewport.', 'us' ),
+			'type' => 'select',
+			'options' => array(
+				'' => us_translate( 'None' ),
+				'fade' => __( 'Fade', 'us' ),
+				'afc' => __( 'Appear From Center', 'us' ),
+				'afl' => __( 'Appear From Left', 'us' ),
+				'afr' => __( 'Appear From Right', 'us' ),
+				'afb' => __( 'Appear From Bottom', 'us' ),
+				'aft' => __( 'Appear From Top', 'us' ),
+				'hfc' => __( 'Height From Center', 'us' ),
+				'wfc' => __( 'Width From Center', 'us' ),
+			),
+			'std' => '',
+			'admin_label' => TRUE,
+			'context' => array( 'shortcode' ),
+		),
+		'animate_delay' => array(
+			'title' => __( 'Animation Delay (in seconds)', 'us' ),
+			'type' => 'text',
+			'std' => '',
+			'show_if' => array( 'animate', '!=', '' ),
+			'admin_label' => TRUE,
+			'context' => array( 'shortcode' ),
+		),
+
+		// Height in Header only
+		'heading_1' => array(
+			'title' => us_translate( 'Default' ),
+			'type' => 'heading',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_default' => array(
+			'title' => us_translate( 'Height' ),
+			'type' => 'text',
+			'std' => '35px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_tablets' => array(
+			'title' => __( 'Height on Tablets', 'us' ),
+			'type' => 'text',
+			'std' => '30px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_mobiles' => array(
+			'title' => __( 'Height on Mobiles', 'us' ),
+			'type' => 'text',
+			'std' => '20px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'heading_2' => array(
+			'title' => __( 'Sticky Header', 'us' ),
+			'type' => 'heading',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_sticky' => array(
+			'title' => us_translate( 'Height' ),
+			'type' => 'text',
+			'std' => '35px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_sticky_tablets' => array(
+			'title' => __( 'Height on Tablets', 'us' ),
+			'type' => 'text',
+			'std' => '30px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+		'height_sticky_mobiles' => array(
+			'title' => __( 'Height on Mobiles', 'us' ),
+			'type' => 'text',
+			'std' => '20px',
+			'cols' => 3,
+			'classes' => 'for_above',
+			'group' => us_translate( 'Height' ),
+			'context' => array( 'header' ),
+		),
+
+	), $design_options ),
+);
