@@ -20,12 +20,12 @@ htdocs/app/themes/schmitz_portfolio/assets/js/*.js
 htdocs/app/themes/schmitz_portfolio/assets/css/*.css
 
 # Application
-# htdocs/app/plugins/*
-# !htdocs/app/plugins/advanced-custom-fields-pro
-# !htdocs/app/plugins/pc-custom-blocks
-# !htdocs/app/plugins/bb-plugin
-# !htdocs/app/plugins/pc-bb-modules
-# !htdocs/app/plugins/gravityforms
+htdocs/app/plugins/*
+!htdocs/app/plugins/advanced-custom-fields-pro
+!htdocs/app/plugins/pc-custom-blocks
+!htdocs/app/plugins/bb-plugin
+!htdocs/app/plugins/pc-bb-modules
+!htdocs/app/plugins/gravityforms
 htdocs/app/wp-cache-config.php
 htdocs/app/upgrade
 htdocs/app/uploads/*
